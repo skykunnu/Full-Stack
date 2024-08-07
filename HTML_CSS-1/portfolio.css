@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+    font-family: "IBM Plex Sans", sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: #fff;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar img{
+    height: 32px;
+    width: 58%;
+    margin: 22px 31px 36px 65px;
+    
+    
+}
+
+.navlist ul{
+    display: flex;
+    margin-right: 43px;
+}
+
+.navlist ul li{
+    list-style: none;
+    margin-left: 12px;
+    padding: 13px;
+}
+
+.navlist ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+.hire{
+    border-radius: 5px;
+    background-color: rgb(144,58,225);
+}
+
+#hiretxt{
+    color: #fff;
+}
+
+
+.look{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(241,241,241);
+    padding-bottom: 3rem;
+
+}
+.txt h2{
+    font-size: 54px;
+    margin: 0rem 4rem;
+    color: rgb(43,42,47);
+    
+}
+.txt p{
+color: rgb(43,42,47);
+font-size: 24px;
+margin: 1rem 4rem;
+}
+
+.hirebtn{
+background-color: rgb(78,15,234);
+border: none;
+margin: 0rem 4rem;
+width: 14rem;
+border-radius: 5px;
+height: 3rem;
+}
+
+.hirebtn a{
+    font-size: 23px;
+    text-decoration: none;
+    color: white;
+}
+.image{
+    margin: 0rem 5rem;
+}
+
+.image img{
+    height: 500px;
+    width: 495px;
+    margin: 2rem 1rem;
+}
+
+.podcast{
+    background-color: white;
+    height: 48rem;
+}
+.heading{
+    height: 158px;
+    width: 1140px;
+}
+
+.heading h1{
+    color: #2b2a2f;
+    font-weight: 900;
+    text-align: center;
+    margin: 3rem 0rem;
+    padding-left: 12rem;
+    font-size: 3rem;
+}
+
+.imageBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0rem 6.8rem;
+    gap: 2rem;
+}
+    
+
+.imgBox1 img{
+    width: 356px;
+    height: 355px;
+    position: relative;
+}
+.imgBoxtext{
+    background-color: rgb(241,241,241);
+    height: 154px;
+    width:356px;
+    position: relative;
+    top: -5px;
+}
+
+.imgBoxtext h3{
+font-size: 28px;
+text-align: center;
+padding-top: 18px;
+color: rgb(78, 15, 234);
+}
+
+.imgBoxtext p{
+    text-align: center;
+    padding: 1rem;
+    font-size: 16px;
+    color: rgb(43,42,47);
+}
+
+.business{
+    background-color: rgb(241,241,241);
+}
+
+.businessHeading h1{
+font-size: 45px;
+font-weight: 900;
+text-align: center;
+padding: 4rem 0rem 2rem 0rem;
+}
+
+.businessHeading p{
+    text-align: center;
+    padding: 0rem 17rem 4rem 17rem;
+    line-height: 1.5rem;
+}
+
+.businessImg{
+    display: flex;
+    
+}
+.businessImg1{
+background-color: #2b2a2f;
+}
+.businessImg1 img{
+    object-fit: contain;
+    width:83%;
+    margin: 1.8rem 1.8rem;
+}

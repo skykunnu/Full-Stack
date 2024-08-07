@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment4</title>
+</head>
+<style>
+
+</style>
+<body>
+    <h1>Increment & decrement</h1>
+    <p id="para">0</p>
+    <button onclick="increment()">Increment</button>
+    <button onclick="decrement()">Decrement</button>
+
+
+
+
+<script>
+    var para=document.getElementById('para');
+    function increment(){
+          if(para.innerHTML>19){
+            alert('Not allowed to increment above 20.');
+          }
+          else{
+            para.innerHTML++;
+          }
+    }
+    function decrement(){
+        if(para.innerHTML<1){
+            alert('Negative values not allowed.')
+        }
+        else{
+            para.innerHTML--;
+        }
+    }
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

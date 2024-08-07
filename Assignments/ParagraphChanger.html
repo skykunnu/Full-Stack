@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-2</title>
+    <style>
+        .Box{
+            width: 250px;
+            height: 150px;
+            border: 1px solid red;
+            margin: 20px;
+            padding: 20px;
+        } 
+        </style>
+</head>
+<body>
+
+<h2>Paragraph changer</h2>
+
+    <div class="Box">
+        <h1>Rajasthan</h1>
+        <p>Jaipur is the capital of Rajasthan</p>
+    </div>
+    <div class="Box">
+        <h1>Maharashtra</h1>
+        <p>Mumbai is the capital of Maharashtra</p>
+    </div>
+    <div class="Box">
+        <h1>Karnataka</h1>
+        <p>Bangalore is the capital of Karnataka</p>
+    </div>
+    <div class="Box">
+        <h1>Uttrakhand</h1>
+        <p>Dehradun is the capital of Uttarakhand</p>
+    </div>
+
+    <button onclick="change()">Change</button>
+
+
+
+
+<script>
+    var data=document.getElementsByTagName('p')
+function change(){
+    for (let i=0;i<data.length;i++) {
+      data[i].innerHTML= "All these states are part of India."
+        
+    }
+}
+</script>
+
+</body>
+</html>

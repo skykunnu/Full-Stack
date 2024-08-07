@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+   <form action="">
+    <label>Name </label><input type="text" name="firstName"><br><br>
+    <label>Password </label><input type="text"><br><br>
+    <!-- radio buttons are used to select one out of many, to select one you need to give name attribute to all the options to tell system that they all belong 
+     to same group.-->
+    <label>Gender </label><input type="radio" name="gender">Male <input type="radio" name="gender">Female<br><br>
+    <!--checkbox is used to select many options from given options.-->
+    <label>Hobbies :</label><br>
+    <input type="checkbox">Playing Cricket <br>
+    <input type="checkbox">Listening Music <br>
+    <input type="checkbox"> stock markets <br>
+    <input type="checkbox">Reading<br><br>
+    <label>Email </label><input type="email"><br><br>
+    <label>Choose a color </label><input type="color"><br><br>
+    <label>Age </label><input type="number" min="1" max="90"><br><br>
+    <label>Date </label><input type="date" name="dob"><br><br>
+
+    <label>City</label>
+    <!-- multiple attribute is used to select multiple options from dropdown. -->
+    <select name=""> 
+        <option value="">Select City</option>
+        <option value="">Jaipur</option>
+        <option value="">Mumbai</option>
+        <option value="">Delhi</option>
+        <option value="">Kolkata</option>
+        <option value="">Kota</option>
+    </select><br><br>
+    <label for="">Address</label>
+    <!-- text area is used to write big text. you can increase the size of text area using rows and cols.-->
+    <textarea name="" id="" cols="30" rows="10"></textarea><br><br>
+    
+    <!-- Buttons are of two types in html, In form always use input type submit not button 
+     although both are similar, but in the case of button type form does'nt get submitted. 
+     -->
+    <input type="submit" value="Submit">
+    <input type="button" value="Submit">
+
+
+
+   </form>
+
+</body>
+</html>

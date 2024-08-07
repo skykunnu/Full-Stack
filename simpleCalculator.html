@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <input id="input-1" type="text" placeholder="Enter First Number" />
+      <input id="input-2" type="text" placeholder="Enter Second Number" />
+      <select name="" id="">
+        <option value="" selected disabled>Operation</option>
+        <option value="+">Add</option>
+        <option value="-">Subtract</option>
+        <option value="/">Divide</option>
+        <option value="*">Multiply</option>
+        <option value="%">Modulus</option>
+      </select>
+      <p></p>
+    </div>
+
+    
+    <script>
+      let input1 = document.querySelector("#input-1");
+      let input2 = document.querySelector("#input-2");
+      let select = document.querySelector("select");
+      let para = document.querySelector("p");
+      select.addEventListener("change", (e) => {
+        input1 = Number(input1.value);
+        input2 = Number(input2.value);
+
+        if (e.target.value === "+") {
+          para.innerHTML = input1 + input2;
+        } else if (e.target.value === "-") {
+          para.innerHTML = input1 - input2;
+        } else if (e.target.value === "*") {
+          para.innerHTML = input1 * input2;
+        } else if (e.target.value === "/") {
+          para.innerHTML = input1 / input2;
+        } else if (e.target.value === "%") {
+          para.innerHTML = input1 % input2;
+        }
+      });
+    </script>
+  </body>
+</html>

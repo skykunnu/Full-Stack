@@ -1,0 +1,36 @@
+<!-- Change the color of all boxes with  change button -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1</title>
+    <style>
+  .box{
+       width: 200px;
+       height: 100px;
+       background-color: green;
+    }
+    </style>
+</head>
+<body>
+    <h1>Box Changer </h1>
+    <div class="box"></div><br>
+    <div class="box"></div><br>
+    <div class="box"></div><br>
+    <div class="box"></div><br>
+    <div class="box"></div><br>
+    <button onclick="change()">Change</button>
+    <script>
+        var box=document.getElementsByClassName('box')
+        function change(){
+            for (let i = 0; i < box.length; i++) {
+                box[i].style='background:yellow'
+                
+            }
+        }
+    </script>
+
+</body>
+</html>

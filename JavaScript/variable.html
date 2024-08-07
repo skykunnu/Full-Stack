@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable in JS</title>
+</head>
+<body>
+    <h1>Variables in js</h1>
+
+
+    <script>
+        // var can be re-declare, re-assign and is globally scoped(it can be accessed anywhere inside the document). 
+
+       var myName='Shikhar' 
+       var myName='Dikshant' // re-declare
+           myName='Yash'  // re-assign
+
+        //    console.log(myName) // Yash
+
+
+        // global scope. 
+        // console.log(a) // undefined 
+        {
+            var a=50
+            // console.log(a) // 50
+        }
+        // console.log(a) // 50
+
+//----------------------------------------------------------------------------------------------------------------------------------
+      // Let can be re-assign, is block scoped (It can be accessed inside block only) but cannot be re-declare.
+
+      let b=100;
+    //    let b=200; error 
+
+      console.log(b) //100
+       
+      console.log(a) // undefined
+      {
+        console.log(a) // undefined
+        let a=50
+        console.log(a) // 50
+      }
+
+      console.log(a) // undefined
+
+
+//-------------------------------------------------------------------------------------------------------------------------------------
+
+// const cannot be re-declare, re-assign but it is blocked scope. 
+
+   const c=50;
+    // const a=100; error
+    // c=200; error
+
+    console.log(c) // undefined
+    {
+        const c=50;
+        console.log(c) // 50
+    }
+    console.log(c) // undefined
+
+// -------------------------------------------------------------------------------------------------------------------
+
+// let a;
+console.log(a) // undefined
+
+// var e;
+console.log(e) // undefined
+
+// const f;
+console.log(f) // syntax error, As f is not initialized.
+
+
+    </script>
+</body>
+</html>

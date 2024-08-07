@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Months display using switch case.</title>
+</head>
+<body>
+    <h1>Months display</h1>
+    <input id="text" type="number">
+    <button onclick="show()">Show</button>
+    <p id="para"></p>
+    <script>
+        
+        function show(){
+        var getMonths=Number(document.getElementById('text').value);
+            
+        switch (getMonths) {
+    case 0:
+        text=("January")
+        break;
+    case 1:
+        text=("february")
+        break;
+    case 2:
+        text=("March")
+        break;
+    case 3:
+        text=("April")
+        break;
+    case 4:
+        text=("May")
+        break;
+    case 5:
+        text=("June")
+        break;
+    case 6:
+        text=("July")
+        break;
+    case 7:
+        text=("August")
+        break;
+    case 8:
+        text=("September")
+        break;
+    case 9:
+        text=("October")
+        break;
+    case 10:
+        text=("November")
+        break;
+    case 11:
+        text=("December")
+        break;    
+    default:
+        text=alert("Entered value is not associated with the month.")
+        break;
+
+    }
+        var output=document.getElementById('para')
+        output.innerHTML=text
+        
+    }
+    </script>
+</body>
+</html>

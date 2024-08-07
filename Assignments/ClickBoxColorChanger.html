@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClickBoxColorChanger</title>
+</head>
+<style>
+    #box{
+        width:200px;
+        height: 100px;
+        background-color: red;
+    }
+</style>
+<body>
+    <h1>A red color box on clicking first time should give green color. and on double clicking should give blue color.</h1>
+    <div id="box" onclick="green()" ondblclick="blue()"></div>
+
+
+    <script>
+
+var box=document.getElementById('box')
+function green(){
+    box.style='background:green'
+}
+function blue(){
+    box.style='background:blue'
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-3</title>
+</head>
+<style>
+    .button-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    }
+
+</style>
+<body>
+    <h1>Background changer</h1>
+    <div class="button-box">
+        <button id="btn-1" onclick="red()">RED</button>
+        <button id="btn-2" onclick="green()">GREEN</button>
+        <button id="btn-3" onclick="blue()">BLUE</button>
+    </div>
+
+
+
+    <script>
+        var btn1=document.getElementById('btn-1')
+        function red(){
+        btn1.style='background:red'
+        document.body.style='background:red'
+        btn2.style='display:none'
+        btn3.style='display:none'
+    }
+    var btn2=document.getElementById('btn-2')
+    function green(){
+        btn2.style='background:green'
+        document.body.style='background:green'
+        btn1.style='display:none'
+        btn3.style='display:none'
+
+    }
+    var btn3=document.getElementById('btn-3')
+    function blue(){
+        btn3.style='background:blue'
+        document.body.style='background:blue'
+        btn1.style='display:none'
+        btn2.style='display:none'
+    }
+    
+    </script>
+</body>
+</html>

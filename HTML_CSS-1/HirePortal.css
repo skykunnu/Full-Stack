@@ -1,0 +1,444 @@
+*{
+    box-sizing: border-box;
+    font-family: "IBM Plex Sans", sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: rgb(255,255,255);
+
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar img{
+    height: 32px;
+    width: 58%;
+    margin: 22px 31px 36px 77px;
+}
+
+.navlist ul{
+    display: flex;
+    margin-right: 43px;
+}
+
+.navlist ul li{
+    list-style: none;
+    margin-left: 12px;
+    padding: 13px;
+}
+
+.navlist ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+.hire{
+    border-radius: 5px;
+    background-color: rgb(144,58,225);
+}
+
+#hiretxt{
+    color: #fff;
+}
+
+.About{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0px 60px;
+}
+
+.heading{
+    width: 40%;
+}
+
+.heading h2{
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.heading p{
+    font-size: 20px;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.hirebtn{
+    height: 42px;
+    width: 30%;
+    background-color: rgb(137, 68, 201);
+    padding: 2px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+}
+
+.hirebtn a{
+    text-decoration: none;
+    color: azure;
+    font-weight: bold;
+}
+
+.shortheading{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cLogos{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px;
+    padding: 20px 80px;
+}
+
+.cLogos img{
+    /* This property keeps its aspect ratio but is resized to fit within the given dimension (avoid pixel bursting) */
+    object-fit: contain; 
+    height: 86px;
+    width: 15%;
+}
+
+.talent{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.clientAbout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    border-radius: 15px;
+}
+
+.person{
+    border: 1px solid black;
+    margin: 5px 50px;
+    border-radius: 10px;
+}
+
+.person img{
+    border-radius: 50%;
+    margin: 17px 0px 0px 118px;
+    height: 157px;
+    width: 32%;
+    text-align: center;
+}
+
+.person h3{
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    margin: 12px;
+}
+
+.person span{
+    font-size: 18px;
+    text-align: center;
+    color: rgb(85, 85, 82);
+}
+
+.person p {
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+    margin: 15px;
+}
+.btns{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.btnP{
+background-color: rgb(35, 87, 130);
+border: none;
+border-radius: 13px;
+font-size: 15px;
+padding: 9px;
+margin: 8px;
+}
+
+
+.sec{
+    background-image: url(https://cdn.pixabay.com/photo/2016/10/20/18/35/earth-1756274_1280.jpg);
+    /* The below property is used for no repeatation of background-image */
+    background-repeat: no-repeat;
+    /* The below property is used for covering the image to the entire container. */
+    background-size: cover;
+}
+
+.sec h2{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    padding: 24px;
+    margin: 40px;
+}
+
+.services{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.service{
+    background-color: rgb(0, 0, 0);
+    height: 300px;
+    opacity: 0.7;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    width: 25%;
+    border-radius: 23px;
+}
+
+.service img{
+    height: 80px;
+    width: 30%;
+    margin: 19px 0px 0px 123px;
+    padding: 2px 4px;
+}
+
+.service h4{
+    text-align: center;
+    font-size: 23px;
+    color:#fff;
+    padding: 6px;
+    line-height: 2rem;
+    margin: 13px;
+    font-weight: bold;
+}
+
+.service p{
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    margin: 13px;
+}
+
+
+.sec-2 h1{
+  font-size: 4rem;
+  margin: 90px 160px 110px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.add{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   padding: 0px 39px;
+   margin-top: 16px;
+}
+
+.addbox{
+    height: 238px;
+    width: 380px;
+    padding: 1px 4px;
+}
+
+.add img{
+    height: 65px;
+    width: 60px;
+    margin: 4px 30px 4px 0px;
+}
+
+.addbox_flex{
+    display: flex;
+    align-items: center;
+}
+
+.addbox_flex h4{
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.addbox p{
+    font-size: 18px;
+    margin-top: 10px;
+    padding-left: 20px;
+    color: #000;
+}
+
+.howHire{
+    background-color: white;
+    padding-top: 20px;
+}
+.howHire h1{
+    text-align: center;
+    font-size: 3.8rem;
+    color: #000;
+    margin-top: 50px;
+}
+
+.howHireAbout img{
+    width: 600px;
+    height: 450px;
+    margin-top: 6rem;
+}
+
+.howHirebox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 81px 4rem 81px;
+}
+
+.num{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5.5rem;
+}
+
+.num h4{
+   border: 2px solid black;
+   margin-right: 20px;
+   border-radius: 50%;
+   padding: 5px 10px;
+   font-size: 1rem;
+   
+}
+.detail{
+    margin-top:2rem;
+}
+
+.numDetail{
+    margin-top:3rem;
+}
+.numDetail h2{
+    padding-top:1rem;
+}
+.numDetail p {
+    padding-top:1rem;
+}
+
+.joinUs{
+    background-color: rgb(95,37,240);
+    height: 24rem;
+    color: white;
+}
+
+.joinDt1 h2{
+text-align: center;
+padding-top: 3rem;
+font-size: 42px;
+}
+
+.joinDt1 p{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.apply{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    gap: 3rem;
+}
+
+.jobsBtn{
+    background-color: rgb(95,37,240);
+    border: 2px solid rgb(249, 247, 247);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 23px;
+    color: #fff;
+}
+
+.apply h2{
+    padding-right: 31px;
+}
+
+.hireBtn{
+    background-color: rgb(95,37,240);
+    border: 2px solid rgb(249, 247, 247);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 23px;
+    color: #fff;
+}
+
+.footer{
+    background-color: rgb(78,15,234);
+    height: 400px;
+}
+.footImg{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 90px  161px 0px 161px;
+
+}
+.footImg_Image img{
+    width: 168px;
+    margin-left: -0.9rem;
+}
+
+.footName{
+    display: flex;
+    /*It is used to provide space between elements on which flex is applied.*/
+    gap: 2rem;
+    color: white;
+    margin-bottom: 2rem;
+    font-size: 18px;
+}
+
+hr{
+margin: -1.5rem 9.68rem;
+}
+
+.footer2{
+    display: flex;
+    justify-content: space-between;
+    margin: 2.5rem 9.6rem;
+}
+
+.icontxt h6{
+    color: #fff;
+    font-size: 1rem;
+    line-height: 35px;
+}
+
+.icontext h5{
+    color: #fff;
+    font-size: 16px;
+    margin-top: 2.7rem;
+}
+
+.iconImg{
+margin-left: 1px;
+display: flex;
+gap: 1rem;
+}
+
+.iconImg span{
+color: #fff ;
+padding-bottom: 10px;
+}
+
+.iconImg i{
+    font-size: 24px;
+}

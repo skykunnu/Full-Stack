@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box;
+    font-family: "IBM Plex Sans", sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: #fff;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar img{
+    height: 32px;
+    width: 58%;
+    margin: 22px 31px 36px 65px;
+    
+    
+}
+
+.navlist ul{
+    display: flex;
+    margin-right: 43px;
+}
+
+.navlist ul li{
+    list-style: none;
+    margin-left: 12px;
+    padding: 13px;
+}
+
+.navlist ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+.hire{
+    border-radius: 5px;
+    background-color: rgb(144,58,225);
+}
+
+#hiretxt{
+    color: #fff;
+}
+
+.header{
+    height: 750px;
+}
+
+.header h1{
+    text-align: center;
+    margin: 61px 42px;
+    font-size: 30px;
+}
+.serviceBox1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+.box1{
+    border: 1px solid #747486;
+    border-radius: 20px;
+    margin: 0rem 3rem;
+}
+.box1 img{
+    height: 52px;
+    width: 52px;
+    border: 1px solid #747486;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 1rem 9rem;
+}
+
+.box1 p{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    color: #747486;
+}
+
+.box1 h3{
+text-align: center;
+color: #2B2A2F;
+}
+
+.serviceBox2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+
+.middle{
+    background-color: rgb(78,15,234);
+    width: 84.31rem;
+    height: 54rem;
+}
+.middleImage img{
+    width: 1024px;
+    margin: 0px 162.5px;
+}
+
+.projectIdea{
+    background: #fff;
+    width: 1349px;
+    height: 220px;
+    text-align: center;
+}
+
+.heading{
+    margin-top: 3rem;
+    font-size: 16px;
+    color: #2B2A2F;
+    padding-bottom: 1rem;
+}
+
+.para{
+    color: #2B2A2F;
+    padding: 1rem 0rem;
+}
+
+.btn{
+    font-size: 15px;
+    width: 17rem;
+    height: 51px;
+    background-color: #4E0FEA;
+    border: none;
+    color: white;
+    padding-top: 1rem;
+    border-radius: 31px;
+    text-align: center;
+    margin-left: 33rem;
+    margin-top: 8px;
+}
+
+.footer{
+    background-color: rgb(78,15,234);
+    height: 400px;
+}
+.footImg{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 90px  161px 0px 161px;
+
+}
+.footImg_Image img{
+    width: 168px;
+    margin-left: -0.9rem;
+}
+
+.footName{
+    display: flex;
+    /*It is used to provide space between elements on which flex is applied.*/
+    gap: 2rem;
+    color: white;
+    margin-bottom: 2rem;
+    font-size: 18px;
+}
+
+hr{
+margin: -1.5rem 9.68rem;
+}
+
+.footer2{
+    display: flex;
+    justify-content: space-between;
+    margin: 2.5rem 9.6rem;
+}
+
+.icontxt h6{
+    color: #fff;
+    font-size: 1rem;
+    line-height: 35px;
+     ;
+}
+
+.icontext h5{
+    color: #fff;
+    font-size: 16px;
+    margin-top: 2.7rem;
+}
+
+.iconImg{
+margin-left: 1px;
+display: flex;
+gap: 1rem;
+}
+
+.iconImg span{
+color: #fff ;
+padding-bottom: 10px;
+}
+
+.iconImg i{
+    font-size: 24px;
+}

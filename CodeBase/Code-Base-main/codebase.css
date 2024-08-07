@@ -1,0 +1,771 @@
+* {
+    box-sizing: border-box;
+    font-family: "IBM Plex Sans", sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: rgb(227, 225, 223);
+}
+
+
+.navbar {
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar img {
+    height: 32px;
+    width: 50%;
+    margin: 20px 31px 36px 88px;
+}
+
+.navlist ul {
+    display: flex;
+    margin-right: 43px;
+}
+
+.navlist ul li {
+    list-style: none;
+    margin-left: 12px;
+    padding: 13px;
+}
+
+.navlist ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+.hire {
+    border-radius: 5px;
+    background-color: rgb(144, 58, 225);
+}
+
+#hiretxt {
+    color: azure;
+}
+
+.About {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0px 60px;
+
+}
+
+.heading {
+    width: 40%;
+}
+
+.heading h2 {
+    font-size: 45px;
+    font-weight: 900;
+
+}
+
+.heading p {
+    font-size: 20px;
+    padding: 0px;
+    margin-top: 15px;
+
+}
+
+.hirebtn {
+    height: 42px;
+    width: 30%;
+    background-color: rgb(137, 68, 201);
+    padding: 2px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+}
+.hirebtn a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+.shortheading {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cLogos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+    padding: 20px 80px;
+}
+
+.cLogos img {
+    object-fit: contain;
+    height: 86px;
+    width: 16%;
+}
+
+.telent {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.clientAbout {
+    margin-top: 4rem;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vishal {
+    border: 1px solid black;
+    margin: 5px 40px;
+    border-radius: 10px;
+}
+
+.vishal img {
+    border-radius: 50%;
+    margin: 17px 0px 0px 123px;
+    height: 157px;
+    width: 32%;
+    padding-left: 10px;
+}
+
+.vishal h3 {
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    margin: 12px;
+}
+
+.vishal span {
+    font-size: 18px;
+    text-align: center;
+    color: rgb(188, 188, 178);
+
+}
+
+.vishal p {
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+    margin: 15px;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnP {
+    background-color: rgb(35, 87, 130);
+    border: none;
+    border-radius: 13px;
+    padding: 9px;
+    margin: 8px 8px;
+    font-size: 15px;
+}
+
+.sec {
+    background-image: url(https://cdn.pixabay.com/photo/2016/10/20/18/35/earth-1756274_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 520px;
+
+}
+
+.sec h2 {
+    color: white;
+    font-size: 33px;
+    font-weight: bold;
+    text-align: center;
+    padding: 24px;
+    margin: 40px;
+
+}
+
+.servies {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.service {
+    background-color: rgb(0, 0, 0);
+    height: 300px;
+    opacity: 0.7;
+    margin-top: 40px;
+    width: 25%;
+    border-radius: 23px;
+}
+
+.service img {
+    height: 80px;
+    width: 29%;
+    margin: 19px 0px 0px 123px;
+    padding: 2px 4px;
+}
+
+.service h4 {
+    text-align: center;
+    font-size: 23px;
+    padding: 6px;
+    line-height: 2rem;
+    margin: 13px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.service p {
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    margin: 13px;
+}
+
+.sec2 h1 {
+    font-size: 4.1rem;
+    margin: 36px 161px;
+    text-align: center;
+
+}
+
+.add {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 39px;
+    margin-top: 16px;
+}
+
+.addbox {
+    height: 238px;
+    width: 380px;
+    padding: 1px 4px;
+}
+
+.add img {
+    height: 65px;
+    width: 60px;
+    margin: 4px 4px;
+    /* align-items: center; */
+    /* border-radius: 50%; */
+}
+
+.add h4 {
+    font-size: 23px;
+    margin-top: 8px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.add p {
+    font-size: 18px;
+    margin-top: 8px;
+    color: #000000;
+}
+
+.howHire {
+    background-color: white;
+    padding-top: 20px;
+}
+
+.howHire h1 {
+    font-size: 3.7rem;
+    color: rgb(16, 16, 16);
+    margin: 36px 121px;
+    text-align: center;
+}
+
+.howHireAbout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 81px;
+}
+
+.howHireAbout img {
+    height: 400px;
+    width: 34rem;
+    margin: 10px 10px;
+    padding: 2px 4px;
+    /* align-items: center; */
+    /* border-radius: 50%; */
+}
+
+.num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.num h1 {
+    font-size: 47px;
+    margin-right: 34px;
+    color: rgb(42, 11, 243);
+    font-weight: bold;
+    border: 8px solid blue;
+    padding: 6px 16px;
+    border-radius: 50%;
+}
+
+.numDetail {
+    /* width: 420px; */
+}
+
+.numDetail h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(18, 18, 18);
+    margin-bottom: 3px;
+}
+
+.numDetail p {
+    font-size: 18px;
+    color: rgb(18, 18, 18);
+
+}
+
+.joinUs {
+    background-color: blue;
+    height: 17rem;
+    color: #fff;
+}
+
+.joinDtl h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 12px;
+}
+
+.joinDtl p {
+    font-size: 18px;
+    margin-top: 12px;
+}
+
+.apply {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.jobsBtn {
+    background-color: rgb(73, 26, 244);
+    border: 2px solid rgb(249, 247, 247);
+    font-size: 16px;
+    color: #fff;
+    padding: 9px 13px;
+    border-radius: 23px;
+}
+
+.apply h2 {
+    margin: 0px 20px;
+    color: #fff;
+}
+
+.hireBtn {
+    background-color: rgb(255, 252, 252);
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 16px;
+    color: #3a22ef;
+    padding: 9px 13px;
+    font-weight: bold;
+    border-radius: 23px;
+}
+
+.footer {
+    background-color: #311dd1;
+    height: 400px;
+}
+
+.footImg img {
+    height: 95px;
+    width: 17%;
+    margin: 7rem 15rem 0rem;
+}
+
+hr {
+    margin: 0px 14rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.iconImg span {
+    color: #fff;
+    margin-left: 16px;
+}
+
+.iconImg span i {
+    font-size: 24px;
+
+}
+
+.iName {
+    display: flex;
+}
+
+.iName h4 {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+    margin-left: 2rem;
+}
+
+.links {
+    line-height: 1.2rem;
+    margin: 1.4rem 18%;
+}
+
+.links h5 {
+    color: #fff;
+    font-size: 13px;
+}
+
+.links h6 {
+    color: #d5d4d4;
+    font-size: 12px;
+}
+
+
+/* services page start */
+
+.ourSvc {
+    background-color: #e7e6e6;
+}
+
+.ourSvc h1 {
+    text-align: center;
+    margin:20px 20px;
+}
+
+.serviceBox1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem 4rem;
+}
+.serviceBox2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 4rem 4rem;
+}
+
+.box1 {
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    height: 15rem;
+    width: 32%;
+    padding: 0px 28px;
+border-radius: 25px;
+}
+
+.box1 img {
+    height: 75px;
+    width: 75px;
+    position:relative;
+    bottom: 40px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 10px;
+}
+.box1 h3{
+    font-weight: bold;
+    font-size: 25px;
+
+}
+.box1 p{
+    padding-top: 1rem;
+}
+
+.main{
+    background-color: #3a22ef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.main img{
+    height: 800px;
+    width: 70%;
+}
+.projectIdea{
+      text-align: center;
+      height: 25rem;
+    }
+
+.projectIdea h2{
+padding-top:10rem ;
+    font-size: 31px;
+font-weight: 300;
+}
+.projectIdea p{
+margin:2rem;
+}
+.projectIdea a{
+text-decoration: none;
+color: #fff;
+background-color:rgb(25, 25, 46) ;
+font-size: 19px;
+padding: 9px 25px ;
+margin-top: 13px;
+border-radius: 25px;
+}
+
+.podcast{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 5rem;
+}
+.podcastDtl h1{
+  font-size: 4rem;
+  font-weight: bold;
+}
+.podcast img{
+    height:32rem;
+    width: 32rem;
+}
+/* hr{
+    width:23em;
+    margin-right: 2rem;
+} */
+/* .pHost{
+    border: 2px solid red;
+} */
+.pHost h1{
+    text-align: center;
+    font-size:3rem;
+    color: #0f0f0f;
+}
+.pHostLists{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 3rem;
+}
+.hList img{
+    height:21rem;
+    width: 23rem;
+}
+.hList {
+    margin: 3rem 2rem;
+    text-align: center;
+}
+.hList h2 {
+color: #311dd1;
+font-size: 27px;
+margin: 20px 0px;
+}
+.hList p{
+padding: 2px 14px;
+}
+
+.startB h1{
+    text-align: center;
+    font-size:4rem;
+    color: #0f0f0f;
+}
+.startB p{
+    text-align: center;
+    font-size:18px;
+    margin: 1rem 14rem;
+    color: #0f0f0f;
+}
+.learnB{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:6rem 9rem;
+}
+.typeB{
+    margin: 1px 10px;
+    /* border: 2px solid red; */
+}
+.typeB img{
+    height:8rem;
+    width: 15rem;
+}
+.typeB h5{
+    font-size:18px;
+    color: #919196;
+    margin: 5px;
+}
+.typeB h3{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 2px 9px;
+}
+
+
+/* contact us page start */
+
+.contact h2{
+    text-align: center;
+    font-size: 35px;
+    padding: 3rem;
+}
+.contactFormHead{
+    background-color: blue;
+    height: 32rem;
+}
+.contactFormHead h2{
+    color: #fff;
+margin-top: 2rem;
+}
+
+ .form-group-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.name-box{
+    margin: 3rem 10rem 1rem;
+  
+}
+.name-box label{
+    color: #ede9e9;
+    font-size: 15px;
+    margin-left: 5px;
+}
+.fname input{
+    height: 2.4rem;
+    width: 23rem;
+    border: none;
+    border-radius: 5px;
+}
+.lname input{
+    height: 2.4rem;
+    width: 23rem;
+    border: none;
+    border-radius: 5px;
+}
+.form-group-mail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.mailbox{
+    margin:0rem 10rem;
+}
+
+.mailbox label{
+    color: #ede9e9;
+    font-size: 15px;
+    margin-left: 5px;
+}
+.mail input{
+    height: 2.4rem;
+    width: 23rem;
+    border: none;
+    border-radius: 5px;
+}
+.number input{
+    height: 2.4rem;
+    width: 23rem;
+    border: none;
+    border-radius: 5px;
+}
+.form-group-msg{
+    margin: 1rem 9rem;
+  color: #fff;
+}
+.form-group-btn{
+    margin: 1rem 9rem ;
+
+}
+.form-group-btn input{
+    padding: 7px 11px;
+    border-radius: 5px;
+    border: none;
+}
+
+.place{
+    background-color: #fff;
+}
+
+.city{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+padding-top: 9rem;
+}
+.lack-city{
+    border: 1px solid black;
+    padding: 2rem 13rem;
+    border-radius: 9px;
+}
+.lack-city img{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    bottom:5rem;
+    background-color: #fff;
+    left: 2rem;
+    padding: 4px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.lack-city h3{
+    font-size: 24px;
+}
+
+.pune-city{
+    border: 1px solid black;
+    padding: 2rem 14rem;
+    border-radius: 9px;
+
+
+}
+.pune-city img{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    background-color: #fff;
+    bottom:5rem;
+    padding: 4px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.pune-city h3{
+    /* margin: 2rem 1rem 0rem; */
+    font-size: 24px;
+   margin-left: 1rem;
+}
+.give-call h2{
+    text-align: center;
+    padding-top: 4rem;
+    font-size: 30px;
+    font-weight: 500;
+}
+.call-btn{
+    text-align: center;
+    padding:3rem 0rem;
+}
+.call-btn button{
+    padding: 14px 28px;
+    background-color: #100c16;
+    border-radius: 25px;
+    border: none;
+    font-size: 15px;
+    color: #d5d4d4;
+}
