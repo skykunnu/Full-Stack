@@ -151,6 +151,7 @@ color: rgb(78, 15, 234);
 
 .business{
     background-color: rgb(241,241,241);
+    height: 40rem;
 }
 
 .businessHeading h1{
@@ -168,13 +169,141 @@ padding: 4rem 0rem 2rem 0rem;
 
 .businessImg{
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 .businessImg1{
-background-color: #2b2a2f;
+    height:10rem;
+    width: 16rem;
 }
 .businessImg1 img{
-    object-fit: contain;
-    width:83%;
-    margin: 1.8rem 1.8rem;
+    height: 100%;
+    width:100%;
 }
+
+.business-detail h3{
+color: #797979;
+font-size: 15px;
+padding: 10px 0px;
+}
+
+.business-detail p{
+    color: #2B2A2F;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+
+
+.business-2{
+    background-color: rgb(255,255,255);
+    height: 40rem;
+}
+.businessHeading-2 h1{
+    font-size: 45px;
+    font-weight: 900;
+    text-align: center;
+    padding: 4rem 0rem 2rem 0rem;
+    }
+
+ .businessHeading-2 p{
+    text-align: center;
+    padding: 0rem 17rem 4rem 17rem;
+    line-height: 1.5rem;
+ }   
+
+ .businessImg-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+ }
+
+ /* Outer div of img */
+ /* parent element par custom height */
+.businessImg2{
+    height: 10rem;
+    width: 16rem;
+}
+
+/* child element par 100% */
+ .businessImg2 img{
+    height: 100%;
+    width: 100%;
+ }
+
+ .business-detail-2 h3{
+    color: #797979;
+    font-size: 15px;
+    padding: 10px 0px;
+    }
+    
+    .business-detail-2 p{
+        color: #2B2A2F;
+        font-size: 22px;
+        font-weight: bolder;
+    }
+
+    .footer{
+        background-color: rgb(78,15,234);
+        height: 400px;
+    }
+    .footImg{
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        padding: 90px  161px 0px 161px;
+    
+    }
+    .footImg_Image img{
+        width: 168px;
+        margin-left: -0.9rem;
+    }
+    
+    .footName{
+        display: flex;
+        /*It is used to provide space between elements on which flex is applied.*/
+        gap: 2rem;
+        color: white;
+        margin-bottom: 2rem;
+        font-size: 18px;
+    }
+    
+    hr{
+    margin: -1.5rem 9.68rem;
+    }
+    
+    .footer2{
+        display: flex;
+        justify-content: space-between;
+        margin: 2.5rem 9.6rem;
+    }
+    
+    .icontxt h6{
+        color: #fff;
+        font-size: 1rem;
+        line-height: 35px;
+         ;
+    }
+    
+    .icontext h5{
+        color: #fff;
+        font-size: 16px;
+        margin-top: 2.7rem;
+    }
+    
+    .iconImg{
+    margin-left: 1px;
+    display: flex;
+    gap: 1rem;
+    }
+    
+    .iconImg span{
+    color: #fff ;
+    padding-bottom: 10px;
+    }
+    
+    .iconImg i{
+        font-size: 24px;
+    }

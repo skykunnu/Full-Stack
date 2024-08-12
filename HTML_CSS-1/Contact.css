@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box;
+    font-family: "IBM Plex Sans", sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: #fff;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar img{
+    height: 32px;
+    width: 58%;
+    margin: 22px 31px 36px 65px;
+    
+    
+}
+
+.navlist ul{
+    display: flex;
+    margin-right: 43px;
+}
+
+.navlist ul li{
+    list-style: none;
+    margin-left: 12px;
+    padding: 13px;
+}
+
+.navlist ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+.hire{
+    border-radius: 5px;
+    background-color: rgb(144,58,225);
+}
+
+#hiretxt{
+    color: #fff;
+}
+
+.contact{
+    background-color: #fff;
+}
+
+.contact h1{
+    text-align: center;
+    font-size: 30px;
+    margin: 4rem 0rem;
+    color:#2B2A2F;
+}
+
+.formBox{
+height: 40rem;
+background-color: rgb(78,15,234);
+}
+.formBox-text h1{
+    text-align: center;
+    color: #ffff;
+    padding: 5rem 0rem;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.formContent{
+    display:flex ;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.formContent-2{
+    display: flex;
+    justify-content: space-between;
+}
+
+#email{
+    margin-left: 7rem;
+}
+input[type='email'] {
+    width: 33.1rem;
+    height: 2.6rem;
+    border-radius: 5px;
+    border: none;
+    margin: 6px 0px;
+}
+
+input[type="text"]{
+    width: 33rem;
+    height: 2.6rem;
+    border-radius: 5px;
+    border: none;
+    margin: 6px 0px 21px 0px;
+
+}
+
+input[type="number"]{
+    width: 33rem;
+    height: 2.6rem;
+    border: none;
+    border-radius: 5px;
+    margin: 6px 7rem 4px 0px;
+}
+
+
+Label{
+    color: #fff;
+    font-size: 14px;
+}
+span{
+    color: red;
+}
+
+
+
+.formMessage{
+    display: flex;
+    justify-content: left;
+    margin: 1rem 0rem 0rem 7rem;
+}
+
+textarea{
+    width: 70.5rem;
+    height: 5rem;
+    border-radius: 5px;
+    margin: 6px 0px;
+}
+
+label[for='Message']{
+    margin: 1px;
+}
+
+.btn{
+    margin: 3rem 0rem 0rem 7rem;
+}
+
+
+.btn button{
+    font-size: 12px;
+    padding: 10px 23px;
+    color: black;
+    border-radius: 3px;
+    border: none;
+    font-weight: bold;
+}
+
+.cityContent{
+    height: 35rem;
+}
+
+.city{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+.cityImage img{
+    background-color: #fff;
+    height: 101px;
+    width: 131px;
+    margin: 6rem 0rem -4rem 14.2rem;
+    padding: 0rem 1rem 0rem 1rem;
+    z-index: 1;
+}
+
+.cityItems h2{
+    text-align: center;
+    height: 168px;
+    width: 585px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    color: rgb(43,42,47);
+    padding: 8rem 0rem 0rem 0rem;
+}
+
+.cityText{
+    margin: 7rem 0rem 0rem 0rem;
+    text-align: center;
+}
+
+.cityText h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.cityText button{
+    font-size: 18px;
+    padding: 11px 42px;
+    margin: 21px 0px 0px 0px;
+    border-radius: 22px;
+    border: none;
+    background-color: rgb(78, 15, 234);
+    color: white;
+    font-weight: 799;
+}
