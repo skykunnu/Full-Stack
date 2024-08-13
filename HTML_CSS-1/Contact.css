@@ -204,3 +204,66 @@ label[for='Message']{
     color: white;
     font-weight: 799;
 }
+
+
+.footer{
+    background-color: rgb(78,15,234);
+    height: 400px;
+}
+.footImg{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 90px  161px 0px 161px;
+
+}
+.footImg_Image img{
+    width: 168px;
+    margin-left: -0.9rem;
+}
+
+.footName{
+    display: flex;
+    /*It is used to provide space between elements on which flex is applied.*/
+    gap: 2rem;
+    color: white;
+    margin-bottom: 2rem;
+    font-size: 18px;
+}
+
+hr{
+margin: -1.5rem 9.68rem;
+}
+
+.footer2{
+    display: flex;
+    justify-content: space-between;
+    margin: 2.5rem 9.6rem;
+}
+
+.icontxt h6{
+    color: #fff;
+    font-size: 1rem;
+    line-height: 35px;
+}
+
+.icontext h5{
+    color: #fff;
+    font-size: 16px;
+    margin-top: 2.7rem;
+}
+
+.iconImg{
+margin-left: 1px;
+display: flex;
+gap: 1rem;
+}
+
+.iconImg span{
+color: #fff ;
+padding-bottom: 10px;
+}
+
+.iconImg i{
+    font-size: 24px;
+}
