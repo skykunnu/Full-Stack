@@ -6,6 +6,7 @@
     <title>HTML 5 Tags</title>
 </head>
 <body>
+
     <!-- Semantic tags: tags or elements with meaning
     header, footer, section, aside, nav, main, article, figure.    
     datalist, audio, video
@@ -13,15 +14,40 @@
     hr-->
     
     <!-- All semantic elements are equivalent to div tag
+
      Semantic tags do not have any special effect on website design, but are
      very important for better SEO of the website. As search engines rank websites
      with semantic tags higher than those with only divs.
 
     -->
 
+ <!-- Below is the way to link input tag with datalist tag by giving list attribute to input and id attribute to datalist having the same value.  -->
 
-    
-    
+ <!-- <input list="car" placeholder="enter car brand" name="brand">
+ <datalist id="car">
+  <option value="mercedes"></option>
+  <option value="maruti"></option>
+  <option value="masserati"></option>
+  <option value="Bentley"></option>
+  <option value="Honda"></option>
+  <option value="Hyundai"></option>
+  <option value="BMW"></option>
+  <option value="Audi"></option>
+</datalist>
+ -->
+
+
+
+ <!-- Audio (mp3 and ogg are the only extensions supported by html5) and video(mp4 and ogg) tag. -->
+
+ <!-- With controls you will be able to play pause the audio and control the volume.and with autoplay audio and video will automatically play
+ some attributes like 
+ loop-> off(default),on 
+ muted-> In muted form also audio and video will work.
+ -->
+ <audio src="audio.mp3" controls autoplay muted></audio>
+ <video src="video.mp4" controls width="520px" height="520px" autoplay muted></video>
+
 
 </body>
 </html>
