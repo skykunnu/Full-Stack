@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+body{
+    background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color:#2E073F;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+
+.mainMenu{
+    list-style: none;
+    display: flex;
+}
+.title{
+    padding: 7px 0px 1px 10px;
+    color: whitesmoke;
+}
+.mainMenu li{
+padding:13px;
+position: relative;
+}
+
+.mainMenu li {
+    text-decoration: none;
+    color: white;
+}
+
+.mainMenu li:hover{
+    background-color: rgb(138, 125, 125);
+    color: rgba(7, 6, 6, 0.986);
+
+}
+
+.dropdown{
+    position: absolute;
+    list-style: none;
+    background-color: #df7732;
+    color: black;
+    width: 11rem;
+    margin: 13px 0px 0px 0px;
+    display: none;
+    left: 0;
+}
+
+.mainMenu li:hover .dropdown{
+    display: block;
+}
+
+.form{
+    margin: 10rem auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 32%;
+    height: auto;
+    background-color: #FFEEAD;
+}
+.heading h1
+{
+    text-align: center;
+    margin-top: 1rem;
+    color: #00224D;
+}
+input::placeholder{
+    padding-left: 0.5rem;
+}
+form{
+    margin: 2rem auto;
+    width: 62%;
+}
+
+label{
+    color: black;
+    font-size: 18px;
+}
+
+input{
+    margin-bottom: 17px;
+    width: 17rem;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    height: 2rem;
+}
+
+.btn{
+text-align: center;
+margin-top: 12px;
+}
+
+.btn button{
+    font-size: 18px;
+    padding: 6px 22px;
+    border-radius: 4px;
+    background-color: #FF8343;
+}
+
+.footer{
+ margin: 7rem 0rem 0rem 0rem;
+ display: flex;
+ justify-content: space-between;
+ background-color: #FFDA76;
+}
+
+iframe{
+height: 250px;
+width: 450px;
+}
+.importantLinks{
+    margin: 33px 53px;
+
+}
+.links li{
+    list-style: none;
+    margin: 28px 11px;
+}
+
+.map{
+    text-align: end;
+    margin: 33px 53px;
+}
+
+.map h2{
+text-align: start;
+margin-bottom: 25px;
+}
+
+.gender input{
+    width: 27px;
+    height: 15px;
+    margin: 1rem 0rem 2rem 0re
+}

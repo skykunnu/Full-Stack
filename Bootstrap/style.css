@@ -1,0 +1,16 @@
+.img img{
+    height: 5rem;
+    width: 5rem;
+
+}
+
+.back-img{
+  background-color: blue;
+    /* height: 100vh; */
+}
+
+.btn-dark {
+    color:purple !important;
+    background-color: #212529;
+    border-color: #212529;
+}
