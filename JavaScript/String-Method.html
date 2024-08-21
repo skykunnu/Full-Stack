@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String-Method</title>
+</head>
+<body>
+    
+
+<script>
+// length-> shows the number of character including spaces.
+
+// var a="hello world";
+// console.log(a.length)  // 11
+
+//----------------------------------------------------------------
+
+// toUpperCase()
+
+// var a='Hello world';
+// console.log(a.toUpperCase()); // HELLO WORLD
+
+//-------------------------------------------------------------------
+
+// toLowerCase()
+
+// var a="WELCOME TO JAVASCRIPT"
+// console.log(a.toLowerCase()); // welcome to javascript
+
+//---------------------------------------------------------------------
+
+// replace() & replaceAll()
+
+// var a="javascript welcome to the world of javascript"
+
+
+// console.log(a.replace("javascript",'Hello')); // Hello welcome to the world of javascript, it only replaces the first value it encountered which has to be replaced.
+
+// console.log(a.replaceAll("javascript","hello")); // hello welcome to the world of hello, it replaces all the value it encountered which has to be replaced. 
+
+//---------------------------------------------------------------------
+// trim(), trimStart(), trimEnd()
+
+// var a="    javascript      "
+//     console.log(a);
+    // console.log(a.trimStart()); // It will remove the space from the start of the string. 
+    // console.log(a.trimEnd());  // It will remove the space from the end of the string. 
+    // console.log(a.trim());    // It will remove the space from both the end of the string. 
+
+
+//---------------------------------------------------------------------
+// Concat
+
+// var a="hello world";
+// console.log(a.concat(" People")); // hello world People
+
+//---------------------------------------------------------------------
+
+// var a="hello world how are you";
+
+// console.log(a.slice(3,7)) // lo w, start from third position and end at 6th position (not considering 7th position).
+
+// console.log(a.slice(3)) // lo world how are you, start from third position and till the end of the string. 
+
+// console.log(a.slice(-8,-3)); //  are , counting starts from 1 from the back side and for second argument also from the back side (start from 1) stopping at the one less the value. 
+
+//---------------------------------------------------------------------
+
+// charAt()
+
+// var a="hello world"
+// console.log(a.charAt(1)); // e, It returns the character for the provided value. 
+
+//---------------------------------------------------------------------
+
+// charCodeAt()
+
+// var a="hello world"
+// console.log(a.charCodeAt(1)); // 101, It returns the ascii code for the provided value. 
+
+//-----------------------------------------------------------------------
+
+// indexOf() and lastIndexOf()
+
+// var a="Hello world welcome to javaScript Hello"
+
+// console.log(a.indexOf('Hello')) // 0, returns the index of the starting letter of the word that has been passed. 
+// console.log(a.indexOf("javaScript")) // 23, becoz counting always starts from 0 to that particular letter. 
+// console.log(a.lastIndexOf('Hello')) // 34
+
+//-------------------------------------------------------------------------------
+// includes() 
+
+
+// var a="hello world javascript welcomes you"
+// console.log(a.includes('hello')) // true, returns boolean value based on the value passed. 
+// console.log(a.includes("WORLD")) // false
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
