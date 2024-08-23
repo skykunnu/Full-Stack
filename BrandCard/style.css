@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color:skyblue;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background-color: #e7dddd;
+    height: 300px;
+    width: 239px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer{
+    position: absolute;
+    top: 80%;
+    background-color: white;
+    transition: all 400ms;
+}
+
+.container:hover .footer{
+    top: 30%;
+}
+
+.image{
+    text-align: center;
+}
+
+.image img {
+    width: 230px;
+    height: 230px;
+    object-fit: contain;
+}   
+
+.brandItem{
+display: flex;
+width: 100%;
+justify-content: space-between;
+padding: 0px 12px;
+margin: 7px 0px;
+
+}
+
+.brandName span{
+    font-size: 14px;
+    color: grey;
+}
+
+.brandName h2{
+    font-size: 20px;
+}
+
+.brandItem h3{
+    font-size: 18px;
+}
+
+.brandItem h3 i{
+    font-size: 14px;
+    padding-right: 4px;
+}
+
+.colorList{
+    display: flex;
+}
+
+.color_box{
+    width: 25px;
+    height: 25px;
+    margin: 1px;
+}
+.cartbox{
+    text-align: center;
+    margin: 14px 0px;
+}
+.cartbox button {
+    padding: 9px 72px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+}
+.item{
+    padding: 0px 12px;
+    margin: 7px 0px;
+}
+.item h4{
+    margin: 4px 0px;
+}
