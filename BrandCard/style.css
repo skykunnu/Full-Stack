@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
 
 }
 body{
@@ -56,15 +57,15 @@ margin: 7px 0px;
 }
 
 .brandName h2{
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .brandItem h3{
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .brandItem h3 i{
-    font-size: 14px;
+    font-size: 15px;
     padding-right: 4px;
 }
 
@@ -79,20 +80,17 @@ margin: 7px 0px;
 }
 .cartbox{
     text-align: center;
-    margin: 14px 0px;
+    margin: 6px 0px;
 }
 .cartbox button {
-    padding: 9px 72px;
+    padding: 5px 70px;
     border: none;
     border-radius: 5px;
     background-color: black;
     color: white;
-    font-size: 14px;
+    font-size: 13px;
 }
 .item{
     padding: 0px 12px;
     margin: 7px 0px;
-}
-.item h4{
-    margin: 4px 0px;
 }
