@@ -165,10 +165,11 @@ justify-content: center;
 .btnP{
 background-color: rgb(35, 87, 130);
 border: none;
-border-radius: 13px;
-font-size: 15px;
-padding: 9px;
+border-radius: 50px;
+font-size: 14px;
+padding: 6px 12px;
 margin: 8px;
+color: #fff;
 }
 
 
@@ -204,13 +205,15 @@ margin: 8px;
     margin-bottom: 60px;
     width: 25%;
     border-radius: 23px;
+    text-align: center;
 }
 
 .service img{
     height: 80px;
     width: 30%;
-    margin: 19px 0px 0px 123px;
+    margin-top: 19px;
     padding: 2px 4px;
+    object-fit: contain;
 }
 
 .service h4{
