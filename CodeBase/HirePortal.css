@@ -127,14 +127,14 @@ body{
     border: 1px solid black;
     margin: 5px 50px;
     border-radius: 10px;
+    text-align: center;
 }
 
 .person img{
     border-radius: 50%;
-    margin: 17px 0px 0px 118px;
-    height: 157px;
-    width: 32%;
-    text-align: center;
+    height: 120px;
+    width: 120px;
+    margin-top: 10px;
 }
 
 .person h3{
