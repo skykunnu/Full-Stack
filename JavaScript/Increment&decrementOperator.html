@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment & Decrement Operator</title>
+</head>
+<body>
+    
+
+
+    <script>
+        // Increment & Decrement Operator
+       
+          // pre Increment  (++a)   first increase & then assign. 
+          // post Increment  (a++)  first assign & then increase.
+
+
+          // pre Decrement   (--a)  first decrease & then assign. 
+          // post Decrement  (a++)  first assign & then increase.
+
+          
+          var a=11;
+            // outside of console.log, increment and decrement behave normally not according to above rule. 
+          ++a;
+          a++;
+          console.log(a) // 13 
+
+        
+          var a=1
+           
+          // Below it will work according to above rules. 
+          console.log(++a) // 2
+          console.log(a++) // 2
+          console.log(a)  // 3
+          console.log(--a) // 2
+          console.log(a++) // 2
+          console.log(a--) // 3 
+          console.log(a)  // 2
+
+
+    </script>
+</body>
+</html>

@@ -11,30 +11,73 @@
      
      // DataTypes: Number, string, Boolean, Array, Object, Undefined, null
 
-     var a=10;
-     console.log(typeof(a)) // Number
+    //  var a=10;
+    //  console.log(typeof(a)) // Number
 
-     var b='Shikhar'
-     console.log(typeof(b)) // String
+    //  var b='Shikhar'
+    //  console.log(typeof(b)) // String
 
-     var c=true;
-     console.log(typeof(c)) // boolean
+    //  var c=true;
+    //  console.log(typeof(c)) // boolean
 
-     var d;
-     console.log(typeof(d)) // undefined
+    //  var d;
+    //  console.log(typeof(d)) // undefined
      
-     var e=null;
-     console.log(typeof(e)) // object
+    //  var e=null;
+    //  console.log(typeof(e)) // object
 
-     var f=[1,2,3,4,5]
-     console.log(typeof(f)) // object
+    //  var f=[1,2,3,4,5]
+    //  console.log(typeof(f)) // object
 
-     var g={
-        myName:'Shikhar',
-        Age:24
-     }
-     console.log(g) // object
- 
+    //  var g={
+    //     myName:'Shikhar',
+    //     Age:24
+    //  }
+    //  console.log(g) // object
+//----------------------------------------------------------------------
+
+// Primitive and Non Primitive Data types.
+
+// Primitive-> String, Numbers, boolean, null, undefined, symbol. (Copy of variable is formed)
+
+// Non-Primitive-> Array, Object, functions.
+
+
+// Stack and Heap memory 
+
+// Stack-> All primitive data types are stored inside stack memory.
+
+// Heap-> All Non-primitive data types are stored inside heap memory.
+
+
+/*Whenever we define variables with (primitive datatypes), We get the copy of a variable in stack, 
+whatever changes made in the original variable will reflect only in the original variable. not in the copied variable.
+*/
+
+// let mySchoolname = "Shikhar";
+// let anotherName = mySchoolname;
+// anotherName = "Kunnu";
+
+// console.log(mySchoolname); // Shikhar
+// console.log(anotherName); // Kunnu
+
+
+
+
+/* Whenever we define variables with (Non-primitive datatypes), we get the reference of a variable in Heap,
+whatever changes made in the original variable will reflect in both original as well as referenced variable also.*/
+
+// let userOne={
+//     email:"user@gmail.com",
+//     upi:123
+// }
+
+// let userTwo=userOne;
+
+// userTwo.email="shikhar@gmail.com"
+
+// console.log(userOne.email) // shikhar@gmail.com 
+// console.log(userTwo.email) // shikhar@gmail.com
 
 
 
