@@ -39,7 +39,7 @@ notification.addEventListener('click',innerBox4)
 function innerBox4(){
         innerbox3.style.backgroundColor="#123859";
         innerbox3.style.color='white';
-        innerbox4.style.backgroundColor="$c7cfd9";
+        innerbox4.style.backgroundColor="#c7cfd9";
         innerbox4.style.color="black";
 }
 
