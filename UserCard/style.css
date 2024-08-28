@@ -53,6 +53,25 @@
 .icons i{
    font-size: 30px;
 }
+
+.fa-facebook{
+    color: #0335a1;
+}
+
+.fa-twitter{
+    color: 	#1DA1F2;
+}
+
+.fa-instagram{
+   color:#E1306C;
+}
+
+.fa-linkedin{
+    color: #0072b1;
+}
+
+
+
 .buttons{
     margin-top: 1.5rem;
     display: flex;
