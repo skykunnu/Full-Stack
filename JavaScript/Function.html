@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <script>
+        
+        // Function: Write once, use multiple times.
+        // Functions: A block of code which we write once, but use many times in our code. Functions do not execute on their own, they have to called (invoke).
+        
+        
+        
+ //-------------------------------------------------------------------------
+        
+ // Types of functions 
+                                                                                                
+// Without  (parameter)
+// with parameter
+// with parameter having default values
+// with return values
+// anonymous function
+
+// variables in function definition are called as parameters.
+// variables present during function calling(invoke) are called as Arguments.                                                                                                                                                                                            
+        
+// -------------------------------------------------------------------------
+      
+// Function without parameter
+
+//  function myName() {
+// let firstName="Shikhar";
+// let lastName="Khandelwal";
+// document.write(firstName+" "+lastName+"<br>");
+// }
+// myName();
+
+
+ //--------------------------------------------------------------------------
+// Function with Parameters
+
+// function sum(a,b){
+//     document.write(a+b+"<br>");
+// }
+
+// sum(10,20); // 30 
+
+// function checkName(name){
+//     if(name.length%2===0) document.write("Batman")
+//     else document.write("Deadpool");
+// }
+// checkName("Pankaj"); // Batman
+
+// checkName(["harry", "Shikhar", "Ranveer", "Lucky", "Rishabh"]) // Deadpool
+
+//---------------------------------------------------------------------------
+
+// Function with Parameters having default values
+
+// function sum(a=14, b=50){
+// document.write(a + b + "<br>");
+// }
+
+// sum(10, 20); // 30, function with parameter (14, 50) is overwrite by arguments (10,20), so ans is 30.  
+
+//---------------------------------------------------------------------------
+
+// Function with return value
+
+// const numbers=[2, 3, 4, 5, 7]
+
+// function printSum(num){
+//     let x=0;
+//     for(let i=0;i<num.length;i++){
+//         x=x+num[i];
+//     }
+//     return x; // 21
+// }
+
+// function batmanVsSuperman(n){
+//     if(n%2===0) return "Batman";
+//     else return "Superman";
+// }
+
+// const superhero= batmanVsSuperman(printSum(numbers)); // Superman becoz 21 is not divisible by 2.
+
+// document.write("My favourite superhero is "+superhero); // My favourite superhero is Superman. 
+ 
+
+//-----------------------------------------------------------------------------------------------------------------------
+
+// Anonymous function 
+
+
+
+
+
+
+    </script>
+</body>
+</html>
