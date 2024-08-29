@@ -20,23 +20,74 @@
           // post Decrement  (a++)  first assign & then increase.
 
           
-          var a=11;
-            // outside of console.log, increment and decrement behave normally not according to above rule. 
-          ++a;
-          a++;
-          console.log(a) // 13 
+          // var a=11; 
+          // ++a;
+          // a++;
+          // console.log(a) // 13 
 
         
-          var a=1
+          // var a=1
            
-          // Below it will work according to above rules. 
-          console.log(++a) // 2
-          console.log(a++) // 2
-          console.log(a)  // 3
-          console.log(--a) // 2
-          console.log(a++) // 2
-          console.log(a--) // 3 
-          console.log(a)  // 2
+          // // below console.log is doing two things either it is printing first and increment or decrement second or vice-versa. 
+
+
+
+          // console.log(++a) // 2
+          // console.log(a++) // 2
+          // console.log(a)  // 3
+          // console.log(--a) // 2
+          // console.log(a++) // 2
+          // console.log(a--) // 3 
+          // console.log(a)  // 2
+
+
+      //   let a = 11; // 13 , 12, 13 
+      //   console.log(++a); // 12        
+      //   console.log(++a + 1);  // 14   
+      //   console.log(--a - 1); // 11     
+      //   console.log(a++ + --a); // 24
+      
+
+
+       // let a = 1; // 2 
+      // let b = 2; // 3
+      // let c = ++a + b++;  // 4, 5
+      // let d = ++c; // 5
+      // let e = a + b + c + d;  // (2+3+5+5=15)
+      // console.log(e) // 15
+
+      // let a = 101; // 102, 103
+      // let b = a++; // 101, 102
+      // let c = a++ + b++; // 102 + 101= 203
+      // let d = a + b + c; // 103+102+203=408
+      // let e = --d; // 407
+      // console.log(e) // 407
+
+
+      
+      //   let a = 5; // 4
+      //   let b = --a + 1; // 5, 4 
+      //   let c = b--; // 5, 4
+      //   let d = a + b + --c; // 12, 11
+      //   let e = a + b + c + d--; // 24
+      //   console.log(e); // 24
+
+
+
+      // let x = 1;
+      //   for (let i = 0; i <= 5; i++) {
+      //     x = x++; // it is kept here to confuse. it's presence is not important.
+      //     x = x + i; // (1+0, 1+1, 2+2, 4+3, 7+4, 11+5)
+      //   }
+      //   console.log(x); // 16
+
+
+
+
+
+
+
+
 
 
     </script>
