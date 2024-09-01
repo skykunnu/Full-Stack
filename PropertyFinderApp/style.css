@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    height: 100vh;
+}
+
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo-image{
+    height: 42px;
+    width: 104px;
+    margin-left: 5rem;
+}
+
+.logo-image img{
+height: 100%;
+width: 100%;
+object-fit: contain; 
+}
+
+.nav-Items {
+    margin-right: 22rem;
+    margin-bottom: 0.375rem;
+}
+.nav-Items ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: 14px;
+    color: #636262;
+    font-weight: 400;
+    padding: 0px 12px;
+}
+
+.nav-Items ul li span i{
+    height: 10px;
+    width: 10px;
+}
+
+.btn{
+    margin-right: 5rem;
+}
+
+.btn button{
+   padding: 6px 12px;
+   color: #3A307F;
+   background-color: #FFFFFF;
+   border: 1px solid #8C84CC;
+   border-radius: 8px;
+   font-size: 14px;
+   font-weight: 600;
+   cursor: pointer;
+}
+
+.btn button:hover{
+    background-color: #e7e5f4;
+}
+
+.Video{
+    position: relative;
+}
+
+.VideoItem{
+    height: 400px;
+    overflow: hidden;
+    object-fit: contain;
+    
+}
+
+.VideoItem video{
+    width: 100%;
+}
+
+.h1-text{
+    position: absolute;
+    bottom: 70%;
+    left: 38%;
+    top: 10%;
+}
+
+.h1-text h1{
+    font-size: 40px;
+    color: white;
+}
+
+.inputText{
+    height: 136px;
+    width: 920px;
+    position: absolute;
+    background-color: #333333;
+    opacity: 0.5;
+    bottom: 30%;
+    left: 16%;
+    top: 42%;
+    border-radius: 40px;
+}
+
+.btn-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    margin-top: 1rem;
+}
+
+.btn-1 button{
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #3A307F;
+    padding: 0.1rem 2rem;
+    background-color: white;
+}
+
+#btn-1-1{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+#btn-1-4{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.btn-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+
+.btn-2 input{
+width: 600px;
+padding: 8px 12px;
+border-top-left-radius: 24px;
+border-bottom-left-radius: 24px;
+font-size: 16px;
+border: none;
+}
+
+.btn-2 button{
+    
+}

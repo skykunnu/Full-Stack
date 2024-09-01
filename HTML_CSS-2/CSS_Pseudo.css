@@ -1,19 +1,16 @@
-/* Pseudo classes are classes that are not in HTML, but are still used in css.*/
-
-/* Most common pseudo classes are: 
-hover, active, focus, first-of-type, last-of-type, first-child, last-child, nth-of-type
-before, after
-*/
-
-/* Pseudo classes are represented by colon(:)*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 p{
-    border: 1px solid red;
+    border: 1px solid #000;
     width: 50%;
     padding: 20px;
 }
 
 p:hover{
     background-color: #000;
-    color: #fff;
+    color: whitesmoke;
 }
