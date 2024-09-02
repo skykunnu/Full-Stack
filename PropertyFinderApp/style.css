@@ -9,6 +9,11 @@ body{
     height: 100vh;
 }
 
+.main{
+    height: 520px;
+}
+
+
 .Header{
     display: flex;
     justify-content: space-between;
@@ -70,38 +75,40 @@ object-fit: contain;
 }
 
 .VideoItem{
-    height: 400px;
-    overflow: hidden;
-    object-fit: contain;
-    
+    position: absolute;
+    height: 420px;
+    width: 100%;
 }
 
-.VideoItem video{
+ .VideoItem video{
+    /* object-fit: cover is used to fix the video inside particular div. */
+    object-fit: cover; 
+    height: 100%;
     width: 100%;
 }
 
 .h1-text{
     position: absolute;
-    bottom: 70%;
     left: 38%;
-    top: 10%;
+    top: 3rem;
 }
 
 .h1-text h1{
-    font-size: 40px;
+    font-size: 48px;
     color: white;
 }
 
-.inputText{
+
+
+.box{
     height: 136px;
-    width: 920px;
+    width: 940px;
     position: absolute;
-    background-color: #333333;
-    opacity: 0.5;
-    bottom: 30%;
+    background-color: rgba(0, 0, 0, 0.4);
     left: 16%;
-    top: 42%;
+    top: 13rem;
     border-radius: 40px;
+    backdrop-filter: blur(.4rem);
 }
 
 .btn-1{
@@ -110,23 +117,27 @@ object-fit: contain;
     justify-content: center;
     gap: 1px;
     margin-top: 1rem;
+    z-index: 2;
 }
 
 .btn-1 button{
     border: none;
     font-size: 14px;
-    font-weight: 600;
-    color: #3A307F;
-    padding: 0.1rem 2rem;
+    font-weight: 500;
+    color: #707070;
     background-color: white;
+    padding: 4px 8px;
+    height: 32px;
+    width: 137px;
 }
 
-#btn-1-1{
+.btn-1 .btn-1-1{
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
 }
 
-#btn-1-4{
+
+.btn-1 .btn-1-4{
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
 }
@@ -135,19 +146,125 @@ object-fit: contain;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
+}
+
+.InputText {
+    position: relative;
+    height: 47px;
+    width: 458px;
+    cursor: pointer;
+}
+.InputText .Icon{
+    position: absolute;
+    top: 11px;
+    left: 10px;
+    right: 10px;
+    height: 15px;
+    width: 15px;
+    color: #707070;
+
+}
+
+.InputText input{
+    padding: 8px 40px;
+    border: none;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+}
+.InputText input::placeholder{
+    font-size: 16px;
+    color: #707070;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 47px;
+    width: 28rem;
 }
 
 
-.btn-2 input{
-width: 600px;
-padding: 8px 12px;
-border-top-left-radius: 24px;
-border-bottom-left-radius: 24px;
-font-size: 16px;
-border: none;
+.buttons button{
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    padding: 8px 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    margin-left: 1px;
+    color: #707070;
+}
+.buttons .buttons-search{
+    background-color: #EA3934;
+    color: white;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
 }
 
-.btn-2 button{
-    
+.container{
+    height: 796px;
+    padding: 41px 96px;
 }
+
+
+.textItem-1 h2{
+    font-size: 38px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.textItem-1 p{
+    font-size: 16px;
+    color: #707070;
+    margin-top: 1rem;
+}
+
+.textItem-2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 2rem 0rem;
+    /* border-bottom: 1px solid #E3E3E3; */
+    border-bottom: 3px soild #6459B2;
+
+
+}
+
+.textItem-2 button{
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 8px 24px;
+    color: #707070;
+    background-color: white;
+    cursor: pointer;
+}
+
+.textItem-2 .rentbtn{
+    color: #6459B2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
