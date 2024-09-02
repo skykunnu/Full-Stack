@@ -208,7 +208,8 @@ object-fit: contain;
 
 .container{
     height: 796px;
-    padding: 41px 96px;
+    margin: 41px auto;
+    width: 80%;
 }
 
 
@@ -229,17 +230,15 @@ object-fit: contain;
     align-items: center;
     gap: 10px;
     margin: 2rem 0rem;
-    /* border-bottom: 1px solid #E3E3E3; */
-    border-bottom: 3px soild #6459B2;
-
+    border-bottom: 1px solid #E3E3E3;
 
 }
 
 .textItem-2 button{
     border: none;
     font-size: 14px;
-    font-weight: 400;
-    padding: 8px 24px;
+    font-weight: 500;
+    padding: 9px 24px;
     color: #707070;
     background-color: white;
     cursor: pointer;
@@ -249,7 +248,58 @@ object-fit: contain;
     color: #6459B2;
 }
 
+.ItemBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap:wrap ;
+    width: 100%;
+}
 
+
+.boxes{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+    box-shadow: 1px 1px 4px grey;
+    border-radius: 10px;
+    height: 180px;
+    width:500px;
+}
+
+.Image{
+    height: 180px;
+    width: 250px;
+    background-color:#eff9ff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    object-fit: cover;
+}
+
+.Image img{
+    height: 100%;
+    width: 100%;
+} 
+
+.boxText h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #4C4C4C;
+    padding: 17px 0;
+    /* line-height: 10px; */
+}
+
+.boxText p{
+    color: #535353;
+    font-size: 14px;
+    padding: 15px 0;
+
+}
+.boxText {
+    width: 60%;
+}
 
 
 
