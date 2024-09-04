@@ -90,7 +90,7 @@ object-fit: contain;
 .h1-text{
     position: absolute;
     left: 38%;
-    top: 3rem;
+    top: 5rem;
 }
 
 .h1-text h1{
@@ -415,10 +415,14 @@ gap: 11rem;
     object-fit: contain;
 }
 
+.section-2{
+    height: 80rem;
+}
+
 .container-3{
     height: 645px;
     margin: 5rem auto;
-    width: 80%;
+    width: 77%;
 }
 
 
@@ -458,42 +462,74 @@ gap: 11rem;
     color: #6459B2;
 }
 
-
-
-.section-2{
-    height: 88rem;
-}
-
 .buildingItems{
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     width: 100%;
     flex-wrap: wrap;
+    gap: 17px;
+    cursor: pointer;
 }
 
 .buildingItem {
-    border: 1px solid black;
+    box-shadow: 2px 2px 5px grey;
+    border-radius: 10px;
 }
+
+.buildingItem:hover{
+    box-shadow:1px -1px 20px 7px rgb(202, 201, 201);
+}
+
+
+
 .Shamsa-Image{
 height: 206px;
-width: 324px;
+width: 334px;
+position: relative;
 }
 
 .Shamsa-Image img{
     height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
+.upcomingbox{
+    position: absolute;
+    bottom: 88%;
+    left: 4%;
+    font-size: 10px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(2, 2, 2, 0.37);
+    backdrop-filter: blur(0.4rem);
+    padding: 0px 8px;
+    border-radius: 5px;
+}
+
+.locationDot{
+    position: absolute;
+    font-size: 17px;
+    border: 1px solid gray;
+    color: gray;
+    background-color: white;
+    bottom: 5%;
+    left: 89%;
+    padding: 2px 8px;
+    border-radius: 7px;
+}
 
 .tower-1_Details{
     width: 324px;
-    height: 300px;
+    height: 213px;
 }
 
 .buildingText{
     margin-bottom: 3rem;
+    padding: 9px 0px 0px 9px;
 }
 
 .buildingText h2{
@@ -506,7 +542,7 @@ width: 324px;
 .buildingText p{
     font-size: 14px;
     color: #333333;
-    font-weight: 400;
+    font-weight: 500;
     margin: 5px 0px;
 }
 
@@ -516,8 +552,63 @@ width: 324px;
     padding-left: 5px;
 }
 
-.tower-1_Details .address span{
-    font-size: 12px;
-    color: #999999;
+.tower-1_Details .address p{
+    font-size: 11px;
+    color: #7c7a7a;
+    font-weight: 300;
     margin-top: 1rem;
+    padding: 0px 0px 5px 5px;
+    border-bottom: 1px solid #E3E3E3;
+
 }
+.address p span i{
+    padding: 0 5px;
+}
+.buildingbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.btns{
+    padding: 5px 10px;
+    width: 154px;
+    margin: 6px 0;
+     background-color:#f7f7fc;
+     border: none;
+     border-radius: 7px;
+     font-size: 17px;
+     font-weight: 600;
+     color: #3A307F;
+    }
+    .btns:hover{
+        background-color: #f1f1f1;
+    }
+
+    .btns i{
+        font-size: 17px;
+        font-weight: 600;
+        color: #3A307F;
+        padding-right: 5px;
+    }
+
+
+    .AllProjectbtn{
+        margin: 5rem auto;
+        text-align: center;
+    }
+
+    .AllProjectbtn button{
+      
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 12px;
+    border-radius: 4px;
+    border: none;
+    color: #3A3074;
+    cursor: pointer;
+    }
+
+    .AllProjectbtn button:hover{
+        background-color: #e7e5f4;
+    }
