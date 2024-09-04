@@ -268,6 +268,12 @@ object-fit: contain;
     border-radius: 10px;
     height:180px;
     width:523px;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.boxes:hover{
+    box-shadow:1px -1px 20px 7px rgb(202, 201, 201);
 }
 
 
@@ -416,7 +422,7 @@ gap: 11rem;
 }
 
 .section-2{
-    height: 80rem;
+    height: 77rem;
 }
 
 .container-3{
@@ -481,6 +487,9 @@ gap: 11rem;
     box-shadow:1px -1px 20px 7px rgb(202, 201, 201);
 }
 
+.part-2{
+    margin-top: 2rem;
+}
 
 
 .Shamsa-Image{
@@ -611,4 +620,32 @@ position: relative;
 
     .AllProjectbtn button:hover{
         background-color: #e7e5f4;
+    }
+
+    .section-3{
+        height: 80rem;
+        background-color: #f7f7fc;
+    }
+    
+    .container-4{
+        height: 645px;
+        margin: 5rem auto;
+        width: 77%;
+    }
+
+    .textItem-5{
+        padding-top: 5rem;
+    }
+
+    .textItem-5 span{
+       font-size: 38px;
+       font-weight: 600;
+       color: #333333;
+    }
+    
+    .G-icon{
+        height: 48px;
+        width: 48px;
+        margin-left: 8px;
+        color: #FD6360;
     }
