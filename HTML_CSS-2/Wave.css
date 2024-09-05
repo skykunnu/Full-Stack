@@ -4,11 +4,14 @@
     box-sizing: border-box;
 }
 
-.background{
-
+body{
     height: 100vh;
+}
+
+.background{
+    height: 100%;
     width: 100%;
-    background-image: url(image/woman-7905583_640.webp);
+    background-image: url("./wave-img.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
