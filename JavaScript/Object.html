@@ -68,6 +68,53 @@ document.write(person[age]) // 24
 // b: 42
 
 
+// -----------------------------------------------------------------------------------------------------------------------------------
+
+//  Object.seal() -> It seals an object means existing properties cannot be removed , new properties cannot be added but the values of existing properties can be changed.
+
+// const object1 = {
+//   property1: 42,
+// };
+
+// Object.seal(object1);
+// object1.property1 = 33;
+// console.log(object1.property1); // 33
+ 
+// delete object1.property1; // existing properties cannot be removed. 
+// console.log(object1.property1); // 33
+
+// ------------------------------------------------------------------------------------------------------------------------------------
+
+// Object.freeze() -> It freezes an object means all the properties of seal() including values of properties cannot be changed. 
+
+
+
+// const obj = {
+//   prop: 42,
+// };
+
+// Object.freeze(obj);
+
+// obj.prop = 33;
+
+// console.log(obj.prop); // 42
+
+
+// -------------------------------------------------------------------------------------------------------------------------------------
+
+// Object.assign() -> copies all properties from one or more source objects to a target object. It returns the modified target object.
+
+// const target = { a: 1, b: 2 };
+// const source = { b: 4, c: 5 };
+
+// const returnedTarget = Object.assign(target, source);
+
+// console.log(target);
+// // Expected output: Object { a: 1, b: 4, c: 5 } (b:4 becoz priority of b:4 is more than b:2)
+
+
+// -----------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
