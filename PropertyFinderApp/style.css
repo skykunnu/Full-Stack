@@ -340,21 +340,24 @@ object-fit: contain;
 .section{
     height: 447px;
     background-color: #d1e1e0;
-    background-image: linear-gradient(359deg, #e1f3f2 0%, #fffafb 100%);
+background-image: linear-gradient(359deg, #e1f3f2 0%, #fffafb 100%);
 }
 
 .container-2{
 display: flex;
 justify-content: center;
-align-items: start;
-width: 100%;
+align-items: center;
+width: 80%;
+margin: 5rem auto;
 gap: 11rem;
+
+
 }
 
 .leftBox{
     height: 96px;
     width: 511px;
-    margin-top: 10rem;
+    margin-top: 1rem;
 }
 
 .leftBox h2{
@@ -428,7 +431,7 @@ gap: 11rem;
 .container-3{
     height: 645px;
     margin: 5rem auto;
-    width: 77%;
+    width: 80%;
 }
 
 
@@ -468,6 +471,7 @@ gap: 11rem;
     color: #6459B2;
 }
 
+
 .buildingItems{
     display: flex;
     align-items: center;
@@ -493,8 +497,8 @@ gap: 11rem;
 
 
 .Shamsa-Image{
-height: 206px;
-width: 334px;
+height: 208px;
+width: 348px;
 position: relative;
 }
 
@@ -630,7 +634,7 @@ position: relative;
     .container-4{
         height: 645px;
         margin: 5rem auto;
-        width: 77%;
+        width: 80%;
     }
 
     .textItem-5{
@@ -643,9 +647,89 @@ position: relative;
        color: #333333;
     }
     
-    .G-icon{
-        height: 48px;
-        width: 48px;
-        margin-left: 8px;
-        color: #FD6360;
-    }
+  .G-Icon{
+    color: #fd6360;
+    height: 2.8rem;
+    width: 2.8rem;
+    margin-bottom: -7px;
+  }
+
+  
+  .textItem-5 p{
+    font-size: 15px;
+    color: #7a7a7b;
+    margin-top: 1rem;
+  }
+
+  .arrows{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+ .arrows span i{
+    font-size: 15px;
+    margin-top: 2rem;
+    font-weight: 100;
+
+ }
+  .arrows .fa-greater-than{
+  margin-left: 24px;
+  }
+
+
+.section-3-Images{
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 1rem;
+}
+
+  .S-3-imgs{
+    height: 250px;
+    width: 400px;
+  }
+
+  .S-3-imgs img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .S-3-imgs span{
+    font-size: 18px;
+    font-weight: 500;
+    color: #625e5e;
+  }
+
+  .section-3-text h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: #333333;
+    margin-top: 6rem;
+  }
+
+  .section-3-buttons{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1px;
+    margin-top: 1rem;
+  }
+
+  .section-3-buttons button{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px 50px;
+    border: 1px solid #E3E3E3;
+    background-color: #F7F7F7;
+    color: #707070;
+  }
+
+  #S-3-btn-1{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  #S-3-btn-2{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }

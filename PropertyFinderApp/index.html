@@ -1,376 +1,484 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Property-Finder</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
-<link rel="icon" type="image/png" sizes="16x16" href="https://static-assets.propertyfinder.com/favicon/favicon-16x16.png">
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://static-assets.propertyfinder.com/favicon/favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
 
-<!-- Header Section -->
-
-<div class="main">
-    <div class="Header">
+    <div class="main">
+      <div class="Header">
         <div class="logo-image">
-            <img src="./logo.png" alt="">
+          <img src="./logo.png" alt="" />
         </div>
         <div class="nav-Items">
-           <ul>
+          <ul>
             <li>Buy</li>
             <li>Rent</li>
             <li>Commercial</li>
             <li>New projects</li>
             <li>Find agent</li>
-            <li>Explore <span><i class="fa-solid fa-angle-down"></i></span></li>
+            <li>
+              Explore <span><i class="fa-solid fa-angle-down"></i></span>
+            </li>
             <li>Mortgages</li>
-           </ul>
+          </ul>
         </div>
         <div class="btn">
-            <button>Log in</button>
+          <button>Log in</button>
         </div>
-    </div>
-   <!-- Video Section -->
-   <div class="Video">
-    <div class="VideoItem" >
-        <video autoplay muted loop>
-            <source src="https://static-assets.propertyfinder.com/videos/home-ae.mp4" type="video/mp4">
-        </video>
-    </div>
-    <div class="h1-text">
-        <h1>We Open Doors</h1>
-    </div>
-
-  <div class="box">
-    <div class="btn-1">
-        <button class="btn-1-1">Rent</button>
-        <button class="btn-1-2">Buy</button>
-        <button class="btn-1-3">New projects</button>
-        <button class="btn-1-4">Commercial</button>
-    </div>
-    <div class="btn-2">
-        <div class="InputText">
-            <span class="Icon"><i class="fa-solid fa-magnifying-glass"></i></span>
-                <input type="text" placeholder="City, community or building">
+      </div>
+      <!-- Video Section -->
+      <div class="Video">
+        <div class="VideoItem">
+          <video autoplay muted loop>
+            <source
+              src="https://static-assets.propertyfinder.com/videos/home-ae.mp4"
+              type="video/mp4"
+            />
+          </video>
         </div>
-        <div class="buttons">
-            <button>Property type <span><i class="fa-solid fa-angle-down"></i></span></button>
-            <button>Beds & Baths <span><i class="fa-solid fa-angle-down"></i></span></button>
-            <button class="buttons-search">Search</button>
+        <div class="h1-text">
+          <h1>We Open Doors</h1>
         </div>
 
+        <div class="box">
+          <div class="btn-1">
+            <button class="btn-1-1">Rent</button>
+            <button class="btn-1-2">Buy</button>
+            <button class="btn-1-3">New projects</button>
+            <button class="btn-1-4">Commercial</button>
+          </div>
+          <div class="btn-2">
+            <div class="InputText">
+              <span class="Icon"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></span>
+              <input type="text" placeholder="City, community or building" />
+            </div>
+            <div class="buttons">
+              <button>
+                Property type
+                <span><i class="fa-solid fa-angle-down"></i></span>
+              </button>
+              <button>
+                Beds & Baths <span><i class="fa-solid fa-angle-down"></i></span>
+              </button>
+              <button class="buttons-search">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-</div>
-
-    
     <!-- container-1 -->
-<div class="container">
-    <div class="textItem-1">
+    <div class="container">
+      <div class="textItem-1">
         <h2>Supercharge your search</h2>
-        <p>Explore the most home listings in the UAE. With the most reliable information. All at your fingertips.</p>
-    </div>
+        <p>
+          Explore the most home listings in the UAE. With the most reliable
+          information. All at your fingertips.
+        </p>
+      </div>
 
-    <div class="textItem-2">
+      <div class="textItem-2">
         <button class="rentbtn">Rent</button>
         <button>Buy</button>
         <button>Invest</button>
+      </div>
+
+      <div class="ItemBox">
+        <div class="boxes">
+          <div class="Image">
+            <img
+              class="img-1"
+              src="https://static-assets.propertyfinder.com/images/homepage/cards/Verified_Listings.svg"
+            />
+          </div>
+          <div class="boxText">
+            <h3>Listings you can trust</h3>
+            <p>Browse the most accurate listings, validated by our team</p>
+            <a href="">Explore Verified Listings</a>
+          </div>
+        </div>
+
+        <div class="boxes">
+          <div class="Image">
+            <img
+              class="img-2"
+              src="https://static-assets.propertyfinder.com/images/homepage/cards/superagent_illustration.svg"
+              alt=""
+            />
+          </div>
+          <div class="boxText">
+            <h3>Find a SuperAgent</h3>
+            <p>The most responsive agents with verified listings.</p>
+            <a href="">Find your SuperAgent</a>
+          </div>
+        </div>
+
+        <div class="boxes">
+          <div class="Image">
+            <img
+              class="img-3"
+              src="https://static-assets.propertyfinder.com/images/homepage/cards/RentVsBuy_Image.svg"
+              alt=""
+            />
+          </div>
+          <div class="boxText">
+            <h3>Rent or buy?</h3>
+            <p>We've got the tools to help you make an empowered decision.</p>
+            <a href="">Try Rent vs. Buy Calculator</a>
+          </div>
+        </div>
+
+        <div class="boxes">
+          <div class="Image">
+            <img
+              class="img-4"
+              src="https://static-assets.propertyfinder.com/images/homepage/cards/Dataguru.svg"
+              alt=""
+            />
+          </div>
+          <div class="boxText">
+            <h3>Not sure where to live?</h3>
+            <p>Pick the right neighborhood with DataGuru's insights.</p>
+            <a href="">Find my community</a>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="ItemBox">
-        <div class="boxes">
-            <div class="Image">
-                <img class="img-1"src="https://static-assets.propertyfinder.com/images/homepage/cards/Verified_Listings.svg">
-            </div>
-            <div class="boxText">
-                <h3>Listings you can trust</h3>
-                <p>Browse the most accurate listings, validated by our team</p>
-                <a href="">Explore Verified Listings</a>
-            </div>
-        </div>
+    <!--Container-2-->
 
-        <div class="boxes">
-            <div class="Image">
-                <img class="img-2"  src="https://static-assets.propertyfinder.com/images/homepage/cards/superagent_illustration.svg" alt="">
-            </div>
-            <div class="boxText">
-                <h3>Find a SuperAgent</h3>
-                <p>The most responsive agents with verified listings.</p>
-                <a href="">Find your SuperAgent</a>
-            </div>
-        </div>
-
-        <div class="boxes">
-            <div class="Image">
-                <img class="img-3" src="https://static-assets.propertyfinder.com/images/homepage/cards/RentVsBuy_Image.svg" alt="">
-            </div>
-            <div class="boxText">
-                <h3>Rent or buy?</h3>
-                <p>We've got the tools to help you make an empowered decision.</p>
-                <a href="">Try Rent vs. Buy Calculator</a>
-            </div>
-        </div>
-
-        <div class="boxes">
-            <div class="Image">
-                <img class="img-4" src="https://static-assets.propertyfinder.com/images/homepage/cards/Dataguru.svg" alt="">
-            </div>
-            <div class="boxText">
-                <h3>Not sure where to live?</h3>
-                <p>Pick the right neighborhood with DataGuru's insights.</p>
-                <a href="">Find my community</a>
-            </div>
-        </div>
-        
-    </div>
-    
-</div>
-
-<!--Container-2-->
-
-<div class="section">
-    <div class="container-2">
+    <div class="section">
+      <div class="container-2">
         <div class="leftBox">
-            <h2>Download the UAE’s most trusted
-                property search app</h2>
-            <p>Install the Property Finder app and start searching smarter.</p>
+          <h2>Download the UAE’s most trusted property search app</h2>
+          <p>Install the Property Finder app and start searching smarter.</p>
         </div>
-    
+
         <div class="rightBox">
-            <div class="QrCode">
-                <div class="Image-1">
-                    <img src="./QrCode.png" alt="">
-                </div>
-                <p>Scan to download the app</p>
+          <div class="QrCode">
+            <div class="Image-1">
+              <img src="./QrCode.png" alt="" />
             </div>
-            <div class="Image-2">
-                <img src="https://static-assets.propertyfinder.com/images/apps/ios-ae-en.png" alt="">
-            </div>
+            <p>Scan to download the app</p>
+          </div>
+          <div class="Image-2">
+            <img
+              src="https://static-assets.propertyfinder.com/images/apps/ios-ae-en.png"
+              alt=""
+            />
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<!-- Container-3 -->
+    <!-- Container-3 -->
 
-<div class="section-2">
-    <div class="container-3">
+    <div class="section-2">
+      <div class="container-3">
         <div class="textItem-3">
-            <h2>Explore new project in the UAE</h2>
-            <p>Discover the latest off-plan properties and be informed.</p>
+          <h2>Explore new project in the UAE</h2>
+          <p>Discover the latest off-plan properties and be informed.</p>
         </div>
-    
+
         <div class="textItem-4">
-            <button class="dubai-btn">Dubai</button>
-            <button>Abu Dhabi</button>
-            <button>Sharjah</button>
-            <button>Ras Al Khaimah</button>
+          <button class="dubai-btn">Dubai</button>
+          <button>Abu Dhabi</button>
+          <button>Sharjah</button>
+          <button>Ras Al Khaimah</button>
         </div>
-    
-        <div class="buildingItems">
-            <div class="buildingItem">
-                <div class="Shamsa-Image">
-                    <img src="https://new-projects-media.propertyfinder.com/project/3ba1ae76-e61f-415e-b0c9-d057804522e8/gallery/image/AmB5K9mn-tRzKNheh3ocDtHNyeLJbdaaI-BsWVK1Olk=/small.webp" alt="">
-                <div class="upcomingbox">
-                    <p>UPCOMING</p>
-                </div>
-                <div class="locationDot">
-                    <span><i class="fa-solid fa-location-dot"></i></span>
-                </div>
-                </div>
-                <div class="tower-1_Details">
-                    <div class="buildingText">
-                        <h2>Shamsa Townhouse 2</h2>
-                        <p>From: <span>3,386,961 AED</span></p>
-                        <p>Developer: <span>Expo Dubai Group</span></p>
-                        
-                    </div>
-                    <div class="address">
-                        <p><span><i class="fa-solid fa-location-dot"></i></span>Dubai, Expo City, Expo City Valley, Shamsa Townhouse </p>
-                    </div>
-                    <div class="buildingbtn">
-                        <button class="btns"><span><i class="fa-solid fa-envelope"></i></span>Email</button>
-                        <button class="btns"><span><i class="fa-brands fa-whatsapp"></i></span>WhatsApp</button>
-                    </div>
-                </div>
-              
-            </div>
 
-
-            <div class="buildingItem">
-                <div class="Shamsa-Image">
-                    <img src="https://new-projects-media.propertyfinder.com/project/4a6d8783-2eb7-42c6-af55-f15916738ce2/gallery/image/t_thpNcHlXg7zveBKd1hPWpBsRKvON48G4e2fNKuXg4=/small.webp" alt="">
+            <div class="buildingItems">
+                <div class="buildingItem">
+                  <div class="Shamsa-Image">
+                    <img
+                      src="https://new-projects-media.propertyfinder.com/project/3ba1ae76-e61f-415e-b0c9-d057804522e8/gallery/image/AmB5K9mn-tRzKNheh3ocDtHNyeLJbdaaI-BsWVK1Olk=/small.webp"
+                      alt=""
+                    />
                     <div class="upcomingbox">
-                        <p>UNDER CONSTRUCTION</p>
+                      <p>UPCOMING</p>
                     </div>
                     <div class="locationDot">
-                        <span><i class="fa-solid fa-location-dot"></i></span>
+                      <span><i class="fa-solid fa-location-dot"></i></span>
                     </div>
-                </div>
-                <div class="tower-1_Details">
+                  </div>
+                  <div class="tower-1_Details">
                     <div class="buildingText">
-                        <h2>Moonsa Residences 2</h2>
-                        <p>From: <span>486,395 AED</span></p>
-                        <p>Developer: <span>Dugasta</span></p>
-                        
+                      <h2>Shamsa Townhouse 2</h2>
+                      <p>From: <span>3,386,961 AED</span></p>
+                      <p>Developer: <span>Expo Dubai Group</span></p>
                     </div>
                     <div class="address">
-                        <p><span><i class="fa-solid fa-location-dot"></i></span>Dubai, International City</p>
+                      <p>
+                        <span><i class="fa-solid fa-location-dot"></i></span>Dubai,
+                        Expo City, Expo City Valley, Shamsa Townhouse
+                      </p>
                     </div>
                     <div class="buildingbtn">
-                        <button class="btns"><span><i class="fa-solid fa-envelope"></i></span>Email</button>
-                        <button class="btns"><span><i class="fa-brands fa-whatsapp"></i></span>WhatsApp</button>
+                      <button class="btns">
+                        <span><i class="fa-solid fa-envelope"></i></span>Email
+                      </button>
+                      <button class="btns">
+                        <span><i class="fa-brands fa-whatsapp"></i></span>WhatsApp
+                      </button>
                     </div>
+                  </div>
                 </div>
-              
-            </div>
-
-
-            <div class="buildingItem">
-                <div class="Shamsa-Image">
-                    <img src="https://new-projects-media.propertyfinder.com/project/8ec0343a-f537-47c7-8acf-90ea3fc9310c/gallery/image/8zS9yGubc2l9Gn3FJ4uSOyTfY7Crfp34w-vw9wrsk6Y=/small.webp" alt="">
+      
+                <div class="buildingItem">
+                  <div class="Shamsa-Image">
+                    <img
+                      src="https://new-projects-media.propertyfinder.com/project/4a6d8783-2eb7-42c6-af55-f15916738ce2/gallery/image/t_thpNcHlXg7zveBKd1hPWpBsRKvON48G4e2fNKuXg4=/small.webp"
+                      alt=""
+                    />
                     <div class="upcomingbox">
-                        <p>UNDER CONSTRUCTION</p>
+                      <p>UNDER CONSTRUCTION</p>
                     </div>
                     <div class="locationDot">
-                        <span><i class="fa-solid fa-location-dot"></i></span>
+                      <span><i class="fa-solid fa-location-dot"></i></span>
                     </div>
-                </div>
-                <div class="tower-1_Details">
+                  </div>
+                  <div class="tower-1_Details">
                     <div class="buildingText">
-                        <h2>Peace Lagoons</h2>
-                        <p>From: <span>654,738 AED</span></p>
-                        <p>Developer: <span>Peace Homes Group</span></p>
-                        
+                      <h2>Moonsa Residences 2</h2>
+                      <p>From: <span>486,395 AED</span></p>
+                      <p>Developer: <span>Dugasta</span></p>
                     </div>
                     <div class="address">
-                        <p><span><i class="fa-solid fa-location-dot"></i></span>Dubai, Dubai Land, Peace Lagoons</p>
+                      <p>
+                        <span><i class="fa-solid fa-location-dot"></i></span>Dubai,
+                        International City
+                      </p>
                     </div>
                     <div class="buildingbtn">
-                        <button class="btns"><span><i class="fa-solid fa-envelope"></i></span>Email</button>
-                        <button class="btns"><span><i class="fa-brands fa-whatsapp"></i></span>WhatsApp</button>
+                      <button class="btns">
+                        <span><i class="fa-solid fa-envelope"></i></span>Email
+                      </button>
+                      <button class="btns">
+                        <span><i class="fa-brands fa-whatsapp"></i></span>WhatsApp
+                      </button>
                     </div>
+                  </div>
                 </div>
-              
-            </div>
-
-
-            <div class="buildingItem part-2">
-                <div class="Shamsa-Image">
-                    <img src="https://new-projects-media.propertyfinder.com/project/de168f52-2b37-4a18-aab8-3c8fb7842083/gallery/image/Mz1QHQlTiW4-QPONzxyCNHIAF6A_rtYTKRrsehUoIFQ=/small.webp">
+      
+                <div class="buildingItem">
+                  <div class="Shamsa-Image">
+                    <img
+                      src="https://new-projects-media.propertyfinder.com/project/8ec0343a-f537-47c7-8acf-90ea3fc9310c/gallery/image/8zS9yGubc2l9Gn3FJ4uSOyTfY7Crfp34w-vw9wrsk6Y=/small.webp"
+                      alt=""
+                    />
                     <div class="upcomingbox">
-                        <p>UNDER CONSTRUCTION</p>
+                      <p>UNDER CONSTRUCTION</p>
                     </div>
                     <div class="locationDot">
-                        <span><i class="fa-solid fa-location-dot"></i></span>
+                      <span><i class="fa-solid fa-location-dot"></i></span>
                     </div>
-                </div>
-                <div class="tower-1_Details">
+                  </div>
+                  <div class="tower-1_Details">
                     <div class="buildingText">
-                        <h2>One by Binghatti</h2>
-                        <p>From: <span>1,111,111 AED</span></p>
-                        <p>Developer: <span>Binghatti Developers FZE</span></p>
-                        
+                      <h2>Peace Lagoons</h2>
+                      <p>From: <span>654,738 AED</span></p>
+                      <p>Developer: <span>Peace Homes Group</span></p>
                     </div>
                     <div class="address">
-                        <p><span><i class="fa-solid fa-location-dot"></i></span>Dubai, Business Bay, One By Binghatti</p>
+                      <p>
+                        <span><i class="fa-solid fa-location-dot"></i></span>Dubai,
+                        Dubai Land, Peace Lagoons
+                      </p>
                     </div>
                     <div class="buildingbtn">
-                        <button class="btns"><span><i class="fa-solid fa-envelope"></i></span>Email</button>
-                        <button class="btns"><span><i class="fa-brands fa-whatsapp"></i></span>WhatsApp</button>
+                      <button class="btns">
+                        <span><i class="fa-solid fa-envelope"></i></span>Email
+                      </button>
+                      <button class="btns">
+                        <span><i class="fa-brands fa-whatsapp"></i></span>WhatsApp
+                      </button>
                     </div>
+                  </div>
                 </div>
-              
-            </div>
-
-            <div class="buildingItem part-2">
-                <div class="Shamsa-Image">
-                    <img src="https://new-projects-media.propertyfinder.com/project/e4428f63-3161-4d8d-a3a2-ccab32090299/gallery/image/xqZIj2sZp3Euz0KSyDN0DuDLPdhcRYqwrgRQwR_NhzQ=/small.webp" alt="">
+      
+                <div class="buildingItem part-2">
+                  <div class="Shamsa-Image">
+                    <img
+                      src="https://new-projects-media.propertyfinder.com/project/de168f52-2b37-4a18-aab8-3c8fb7842083/gallery/image/Mz1QHQlTiW4-QPONzxyCNHIAF6A_rtYTKRrsehUoIFQ=/small.webp"
+                    />
                     <div class="upcomingbox">
-                        <p>UNDER CONSTRUCTION</p>
+                      <p>UNDER CONSTRUCTION</p>
                     </div>
                     <div class="locationDot">
-                        <span><i class="fa-solid fa-location-dot"></i></span>
+                      <span><i class="fa-solid fa-location-dot"></i></span>
                     </div>
-                </div>
-                <div class="tower-1_Details">
+                  </div>
+                  <div class="tower-1_Details">
                     <div class="buildingText">
-                        <h2>Verdana 6</h2>
-                        <p>From: <span>490,000 AED</span></p>
-                        <p>Developer: <span>Reportage Real Estate</span></p>
-                        
+                      <h2>One by Binghatti</h2>
+                      <p>From: <span>1,111,111 AED</span></p>
+                      <p>Developer: <span>Binghatti Developers FZE</span></p>
                     </div>
                     <div class="address">
-                        <p><span><i class="fa-solid fa-location-dot"></i></span>Dubai, Dubai Investment Park (DIP)</p>
+                      <p>
+                        <span><i class="fa-solid fa-location-dot"></i></span>Dubai,
+                        Business Bay, One By Binghatti
+                      </p>
                     </div>
                     <div class="buildingbtn">
-                        <button class="btns"><span><i class="fa-solid fa-envelope"></i></span>Email</button>
-                        <button class="btns"><span><i class="fa-brands fa-whatsapp"></i></span>WhatsApp</button>
+                      <button class="btns">
+                        <span><i class="fa-solid fa-envelope"></i></span>Email
+                      </button>
+                      <button class="btns">
+                        <span><i class="fa-brands fa-whatsapp"></i></span>WhatsApp
+                      </button>
                     </div>
+                  </div>
                 </div>
-              
-            </div>
-
-            <div class="buildingItem part-2">
-                <div class="Shamsa-Image">
-                    <img src="https://new-projects-media.propertyfinder.com/project/0d159283-aac5-4123-b552-d69e58acb866/gallery/image/1eEMkfk0ph21vguIf6xW-ahrgwVIVaM_oP_D6txexRg=/small.webp">
+      
+                <div class="buildingItem part-2">
+                  <div class="Shamsa-Image">
+                    <img
+                      src="https://new-projects-media.propertyfinder.com/project/e4428f63-3161-4d8d-a3a2-ccab32090299/gallery/image/xqZIj2sZp3Euz0KSyDN0DuDLPdhcRYqwrgRQwR_NhzQ=/small.webp"
+                      alt=""
+                    />
                     <div class="upcomingbox">
-                        <p>UNDER CONSTRUCTION</p>
+                      <p>UNDER CONSTRUCTION</p>
                     </div>
                     <div class="locationDot">
-                        <span><i class="fa-solid fa-location-dot"></i></span>
+                      <span><i class="fa-solid fa-location-dot"></i></span>
                     </div>
-                </div>
-                <div class="tower-1_Details">
+                  </div>
+                  <div class="tower-1_Details">
                     <div class="buildingText">
-                        <h2>Violet Phase 2</h2>
-                        <p>From: <span>1,870,000 AED</span></p>
-                        <p>Developer: <span>Damac Properties</span></p>
-                        
+                      <h2>Verdana 6</h2>
+                      <p>From: <span>490,000 AED</span></p>
+                      <p>Developer: <span>Reportage Real Estate</span></p>
                     </div>
                     <div class="address">
-                        <p><span><i class="fa-solid fa-location-dot"></i></span>Dubai, Damac Hills 2, Violet</p>
+                      <p>
+                        <span><i class="fa-solid fa-location-dot"></i></span>Dubai,
+                        Dubai Investment Park (DIP)
+                      </p>
                     </div>
                     <div class="buildingbtn">
-                        <button class="btns"><span><i class="fa-solid fa-envelope"></i></span>Email</button>
-                        <button class="btns"><span><i class="fa-brands fa-whatsapp"></i></span>WhatsApp</button>
+                      <button class="btns">
+                        <span><i class="fa-solid fa-envelope"></i></span>Email
+                      </button>
+                      <button class="btns">
+                        <span><i class="fa-brands fa-whatsapp"></i></span>WhatsApp
+                      </button>
                     </div>
+                  </div>
                 </div>
-              
-            </div>
-            
-        </div>
+      
+                <div class="buildingItem part-2">
+                  <div class="Shamsa-Image">
+                    <img
+                      src="https://new-projects-media.propertyfinder.com/project/0d159283-aac5-4123-b552-d69e58acb866/gallery/image/1eEMkfk0ph21vguIf6xW-ahrgwVIVaM_oP_D6txexRg=/small.webp"
+                    />
+                    <div class="upcomingbox">
+                      <p>UNDER CONSTRUCTION</p>
+                    </div>
+                    <div class="locationDot">
+                      <span><i class="fa-solid fa-location-dot"></i></span>
+                    </div>
+                  </div>
+                  <div class="tower-1_Details">
+                    <div class="buildingText">
+                      <h2>Violet Phase 2</h2>
+                      <p>From: <span>1,870,000 AED</span></p>
+                      <p>Developer: <span>Damac Properties</span></p>
+                    </div>
+                    <div class="address">
+                      <p>
+                        <span><i class="fa-solid fa-location-dot"></i></span>Dubai,
+                        Damac Hills 2, Violet
+                      </p>
+                    </div>
+                    <div class="buildingbtn">
+                      <button class="btns">
+                        <span><i class="fa-solid fa-envelope"></i></span>Email
+                      </button>
+                      <button class="btns">
+                        <span><i class="fa-brands fa-whatsapp"></i></span>WhatsApp
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+       
         <div class="AllProjectbtn">
-            <button>See all New Projects</button>
-        </div>  
+          <button>See all New Projects</button>
+        </div>
+      </div>
     </div>
-     
+
+    <!-- container-4 -->
+
+    <div class="section-3">
+      <div class="container-4">
+        <div class="textItem-5">
+          <span>Explore the UAE market <span><svg class="G-Icon"  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 4C11.5 4.27614 11.7239 4.5 12 4.5C12.2761 4.5 12.5 4.27614 12.5 4V2C12.5 1.72386 12.2761 1.5 12 1.5C11.7239 1.5 11.5 1.72386 11.5 2V4ZM7.10156 12C7.10156 9.29467 9.29467 7.10156 12 7.10156C13.7534 7.10156 15.2923 8.02229 16.1587 9.41021C16.3781 9.76158 16.8407 9.86861 17.1921 9.64926C17.5435 9.42992 17.6505 8.96726 17.4312 8.61589C16.3022 6.80746 14.2922 5.60156 12 5.60156C8.46624 5.60156 5.60156 8.46624 5.60156 12C5.60156 15.5338 8.46624 18.3984 12 18.3984C15.5338 18.3984 18.3984 15.5338 18.3984 12C18.3984 11.5858 18.0627 11.25 17.6484 11.25H14C13.5858 11.25 13.25 11.5858 13.25 12C13.25 12.4142 13.5858 12.75 14 12.75H16.8414C16.4804 15.0993 14.4503 16.8984 12 16.8984C9.29467 16.8984 7.10156 14.7053 7.10156 12ZM10 19C9.72386 19 9.5 19.2239 9.5 19.5C9.5 19.7761 9.72386 20 10 20H14C14.2761 20 14.5 19.7761 14.5 19.5C14.5 19.2239 14.2761 19 14 19H10ZM10.5 21C10.5 20.7239 10.7239 20.5 11 20.5H13C13.2761 20.5 13.5 20.7239 13.5 21C13.5 21.2761 13.2761 21.5 13 21.5H11C10.7239 21.5 10.5 21.2761 10.5 21ZM19.5 12C19.5 11.7239 19.7239 11.5 20 11.5H22C22.2761 11.5 22.5 11.7239 22.5 12C22.5 12.2761 22.2761 12.5 22 12.5H20C19.7239 12.5 19.5 12.2761 19.5 12ZM2 11.5C1.72386 11.5 1.5 11.7239 1.5 12C1.5 12.2761 1.72386 12.5 2 12.5H4C4.27614 12.5 4.5 12.2761 4.5 12C4.5 11.7239 4.27614 11.5 4 11.5H2ZM6.76762 6.77926C6.57235 6.97452 6.25577 6.97452 6.06051 6.77926L4.6463 5.36505C4.45103 5.16978 4.45103 4.8532 4.6463 4.65794C4.84156 4.46268 5.15814 4.46268 5.3534 4.65794L6.76762 6.07215C6.96288 6.26741 6.96288 6.584 6.76762 6.77926ZM18.002 6.70895C17.8067 6.90421 17.4901 6.90421 17.2949 6.70895C17.0996 6.51368 17.0996 6.1971 17.2949 6.00184L18.7091 4.58763C18.9044 4.39236 19.2209 4.39236 19.4162 4.58763C19.6115 4.78289 19.6115 5.09947 19.4162 5.29473L18.002 6.70895Z" fill="currentColor"></path></svg></span></span>
+          <p>
+            Dive deep into the UAE’s real estate market with prices, transaction
+            histories and community insights to help you make an educated
+            decision.
+          </p>
+        </div>
+<div class="arrows">
+    <span><i class="fa-solid fa-less-than"></i><i class="fa-solid fa-greater-than"></i></span>
 </div>
 
-<!-- container-4 -->
-
-<div class="section-3">
-<div class="container-4">
-    <div class="textItem-5">
-        <span>Explore the UAE market<svg class="G-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 4C11.5 4.27614 11.7239 4.5 12 4.5C12.2761 4.5 12.5 4.27614 12.5 4V2C12.5 1.72386 12.2761 1.5 12 1.5C11.7239 1.5 11.5 1.72386 11.5 2V4ZM7.10156 12C7.10156 9.29467 9.29467 7.10156 12 7.10156C13.7534 7.10156 15.2923 8.02229 16.1587 9.41021C16.3781 9.76158 16.8407 9.86861 17.1921 9.64926C17.5435 9.42992 17.6505 8.96726 17.4312 8.61589C16.3022 6.80746 14.2922 5.60156 12 5.60156C8.46624 5.60156 5.60156 8.46624 5.60156 12C5.60156 15.5338 8.46624 18.3984 12 18.3984C15.5338 18.3984 18.3984 15.5338 18.3984 12C18.3984 11.5858 18.0627 11.25 17.6484 11.25H14C13.5858 11.25 13.25 11.5858 13.25 12C13.25 12.4142 13.5858 12.75 14 12.75H16.8414C16.4804 15.0993 14.4503 16.8984 12 16.8984C9.29467 16.8984 7.10156 14.7053 7.10156 12ZM10 19C9.72386 19 9.5 19.2239 9.5 19.5C9.5 19.7761 9.72386 20 10 20H14C14.2761 20 14.5 19.7761 14.5 19.5C14.5 19.2239 14.2761 19 14 19H10ZM10.5 21C10.5 20.7239 10.7239 20.5 11 20.5H13C13.2761 20.5 13.5 20.7239 13.5 21C13.5 21.2761 13.2761 21.5 13 21.5H11C10.7239 21.5 10.5 21.2761 10.5 21ZM19.5 12C19.5 11.7239 19.7239 11.5 20 11.5H22C22.2761 11.5 22.5 11.7239 22.5 12C22.5 12.2761 22.2761 12.5 22 12.5H20C19.7239 12.5 19.5 12.2761 19.5 12ZM2 11.5C1.72386 11.5 1.5 11.7239 1.5 12C1.5 12.2761 1.72386 12.5 2 12.5H4C4.27614 12.5 4.5 12.2761 4.5 12C4.5 11.7239 4.27614 11.5 4 11.5H2ZM6.76762 6.77926C6.57235 6.97452 6.25577 6.97452 6.06051 6.77926L4.6463 5.36505C4.45103 5.16978 4.45103 4.8532 4.6463 4.65794C4.84156 4.46268 5.15814 4.46268 5.3534 4.65794L6.76762 6.07215C6.96288 6.26741 6.96288 6.584 6.76762 6.77926ZM18.002 6.70895C17.8067 6.90421 17.4901 6.90421 17.2949 6.70895C17.0996 6.51368 17.0996 6.1971 17.2949 6.00184L18.7091 4.58763C18.9044 4.39236 19.2209 4.39236 19.4162 4.58763C19.6115 4.78289 19.6115 5.09947 19.4162 5.29473L18.002 6.70895Z" fill="currentColor"></path>
-        </svg></span>
-        <p>Dive deep into the UAE’s real estate market with prices, transaction histories and community insights to help you make an educated decision.</p>
+<div class="section-3-Images">
+    <div class="S-3-imgs">
+        <img src="https://static-assets.propertyfinder.com/images/homepage/dubai.jpg" alt="">
+        <span>Dubai</span>
+    </div>
+    <div class="S-3-imgs">
+        <img src="https://static-assets.propertyfinder.com/images/homepage/abu_dhabi.jpg" alt="">
+        <span>Abu Dhabi</span>
+    </div>
+    <div class="S-3-imgs">
+        <img src="https://static-assets.propertyfinder.com/images/homepage/sharjah.jpg" alt="">
+        <span>Sharjah</span>
     </div>
 </div>
+
+<div class="section-3-text">
+    <h2>UAE property prices by area</h2>
 </div>
 
+<div class="section-3-buttons">
+    <button id="S-3-btn-1">Rent</button>
+    <button id="S-3-btn-2">Buy</button>
+</div>
 
-
-
+<div class="Section-3-Map">
     
-
-</body>
+</div>
+      </div>
+    </div>
+  </body>
 </html>
