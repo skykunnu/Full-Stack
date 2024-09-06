@@ -15,11 +15,11 @@
 // Ways of accessing properties of Objects
 
 
-let person = {
-        name: "Shikhar",
-        phone: 1234512345,
-        age: 24,
-      };
+// let person = {
+//         name: "Shikhar",
+//         phone: 1234512345,
+//         age: 24,
+//       };
 
 /* 
 1) Dot Notation:- 
@@ -50,6 +50,85 @@ document.write(person[age]) // 24
 // Object.values() -> returns value of the object in a form of an array.
 
 // console.log(Object.values(object1)) // ['somestring', 42, false]
+
+// Write a loop using Object.keys( ) to log each key in the book object. 
+
+
+// const books={
+//     title: '1984',
+//     author: 'George Orwell',
+//     year: 1949
+// }
+
+// const keys=Object.keys(books); // ['title' ,'author', 'year']
+
+// keys.forEach((Keybook)=>{   
+//     console.log(Keybook);
+// })
+
+
+//--------------------------------------------------------------------
+
+// Write a line of code using Object.values() to calculate the sum of all scores. 
+
+// const scores={
+//     math:90,
+//     science:85,
+//     history:88
+// };
+
+
+// const value=Object.values(scores); // [90, 85, 88]
+
+// let sum=0;
+// value.forEach((ScoreValue)=>{
+// sum=sum+ScoreValue;
+// })
+// console.log(sum) // 263
+
+
+// // Using reduce method
+// const total=value.reduce((acc,num)=>{
+// return acc+num;
+// },0)
+// console.log(total) // 263
+
+
+// ----------------------------------------------------------------------
+
+// Write a line of code to reverse the properties of object using for loop and object methods only. 
+
+const person={
+    name:"Shikhar",
+    Age:24,
+    Position:"SDE"
+}
+
+const Reversekeys=Object.keys(person).reverse(); 
+
+const ReverseValues=Object.values(person).reverse();
+
+
+const reversedFruits={}
+
+Reversekeys.forEach((key,value)=>{
+reversedFruits[key]=ReverseValues[value]
+})
+
+console.log(reversedFruits);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // --------------------------------------------------------------------------------------------------
 
@@ -114,6 +193,7 @@ document.write(person[age]) // 24
 
 
 // -----------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
