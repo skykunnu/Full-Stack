@@ -111,12 +111,21 @@ const ReverseValues=Object.values(person).reverse();
 
 const reversedFruits={}
 
-Reversekeys.forEach((key,value)=>{
-reversedFruits[key]=ReverseValues[value]
-})
+// using forEach loop
 
-console.log(reversedFruits);
+// Reversekeys.forEach((key,value)=>{
+// reversedFruits[key]=ReverseValues[value]
+// })
 
+// console.log(reversedFruits);
+
+
+// using for loop
+
+// for(let i=Reversekeys.length-1;i>=0;i--){
+//     // reversedFruits[keys[i]] -> Read as reversedFruits.keys[i], keys[2]=Position and so on. 
+//     reversedFruits[keys[i]] =ReverseValues[i]  
+// }
 
 
 
