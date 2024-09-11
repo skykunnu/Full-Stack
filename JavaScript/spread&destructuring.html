@@ -9,9 +9,47 @@
     <script>
 // Spread operator is used in both array and object.
 
-const arr1=[1,2,3,4];
-const arr2=[2,4,6];
-const arr3=[1,7,8,9];
+// const a=[1,2,3,4];
+// const b=[2,4,6];
+// const c=[1,7,8,9];
+
+// const x=[...a, ...c];
+// const d=[...b, ...x];
+
+// document.write(d[0]+d[1]+d[2]+d[3]) // 13
+// document.write(d[d.length-2]+d[d.length-1]); //  17
+
+
+// const names = ["Lucky", "Harendra"];
+// names.push("Ranveer");
+// names.shift();
+// names.unshift("Lucky", "Pankaj");
+// const x = [...names]; // ["lucky","Pankaj","Harendra","Ranveer"]
+// console.log(x.length); // 4
+// console.log(x[0].length + x[x.length - 2].length); // 13
+
+// const a=[1,3,5,7];
+// a[4]=9;
+// const b=[...a]; // [1,3,5,7,9]
+// console.log(b.length) // 5
+
+
+//    const obj = { name: "Lucky", age: 20 };
+//     const x = { ...obj };
+//     console.log(x.name); // Lucky
+
+//     const obj1 = { name: "Pankaj", age: 26 };
+
+//     const obj2 = { ...obj, ...obj1, salary: 100000 };
+
+
+//     console.log(obj2.name, obj2.age) // Pankaj, 26 because js reads from top to bottom so whichever value comes last will overwrite the previous one. 
+//     console.log(Object.key(obj2)[2]); // salary 
+//     console.log(Object.key(obj2)[2].length) // 2 ['salary',100000]
+
+
+
+
 
 
 
