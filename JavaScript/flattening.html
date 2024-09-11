@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flattening</title>
+</head>
+<body>
+    <script>
+
+// Flattening of array and objects. 
+
+
+//  flattening of objects
+
+// nested objects flatten by using recursion and without recursion.
+
+// const person = {
+//         name: "Shikhar",
+//         address: {
+//           city: "Jaipur",
+//           village: "Sheher",
+//         },
+//         details: {
+//           job: {
+//             designation: "Full Stack Developer",
+//             skills: {
+//               frontend: "HTML, CSS, Js, React",
+//               backend: "Node, Express",
+//             },
+//           },
+//         },
+//       };
+
+//       for(let i in person){ 
+//         if(typeof person[i]==="object"){  // typeof checking of name, address, details. 
+//             for(let j in person[i]){  
+//                if(typeof person[i][j]==='object'){ // typeof checking of address_city, address_village, details_job.
+//                    for(let k in person[i][j]){
+//                     if(typeof person[i][j][k]==='object'){ // typeof checking of details_job_designation & details_job_skills.
+//                         for(let l in person[i][j][k]){
+//                             if(typeof person[i][j][k][l]==='object'){}  // typeof checking of details_job_skills_frontend & details_job_skills_backend.
+//                             else{
+//                                 document.write(i+"_"+j+"_"+k+"_"+l+":"+person[i][j][k][l]+"<br>")
+//                         }
+//                         }
+//                     }
+//                     else{
+//                         document.write(i+"_"+j+"_"+k+":"+person[i][j][k]+"<br>")
+//                     }
+//                    }
+//                }
+//                else{
+//                 document.write(i + "_"+j +":"+ person[i][j]+"<br>")
+//                }
+//             }
+//         }
+//         else{
+//             document.write(i+":"+person[i]+"<br>")
+//         }
+//       }
+
+
+
+
+
+
+
+// Using Recursion-> function calling itself.
+
+
+
+// const person = {
+//         name: "Shikhar",
+//         address: {
+//           city: "Jaipur",
+//           village: "Sheher",
+//         },
+//         details: {
+//           job: {
+//             designation: "Full Stack Developer",
+//             skills: {
+//               frontend: "HTML, CSS, JS",
+//               backend: "Node, Express",
+//             },
+//           },
+//         },
+//       };
+
+//        function flattenObjectRecursive(obj,extra=null){ // extra=null, becoz to handle the condn of keys having values other than object. 
+//            for(let i in obj){
+//             if(typeof obj[i]==="object"){ // 
+//                flattenObjectRecursive(obj[i],i);} 
+//             else{
+//                 if(!extra) document.write(i+":"+obj[i]+"<br>") // this will work for keys having values other than objects. 
+//                 else document.write(extra+"_"+i+":"+obj[i]+"<br>") // this will work for keys having values as objects
+//             }
+//            }
+//        }
+
+//        flattenObjectRecursive(person)
+
+// --------------------------------------------------------------------------------------------------------------------------------------
+
+// flattening of array
+
+// const numbers=[1,2,4,[5,6],7,[9,8,10],[[11,12],13]];
+
+
+// const output=[]; // because replacement is there so output will be placed outside. if present inside then for new nested arrays it will overwrite previous value.
+// function flattenArray(arr){
+//     arr.forEach((num)=>{
+//         if(typeof num ==="object"){
+//             flattenArray(num);
+//         }
+//         else{ 
+//             output.push(num);
+//         }
+
+//     });
+//     return output;
+// }
+
+// document.write(flattenArray(numbers));
+
+
+
+
+
+
+    </script>
+</body>
+</html>
