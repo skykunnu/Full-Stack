@@ -196,7 +196,7 @@ const names = [
       ];
 
     //   inside anonymous function this is defined, and points to the caller
-    //   where as, inside arrow function this is not defined
+    //   where as, inside arrow function, this is not defined
 
     // ALl arrow functions are anonymous functions but vice versa is not true. Ex->  storing anonymous function inside a variable.
     
@@ -296,7 +296,7 @@ const names = [
 
 
 
-// bind()-> This method doesn’t immediately invoke the function. Instead, it returns a new function that, when called, has (this) permanently set to the value provided.
+// bind()-> This method doesn’t immediately invoke the function. Instead, it returns a new function that, when called, has (this) permanently set to the value provided. basically an object can borrow a method from another object.
 
 
 
@@ -307,57 +307,100 @@ const names = [
 // }
 //  };
 
-// // Create a bound function with `this` set to `person` and the first argument (`age`) pre-filled
-// const boundSayHello = sayHello.bind(person, 25);
 
-// boundSayHello("USA");
+// const boundSayHello = person.sayHello.bind(person,25,"USA");
+
+// boundSayHello(); // My name is Alice, I am 25 years old and from USA. 
 
 
 // ------------------------------------------------------------------------------------------------------------
 
-// nested objects flatten 
+// nested objects flatten by using recursion and without recursion.
 
-const person = {
-        name: "Harendra",
-        address: {
-          city: "Bharatpur",
-          village: "Barauliran",
-        },
-        details: {
-          job: {
-            designation: "Full Stack Developer",
-            skills: {
-              frontend: "HTML, CSS",
-              backend: "Node, Express",
-            },
-          },
-        },
-      };
+// const person = {
+//         name: "Shikhar",
+//         address: {
+//           city: "Jaipur",
+//           village: "Sheher",
+//         },
+//         details: {
+//           job: {
+//             designation: "Full Stack Developer",
+//             skills: {
+//               frontend: "HTML, CSS, Js, React",
+//               backend: "Node, Express",
+//             },
+//           },
+//         },
+//       };
 
-       function flattenObjectRecursive(obj,extra=null){
-           for(let i in obj){
-            if(typeof obj[i]==="object"){
-               flattenObjectRecursive(obj[i],i);            }
-            else{
-                if(!extra) document.write(i+":"+obj[i]+"<br>")
-                else document.write(extra+"_"+i+":"+obj[i]+"<br>")
-            }
-           }
-       }
+//       for(let i in person){ 
+//         if(typeof person[i]==="object"){  // typeof checking of name, address, details. 
+//             for(let j in person[i]){  
+//                if(typeof person[i][j]==='object'){ // typeof checking of address_city, address_village, details_job.
+//                    for(let k in person[i][j]){
+//                     if(typeof person[i][j][k]==='object'){ // typeof checking of details_job_designation & details_job_skills.
+//                         for(let l in person[i][j][k]){
+//                             if(typeof person[i][j][k][l]==='object'){}  // typeof checking of details_job_skills_frontend & details_job_skills_backend.
+//                             else{
+//                                 document.write(i+"_"+j+"_"+k+"_"+l+":"+person[i][j][k][l]+"<br>")
+//                         }
+//                         }
+//                     }
+//                     else{
+//                         document.write(i+"_"+j+"_"+k+":"+person[i][j][k]+"<br>")
+//                     }
+//                    }
+//                }
+//                else{
+//                 document.write(i + "_"+j +":"+ person[i][j]+"<br>")
+//                }
+//             }
+//         }
+//         else{
+//             document.write(i+":"+person[i]+"<br>")
+//         }
+//       }
 
-       flattenObjectRecursive(person)
-
-       
 
 
 
 
 
 
+// Using Recursion. 
 
 
 
+// const person = {
+//         name: "Shikhar",
+//         address: {
+//           city: "Jaipur",
+//           village: "Sheher",
+//         },
+//         details: {
+//           job: {
+//             designation: "Full Stack Developer",
+//             skills: {
+//               frontend: "HTML, CSS, JS",
+//               backend: "Node, Express",
+//             },
+//           },
+//         },
+//       };
 
+//        function flattenObjectRecursive(obj,extra=null){ // extra=null, becoz to handle the condn of keys having values other than object. 
+//            for(let i in obj){
+//             if(typeof obj[i]==="object"){ // 
+//                flattenObjectRecursive(obj[i],i);} 
+//             else{
+//                 if(!extra) document.write(i+":"+obj[i]+"<br>") // this will work for keys having values other than objects. 
+//                 else document.write(extra+"_"+i+":"+obj[i]+"<br>") // this will work for keys having values as objects
+//             }
+//            }
+//        }
+
+//        flattenObjectRecursive(person)
 
 
 
