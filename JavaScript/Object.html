@@ -183,91 +183,64 @@ document.write(person[age]) // 24
 
 
 // -----------------------------------------------------------------------------------------------------------------------------------------
-// const names = [
-//         "Ranveer",
-//         "Harendra",
-//         "Sonu",
-//         "Lucky",
-//         "Pankaj",
-//         "Anant",
-//         "Rishabh",
-//         "Shikhar",
-//         "Sunil",
-//       ];
+//   inside anonymous function this is defined, and points to the caller
+//   where as, inside arrow function, this is not defined
 
-    //   inside anonymous function this is defined, and points to the caller
-    //   where as, inside arrow function, this is not defined
+// ALl arrow functions are anonymous functions but vice versa is not true. Ex->  storing anonymous function inside a variable.
 
-    // ALl arrow functions are anonymous functions but vice versa is not true. Ex->  storing anonymous function inside a variable.
+
+
+      // const person = {
+      //   name: "Rohit",
+      //   age: 33,
+      //   profession: "Full Stack Developer",
+      //   isMarried: true,
+      //   skills: ["HTML", "CSS"], // array
+      //   work: {     // nested object. 
+      //     company: "Full Stack Learning",
+      //     designation: "Owner",
+      //   },
+      //   getIntroduction: function () { // anonymous function
+      //     return "My name is " + this.name;
+      //   },
+      // };
     
-    
+      // const a=person.getIntroduction();
+      // console.log(a) // My name is Rohit
 
-    //   const person = {
-    //     name: "Rohit",
-    //     age: 33,
-    //     profession: "Full Stack Developer",
-    //     isMarried: true,
-    //     skills: ["HTML", "CSS"], // array
-    //     work: {     // nested object. 
-    //       company: "Full Stack Learning",
-    //       designation: "Owner",
-    //     },
-    //     getIntroduction: function () { // anonymous sfunction
-    //       return "My name is " + this.name;
-    //     },
-    //   };
-
-    //   console.log(names);
-
-    //   for(let i=0;i<person.length)
-
-    //   person.forEach((value) => {
-    //     document.write(value);
-    //   });
+      // const a=person.getIntroduction;
+      // console.log(a()) // My name is , because here this is poining to a and inside a name is not defined. 
 
 
-    //   document.write(person.getIntroduction());
 
-    //   for (let i in person) {
-    //     if (typeof person[i] === "object" && !person[i].length) {
-    //       for (let j in person[i]) {
-    //         document.write(i + "_" + j + ":" + person[i][j] + "<br>");
-    //       }
-    //     } else document.write(i + ":" + person[i] + "<br>");
-    //   }
+      // for (let i in person) {
+      //   if (typeof person[i] === "object" && !person[i].length) {
+      //     for (let j in person[i]) {
+      //       document.write(i + "_" + j + ":" + person[i][j] + "<br>");
+      //     }
+      //   } else document.write(i + ":" + person[i] + "<br>");
+      // }
 
+// output of above loop
+
+// name:Rohit
+// age:33
+// profession:Full Stack Developer
+// isMarried:true
+// skills:HTML,CSS
+// work_company:Full Stack Learning
+// work_designation:Owner
+// getIntroduction:function () { // anonymous function return "My name is " + this.name; }
       
-    //   const person = {
-    //     name: "Rohit",
-    //     age: 33,
-    //     profession: "Full Stack Developer",
-    //     isMarried: true,
-    //     skills: ["HTML", "CSS"],
-    //     work: {
-    //       company: "Full Stack Learning",
-    //       designation: "Owner",
-    //     },
-    //     getIntroduction: function () {
-    //       return "My name is " + this.name;
-    //     },
-    //   };
-
-
-    //   const a = person.name;
-    //   console.log(a) // Rohit
-
-    //   const a = person.getIntroduction.bind(person);
-    //   console.log(a()); // My name is Rohit. 
-
-    // const a=person.getIntroduction.call(person)  
-    // console.log(a) // My name is Rohit. 
-
+   
 
 // -------------------------------------------------------------------------------------------------------------------------
 
 //call, bind, apply -> These are the methods that allow you to control the value of this in functions.
 
-// In JavaScript, call() is like you giving instructions to a function right away, saying, "Run this function, but use this person (or object) as this when running."
+// In JavaScript, 
+
+//  call() is like you giving instructions to a function right away, saying, "Run this function, but use this person (or object) as this when running."
 
 
 // const person = 
@@ -279,6 +252,8 @@ document.write(person[age]) // 24
 
 // const a=person.sayHello.call(person,"24","India")
 // console.log(a)
+
+
 
 // The apply() method works similarly to call(), but instead of passing arguments individually, it accepts a single array of arguments. This is useful when you don’t know in advance how many arguments will be passed.
 
