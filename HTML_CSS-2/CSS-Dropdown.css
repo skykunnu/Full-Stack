@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
 
 body{
     height: 100vh;
@@ -16,19 +22,24 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
-
-nav{
+#menu{
     width: 50%;
 }
 
+#menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-nav ul{
-display: flex;
-align-items: center;
-justify-content: space-between;
-list-style: none;
+}
+ #menu ul li{
+    position: relative;
+ }
+
+ #menu li a{
+    color: black;
 }
 
-nav ul li a{
-    text-decoration: none;
+.subclass li a{
+    display: block;
 }

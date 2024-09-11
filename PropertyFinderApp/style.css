@@ -5,6 +5,10 @@
     font-family: 'Poppins',sans-serif;
 }
 
+li{list-style: none;}
+
+a{text-decoration: none;}
+
 body{
     height: 100vh;
 }
@@ -49,7 +53,6 @@ object-fit: contain;
 }
 
 .nav-Items ul .nv-item{
-    list-style: none;
     font-size: 14px;
     color: #333333;
     padding: 24.25px 15px;
@@ -70,19 +73,12 @@ background-color: #FFFFFF;
 padding-top:5px;
 }
 
-
-.nav-Items ul ul li{
-    display: block;
-    height: 3rem;
-   
-    
-}
-
 .nav-Items ul ul li a{
     display: block;
-    text-decoration: none;
     color: black;
     padding: 1rem;
+    height: 3rem;
+
 }
 
 
