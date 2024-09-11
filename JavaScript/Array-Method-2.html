@@ -8,7 +8,7 @@
 <body>
     <script>
 
-// Map, filter, reduce , some , every, find, findIndex
+// Map, filter, reduce , some , every, find, findIndex, forEach, for in , for of
 
 // Map -> It creates a new array with the results of a provided function on every element in the calling array. 
 
@@ -100,8 +100,49 @@ and if init value is present than accumulator value will be the init value anf t
 
 //------------------------------------------------------------------------------------------------------------------------------------------------
 
+// ForEach loop 
+
+// let arr=[10,20,30,40,50]
+
+// Anonymous function with ForEach
 
 
+// arr.forEach(function(element,index){
+//       document.write(`${element} : ${index} <br>`)
+// });
+
+
+// Arrow function with ForEach
+
+// let sum=0
+// arr.forEach((element)=>{
+// sum+=element;
+// })
+
+// document.write(sum) // 150
+
+
+//------------------------------------------------------------------------------------------------------------------------------------
+
+// For of loop -> It iterates over the values of array.
+
+// let fruits=['Guava','Apple','Orange','Blueberry'];
+
+// for(let fruit of fruits){
+//       console.log(fruit) // 'Guava','Apple','Orange','Blueberry'
+// }
+
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+// For in loop -> It iterates over the indices in an array.(not recommended for arrays).
+
+// let fruits=['Guava','Apple','Orange','Blueberry'];
+
+// for(let fruit in fruits){
+//       console.log(fruit) // 0, 1, 2, 3
+// }
 
 
     </script>
