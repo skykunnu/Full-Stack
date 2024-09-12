@@ -17,29 +17,58 @@ body{
 header{
 height: 70px;
 width: 100%;
-background-color: antiquewhite;
-display: flex;
-align-items: center;
-justify-content: center;
+background-color: #22438c;
 }
 #menu{
-    width: 50%;
+    width: 100%;
 }
 
-#menu ul{
+/* for centering ul */
+#menu .main{ 
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
+    justify-content: space-evenly;
 }
- #menu ul li{
+
+
+/* we have used inline block here becoz it automatically adjust height and width and top-bottom margin and padding. */
+#menu .main li{
+    display: inline-block;
     position: relative;
- }
-
- #menu li a{
-    color: black;
+    width: 11rem;
 }
 
-.subclass li a{
+#menu li a{
+    height: 70px;
     display: block;
+    color: whitesmoke;
+    padding: 25px;
+    text-align: center;
+}
+
+.dropdown{
+
+    background-color: black;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    width: 11rem;
+    height: 13.2rem;
+    text-align: center;
+}
+.dropdown li{
+    display: block;
+    font-size: 16px;
+    color: black;
+    width: 11rem;
+}
+
+ul li a:hover{
+background-color: black;
+}
+
+ul li:hover .dropdown{
+    display: block;
+    background-color: #22438c;
+    color: black;
 }
