@@ -21,6 +21,18 @@ body{
     overflow: hidden;
 }
 
+.image{
+    text-align: center;
+    width: 239px;
+    height: 230px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}   
+
 .footer{
     position: absolute;
     top: 80%;
@@ -32,15 +44,6 @@ body{
     top: 30%;
 }
 
-.image{
-    text-align: center;
-}
-
-.image img {
-    width: 230px;
-    height: 230px;
-    object-fit: contain;
-}   
 
 .brandItem{
 display: flex;
@@ -56,13 +59,10 @@ margin: 7px 0px;
     color: grey;
 }
 
-.brandName h2{
+.brandName h2,h3{
     font-size: 17px;
 }
 
-.brandItem h3{
-    font-size: 17px;
-}
 
 .brandItem h3 i{
     font-size: 15px;
@@ -89,6 +89,7 @@ margin: 7px 0px;
     background-color: black;
     color: white;
     font-size: 13px;
+    cursor: pointer;
 }
 .item{
     padding: 0px 12px;

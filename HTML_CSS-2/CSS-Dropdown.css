@@ -31,13 +31,17 @@ background-color: #22438c;
 }
 
 
-/* we have used inline block here becoz it automatically adjusts height and width and top-bottom margin and padding. */
+/* we have used inline block here becoz it automatically adjusts height and width and top-bottom margin and padding.
+parent li has a position relative.
+*/
+
 #menu .main li{
     display: inline-block;
     position: relative;
     width: 11rem;
 }
 
+/* Why display block because anchor tag are inline in nature. */
 #menu li a{
     height: 70px;
     display: block;
@@ -46,17 +50,16 @@ background-color: #22438c;
     text-align: center;
 }
 
+/* actual dropdown which will come under parent li has a position absolute*/
 .dropdown{
-
     background-color: black;
     position: absolute;
-    z-index: 999;
     display: none;
     width: 11rem;
     height: 13.2rem;
     text-align: center;
 }
-.dropdown li{
+.dropdown li a{
     display: block;
     font-size: 16px;
     color: black;
