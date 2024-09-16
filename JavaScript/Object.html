@@ -43,7 +43,7 @@ document.write(person[age]) // 24
 //   c: false,
 // };
 
-// console.log(Object.keys(object1)); // [a, b, c]
+// document.write(Object.keys(object1)); // [a, b, c]
 
 
 
@@ -62,9 +62,13 @@ document.write(person[age]) // 24
 
 // const keys=Object.keys(books); // ['title' ,'author', 'year']
 
-// keys.forEach((Keybook)=>{   
-//     console.log(Keybook);
+// keys.forEach((K)=>{   
+//     console.log(K);
 // })
+
+// for(let i=0;i<keys.length;i++){
+//     console.log(keys[i])
+// }
 
 
 //--------------------------------------------------------------------
@@ -104,17 +108,19 @@ document.write(person[age]) // 24
 //     Position:"SDE"
 // }
 
-// const Reversekeys=Object.keys(person).reverse(); 
+// const Reversekeys=Object.keys(person).reverse(); // ['position','age','name']
 
-// const ReverseValues=Object.values(person).reverse();
+// const ReverseValues=Object.values(person).reverse(); // ['SDE',24,'shikhar']
 
 
-// const reversedFruits={}
+// const reversedFruits={
+// };
 
-// using for loop
+// // using for loop
 
 // for(let i=0;i<Reversekeys.length;i++){
-//     // reversedFruits[keys[i]] -> Read as reversedFruits.keys[i], keys[2]=Position and so on. 
+//     // reversedFruits[keys[i]] -> Read as reversedFruits.keys[i], keys[2]=name and so on. 
+
 //     reversedFruits[Reversekeys[i]] =ReverseValues[i]  
 // }
 // console.log(reversedFruits)

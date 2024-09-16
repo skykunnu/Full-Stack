@@ -1,16 +1,16 @@
-.img img{
-    height: 5rem;
-    width: 5rem;
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.back-img{
-  background-color: blue;
-    /* height: 100vh; */
+.container{
+    background-color: aqua;
 }
 
-.btn-dark {
-    color:purple !important;
-    background-color: #212529;
-    border-color: #212529;
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin-top:1rem;
 }
