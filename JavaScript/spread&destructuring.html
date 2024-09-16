@@ -48,6 +48,62 @@
 //     console.log(Object.key(obj2)[2].length) // 2 ['salary',100000]
 
 
+// ------------------------------------------------------------------------------------------------------------------------------
+// Destructuring- It is a syntax feature that allows you to unpack values from arrays or properties from objects into distinct variables.
+
+    // let arr=[1,2,3]
+    // let [a, ,c]=arr
+    // console.log(a,c) // 1, 3 
+
+    // function usestate(initialvalue){
+    //     let x=initialvalue
+    //     return [x,x*x] // return in the form of an array. 
+    //     return {original:x,square:x*x} // return in the form of an object. 
+
+    // }
+    // const a=usestate(4); // [4, 16]
+    // var x= a[0]; // 4
+    // var y=a[1];  // 16
+    // let  [x,y]=usestate(4);
+    // console.log(x,y) // 4, 16
+    // const {original,square}=usestate(4,16);
+    // console.log(original*square); // 64
+
+    // let food = { breakfast: "poha", lunch: "daal", dinner: "eggs" }
+
+    // traditional way
+
+        // const breakfast = food.breakfast;
+        // const lunch = food.lunch;
+        // const dinner = food.dinner;
+
+
+        
+    //  Using destructuring 
+        // const { breakfast, lunch, dinner } = food; 
+
+        // document.write("I love " + breakfast + " for breakfast, " + lunch + " for lunch and " + dinner + " for dinner");
+
+        // document.write("<br>")
+
+        // // TEMPLATE LITERAL
+        // document.write(`I love ${breakfast} for breakfast, ${lunch} for lunch and ${dinner} for dinner`);
+
+// --------------------------------------------------------------------------------------------------------------
+
+// Nested destructuring 
+
+// const user = { 
+//   id: 1, 
+//   profile: { 
+//     firstName: 'Jane', 
+//     lastName: 'Doe' 
+//   } 
+// };
+
+// const { profile: { firstName, lastName } } = user;
+// console.log(firstName, lastName); 
+
 
 
 

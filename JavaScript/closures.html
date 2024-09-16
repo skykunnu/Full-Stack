@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closures</title>
+</head>
+<body>
+    
+
+    <script>
+        // CLOSURES: functions defined inside another functions with access to the parent function's scope
+
+    //    function parent(){
+    //      var x=3;
+    //      function child(){ // here child() is forming closure with parent() becoz it is accessing x present in the parent function.
+    //         return x+x;
+    //      }
+    //     //   child() // without return it will give undefined becoz parent function is not returning something. 
+
+    //     return child()   
+    //     var x=2 // Let Say x=2 is defined after return child() and  answer is 6. means that x is taking 3 not 2 as a value although it is defined after var x=3, because child() is called before x=2 which makes x=2 unreachable, but if x=2 is defined before return child() then return value of child() will be 4. 
+
+    //    }
+    //    document.write(parent()) // 6   
+
+    
+ 
+    
+//  Ex-2
+
+        // function init(){
+        //     var x =3;
+        //     return function (x) {
+        //         return x+x
+        //     }
+        
+        //     var x = 1;
+        // }
+        
+        // // document.write(init()) // why not 6, becoz inner anonymous function is not called, init() is returning anonymous function, so the output will be whole anonymous function as it is.  
+
+        // const addition=init() // function return by init is actually targeting to addition. so in general the anonymous function is nothing but an additon variable.
+        // // document.write(addition()) // 6
+        // document.write(addition(200)) // 400, becoz we called addition with 200 as an argument, now no accessing to outer variable.
+
+    </script>
+</body>
+</html>

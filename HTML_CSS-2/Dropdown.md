@@ -1,4 +1,6 @@
 How to make Dropdown using HTML and CSS
+---------------------------------------------
+
 
 1. Give header height and width-100% according to your requirement.
 2. Give nav width equivalent to header. under nav giv ul a class and then give display flex to nav ul.
@@ -7,4 +9,5 @@ How to make Dropdown using HTML and CSS
 5. Now under parent li dropdown will come. 
 6. give css to dropdown and position absolute and display none.
 7. give dropdown li>a  ,display block due to anchor tag.
-8. 
+8. Now on hovering parent ul>li dropdown will be displayed as block. 
+9. Thats All your dropdown is ready !! 😊😊
