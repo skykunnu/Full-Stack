@@ -197,26 +197,26 @@ document.write(person[age]) // 24
 
 
 
-      // const person = {
-      //   name: "Rohit",
-      //   age: 33,
-      //   profession: "Full Stack Developer",
-      //   isMarried: true,
-      //   skills: ["HTML", "CSS"], // array
-      //   work: {     // nested object. 
-      //     company: "Full Stack Learning",
-      //     designation: "Owner",
-      //   },
-      //   getIntroduction: function () { // anonymous function
-      //     return "My name is " + this.name;
-      //   },
-      // };
+    //   const person = {
+    //     name: "Rohit",
+    //     age: 33,
+    //     profession: "Full Stack Developer",
+    //     isMarried: true,
+    //     skills: ["HTML", "CSS"], // array
+    //     work: {     // nested object. 
+    //       company: "Full Stack Learning",
+    //       designation: "Owner",
+    //     },
+    //     getIntroduction: function () { // anonymous function
+    //       return "My name is " + this.name;
+    //     },
+    //   };
     
-      // const a=person.getIntroduction();
-      // console.log(a) // My name is Rohit
+    // //   const a=person.getIntroduction();
+    // //   console.log(a) // My name is Rohit
 
-      // const a=person.getIntroduction;
-      // console.log(a()) // My name is , because here this is poining to a and inside a name is not defined. 
+    //   const a=person.getIntroduction;
+    //   console.log(a()) // My name is , because here this is poining to a and inside a name is not defined. 
 
 
 
@@ -243,7 +243,7 @@ document.write(person[age]) // 24
 
 // -------------------------------------------------------------------------------------------------------------------------
 
-//call, bind, apply -> These are the methods that allow you to control the value of this in functions.
+//call, bind, apply -> In JavaScript, call(), apply(), and bind() are methods available on function object( functions present inside the object) that allow you to control the context in which the function is executed (i.e., what this refers to).
 
 // In JavaScript, 
 
@@ -251,15 +251,15 @@ document.write(person[age]) // 24
 // first argument passed to call should be the context (which is this object) and the subsequent arguments are the parameters to the function. 
 
 
-// const person = 
-// { name: "Shikhar" ,
-// sayHello: function(age,country){
-// return `My name is ${this.name} and I am ${age} years old and I am from ${country}.`;
-// }    
-// };
+const person = 
+{ name: "Shikhar" ,
+sayHello: function(age,country){
+return `My name is ${this.name} and I am ${age} years old and I am from ${country}.`;
+}    
+};
 
-// const a=person.sayHello.call(person,"24","India")
-// console.log(a) // My name is Shikhar and I am 24 years old and I am from India.
+const a=person.sayHello.call(person,"24","India")
+console.log(a) // My name is Shikhar and I am 24 years old and I am from India.
 
 
 //----------------------------------------------------------------------------------------------
@@ -276,7 +276,7 @@ document.write(person[age]) // 24
 // };
 
 // const a=person.sayHello.apply(person, [25, "USA"]);
-// console.log(a) // My name is Alice and I am 25 years old and I belong to USA
+// console.log(a) // My name is Alice and I am 25 years old and I belong to USA. 
 
 // ------------------------------------------------------------------------------------------------
 

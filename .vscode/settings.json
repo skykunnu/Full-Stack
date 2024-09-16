@@ -1,4 +1,6 @@
 {
     "liveServer.settings.port": 5501,
-    "editor.find.seedSearchStringFromSelection": "always"
+    "editor.find.seedSearchStringFromSelection": "always",
+    
 }
+
