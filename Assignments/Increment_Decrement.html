@@ -13,6 +13,7 @@
     <p id="para">0</p>
     <button onclick="increment()">Increment</button>
     <button onclick="decrement()">Decrement</button>
+    <button onclick="Reset()">Reset</button>
 
 
 
@@ -34,6 +35,10 @@
         else{
             para.innerHTML--;
         }
+    }
+
+    function Reset(){
+        para.innerHTML=0;
     }
 </script>
 

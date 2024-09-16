@@ -121,7 +121,7 @@ document.write(person[age]) // 24
 // for(let i=0;i<Reversekeys.length;i++){
 //     // reversedFruits[keys[i]] -> Read as reversedFruits.keys[i], keys[2]=name and so on. 
 
-//     reversedFruits[Reversekeys[i]] =ReverseValues[i]  
+//     reversedFruits[Reversekeys[i]]=ReverseValues[i]  
 // }
 // console.log(reversedFruits)
 
@@ -135,12 +135,13 @@ document.write(person[age]) // 24
 //   a: 'somestring',
 //   b: 42,
 // };
+// const val=Object.entries(object1)
 
-// for (const [key, value] of Object.entries(object1)) {
-//   console.log(`${key}: ${value}`);
+
+// for (const [key,value] of Object.entries(object1)) {
+//   console.log(`${key} : ${value}`);
 // }
-// a :'somestring'
-// b: 42
+
 
 
 // -----------------------------------------------------------------------------------------------------------------------------------
@@ -184,7 +185,7 @@ document.write(person[age]) // 24
 
 // const returnedTarget = Object.assign(target, source);
 
-// console.log(target);
+// console.log(returnedTarget);
 // // Expected output: Object { a: 1, b: 4, c: 5 } (b:4 becoz priority of b:4 is more than b:2)
 
 
