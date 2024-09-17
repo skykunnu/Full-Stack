@@ -1,0 +1,7 @@
+.wrapper{
+    height: 200px;
+    width: 300px;
+    background-color: red;
+    margin-bottom: 10px;
+    display: none;
+}

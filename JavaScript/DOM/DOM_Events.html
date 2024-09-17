@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+    #wrapper{
+        height: 70px;
+        width: 100%;
+        background-color: green;
+        text-align: center;
+        padding-top: 20px;
+        color: white;
+        cursor: pointer;
+    }
+
+    #text{
+      width: 100%;
+      height: 100px;
+      border: 1px solid black;
+      color: black;
+      text-align: center;
+      padding: 10px;
+      display: none;
+      background-color: chocolate;
+    }
+
+
+    </style>
+</head>
+<body>
+    
+<!-- OnClick event -->
+<!-- <div id="wrapper">
+
+</div>
+<button onclick="change()">ClickMe</button> -->
+
+<!-- Ondblclick event -->
+
+<div id="wrapper">
+    <h2 id="heading-2" onclick="change()" ondblclick="remove()">Click to Show panel</h1>
+</div>
+<div id="text">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis esse consequatur itaque nobis veritatis vero, fuga, sed quidem dicta dolorem aperiam animi quo explicabo expedita iste commodi suscipit quibusdam fugit.
+    Pariatur cum exercitationem officiis doloribus necessitatibus reiciendis provident dolor sequi dolorum mollitia assumenda similique vitae deserunt illum nemo, rem eaque quod molestiae? Atque soluta vero dolorem deleniti a at. Placeat.</p>
+</div>
+
+    <script>
+function change(){
+    let heading_2=document.getElementById("heading-2");
+    let Text=document.getElementById("text");
+    Text.style.display='block';
+
+}
+function remove(){
+    let heading_2=document.getElementById("heading-2");
+    let Text=document.getElementById("text");
+    Text.style.display='none';
+}
+
+
+
+    </script>
+</body>
+</html>
