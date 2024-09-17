@@ -6,23 +6,72 @@
     <title>Assignment4</title>
 </head>
 <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1580378159116-918e927816ce?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHx8);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1,p{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow:3px 3px black ;
+    font-weight: 900;
+    padding-top: 4rem;
+}
+
+#btn{
+    text-align: center;
+    margin: 10px auto;
+}
+
+button,input{
+    padding: 7px 20px;
+    margin: 10px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+
+
+
 
 </style>
 <body>
     <h1>Increment & decrement</h1>
     <p id="para">0</p>
-    <button onclick="increment()">Increment</button>
-    <button onclick="decrement()">Decrement</button>
-    <button onclick="Reset()">Reset</button>
-
+    <div id="btn">
+        <input type="number" id="num">
+        <button onclick="increment()">Increment</button>
+        <button onclick="decrement()">Decrement</button>
+        <button onclick="Reset()">Reset</button>
+        <button onclick="add()">Add</button>
+    
+    </div>
+    
 
 
 
 <script>
     var para=document.getElementById('para');
+    let inputVal=document.getElementById('num');
     function increment(){
-          if(para.innerHTML>19){
-            alert('Not allowed to increment above 20.');
+          if(para.innerHTML>10000){
+            alert('Not allowed to increment above 10000.');
           }
           else{
             ++para.innerHTML;
@@ -39,7 +88,14 @@
 
     function Reset(){
         para.innerHTML=0;
+        inputVal.value=0;
     }
+
+    function add(){
+        let inputVal=document.getElementById('num');
+        para.innerHTML=inputVal.value;
+    }
+
 </script>
 
 
