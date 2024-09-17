@@ -25,11 +25,11 @@
             alert('Not allowed to increment above 20.');
           }
           else{
-            para.innerHTML++;
+            ++para.innerHTML;
           }
     }
     function decrement(){
-        if(para.innerHTML<1){
+        if(para.innerHTML<=0){
             alert('Negative values not allowed.')
         }
         else{
