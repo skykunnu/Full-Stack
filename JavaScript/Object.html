@@ -251,15 +251,15 @@ document.write(person[age]) // 24
 // first argument passed to call should be the context (which is this object) and the subsequent arguments are the parameters to the function. 
 
 
-const person = 
-{ name: "Shikhar" ,
-sayHello: function(age,country){
-return `My name is ${this.name} and I am ${age} years old and I am from ${country}.`;
-}    
-};
+// const person = 
+// { name: "Shikhar" ,
+// sayHello: function(age,country){
+// return `My name is ${this.name} and I am ${age} years old and I am from ${country}.`;
+// }    
+// };
 
-const a=person.sayHello.call(person,"24","India")
-console.log(a) // My name is Shikhar and I am 24 years old and I am from India.
+// const a=person.sayHello.call(person,"24","India")    
+// console.log(a) // My name is Shikhar and I am 24 years old and I am from India.
 
 
 //----------------------------------------------------------------------------------------------
