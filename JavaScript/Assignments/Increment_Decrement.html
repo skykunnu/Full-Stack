@@ -69,6 +69,8 @@ button,input{
 <script>
     var para=document.getElementById('para');
     let inputVal=document.getElementById('num');
+
+
     function increment(){
           if(para.innerHTML>10000){
             alert('Not allowed to increment above 10000.');
@@ -77,6 +79,9 @@ button,input{
             ++para.innerHTML;
           }
     }
+
+
+
     function decrement(){
         if(para.innerHTML<=0){
             alert('Negative values not allowed.')
@@ -92,7 +97,6 @@ button,input{
     }
 
     function add(){
-        let inputVal=document.getElementById('num');
         para.innerHTML=inputVal.value;
     }
 
