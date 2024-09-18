@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextStyleChanger</title>
+    <style>
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+  }
+
+  input{
+    margin-right: 10px;
+  }
+
+  button{
+    cursor: pointer;
+    margin-right: 10px;
+  }
+    </style>
+</head>
+<body>
+    <input id="inputVal" type="text">
+    <button onclick="Italic()">Italic</button>
+    <button onclick="bold()">Bold</button>
+    <button onclick="UpperCase()">UpperCase</button>
+    <button onclick="lowerCase()">LowerCase</button>
+
+    <script>
+
+let inputVal=document.getElementById('inputVal');
+
+// for Italic use font-style property
+function Italic(){
+inputVal.style.fontStyle='Italic';
+}
+
+// for bold use fontWeight property
+function bold(){
+    inputVal.style.fontWeight='bold';
+}
+
+// for UpperCase use textTransform property
+function UpperCase(){
+    inputVal.style.textTransform='uppercase';
+}
+
+//  for lowerCase use textTransform property
+function lowerCase(){
+    inputVal.style.textTransform='lowercase';
+}
+
+
+    </script>
+</body>
+</html>
