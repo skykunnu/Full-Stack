@@ -13,6 +13,10 @@
     transform: translate(-50%,-50%);
     }
 
+    body{
+        background-color: burlywood;
+    }
+
 </style>
 <body>
     <h1>Background changer</h1>
@@ -26,26 +30,30 @@
 
     <script>
         var btn1=document.getElementById('btn-1')
+        var btn2=document.getElementById('btn-2')
+        var btn3=document.getElementById('btn-3')
+
+
+
+        
         function red(){
-        btn1.style='background:red'
+        // btn1.style='background:red'
         document.body.style='background:red'
-        btn2.style='display:none'
-        btn3.style='display:none'
+        // btn2.style='display:none'
+        // btn3.style='display:none'
     }
-    var btn2=document.getElementById('btn-2')
     function green(){
-        btn2.style='background:green'
+        // btn2.style='background:green'
         document.body.style='background:green'
-        btn1.style='display:none'
-        btn3.style='display:none'
+        // btn1.style='display:none'
+        // btn3.style='display:none'
 
     }
-    var btn3=document.getElementById('btn-3')
     function blue(){
-        btn3.style='background:blue'
+        // btn3.style='background:blue'
         document.body.style='background:blue'
-        btn1.style='display:none'
-        btn2.style='display:none'
+        // btn1.style='display:none'
+        // btn2.style='display:none'
     }
     
     </script>
