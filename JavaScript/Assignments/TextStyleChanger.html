@@ -5,29 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TextStyleChanger</title>
     <style>
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
   body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 150px;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(  0deg, #D9AFD9 0%, #97D9E1 100vh);
+    height: 100vh;
+    position: relative;
+
   }
 
   input{
-    margin-right: 10px;
+    height: 40px;
+    width: 213px;
+    border-radius: 10px;
+    border: none;
+    display: block;
+    margin: 4rem 7rem;
+    font-size: 22px;
+    text-align: center;
   }
 
   button{
     cursor: pointer;
     margin-right: 10px;
+    height: 40px;
+    width: 102px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
   }
+  
+  h1{
+    position: absolute;
+    top: 15%;
+    font-size: 44px;
+}
+  
     </style>
 </head>
 <body>
+  <h1>Text Style Changer</h1>
+  <div id="wrapper">
     <input id="inputVal" type="text">
     <button onclick="Italic()">Italic</button>
     <button onclick="bold()">Bold</button>
     <button onclick="UpperCase()">UpperCase</button>
     <button onclick="lowerCase()">LowerCase</button>
+  </div>
 
     <script>
 
