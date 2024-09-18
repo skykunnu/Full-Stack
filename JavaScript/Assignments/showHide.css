@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container
+{
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+    background-color: coral;
+}
+
+.container p{
+    text-align: center;
+    padding: 10px;
+    height: 100px;
+}
+
+#btn{
+    text-align: center;
+    margin-top: 8rem;
+    
+
+}
+button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
