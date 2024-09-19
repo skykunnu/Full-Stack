@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense-Tracker</title>
+    <link rel="stylesheet" href="./Expense.css">
+</head>
+
+
+<body>
+
+
+<div class="container">
+<!-- onblur event is applied on input fields and also when html elements loses focus. -->
+<input type="number" id="AmtNum" placeholder="totalAmt" onblur="openAmt()">     
+<div class="box">Total : <span id="Total"></span></div>
+<div class="box">Spent : <span id="Spent"></span></div>
+<div class="box">remaining : <span id="Remain"></span></div>
+
+</div>
+<br>
+<div class="container">
+    <input type="text" placeholder="Items" id="items">
+    <input type="number" placeholder="Amount spent" id="AmtSpent">
+    <button onclick="Amtadd()">Add</button>
+    
+</div>
+
+<script>
+
+let AmtNum=document.getElementById('AmtNum');
+let total=document.getElementById('Total');
+let spent=document.getElementById('Spent');
+let remain=document.getElementById('Remain');
+let AmtSpent=document.getElementById('AmtSpent');
+
+
+function Amtadd(){
+    spent.innerHTML=AmtSpent.value;
+    remain.innerHTML=total.innerHTML-spent.innerHTML;
+}
+
+function openAmt(){
+    total.innerHTML=AmtNum.value;
+}
+
+
+
+
+
+
+
+</script>    
+</body>
+</html>
