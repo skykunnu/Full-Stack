@@ -11,21 +11,38 @@
 <body>
 
 
-<div class="container">
-<!-- onblur event is applied on input fields and also when html elements loses focus. -->
-<input type="number" id="AmtNum" placeholder="totalAmt" onblur="openAmt()">     
-<div class="box">Total : <span id="Total"></span></div>
-<div class="box">Spent : <span id="Spent"></span></div>
-<div class="box">remaining : <span id="Remain"></span></div>
-
-</div>
-<br>
-<div class="container">
-    <input type="text" placeholder="Items" id="items">
-    <input type="number" placeholder="Amount spent" id="AmtSpent">
-    <button onclick="Amtadd()">Add</button>
+    <div class="Box">
+        <div class="container">
+            <!-- onblur event is applied on input fields and also when html elements loses focus. -->
+            <input type="number" id="AmtNum" placeholder="totalAmt" onblur="openAmt()">     
+            <div class="box"><bold>Total :</bold><span id="Total"></span></div>
+            <div class="box"><bold>Spent :</bold><span id="Spent"></span></div>
+            <div class="box"><bold>remaining :</bold><span id="Remain"></span></div>
+            </div>
+            
+            
+            <div class="Items">
+                <input type="text" placeholder="Items" id="items">
+                <input type="number" placeholder="Amount spent" id="AmtSpent">
+                <button onclick="Amtadd()">Add Expense</button>
+            </div>
+            
+        
+    </div>
     
-</div>
+    <div class="table">
+        <table id="DownTable">
+        <tr>
+            <th>S.No</th>
+            <th>Info</th>
+            <th>Amount</th>
+        </tr>
+        </table>
+    </div>  
+
+
+
+    
 
 <script>
 
@@ -34,12 +51,29 @@ let total=document.getElementById('Total');
 let spent=document.getElementById('Spent');
 let remain=document.getElementById('Remain');
 let AmtSpent=document.getElementById('AmtSpent');
-
+let downTable=document.getElementById('DownTable')
+let item=document.getElementById("items");
+let x=0;
 
 function Amtadd(){
-    spent.innerHTML=AmtSpent.value;
-    remain.innerHTML=total.innerHTML-spent.innerHTML;
+    spent.innerHTML= Number(AmtSpent.value)+Number(spent.innerHTML);
+    remain.innerHTML=Number(total.innerHTML)-Number(spent.innerHTML);
+    
+    let tabrow=document.createElement('tr')
+    let td1=document.createElement('td')
+    td1.innerHTML=++x;
+    let td2=document.createElement('td')
+    td2.innerHTML=item.value;
+    let td3=document.createElement('td')
+    td3.innerHTML=AmtSpent.value;
+    
+    downTable.append(tabrow)
+    tabrow.append(td1)
+    tabrow.append(td2)
+    tabrow.append(td3)
 }
+
+
 
 function openAmt(){
     total.innerHTML=AmtNum.value;

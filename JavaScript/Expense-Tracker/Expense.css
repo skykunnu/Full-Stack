@@ -4,14 +4,16 @@
     box-sizing: border-box;
     font-family: "Poppins",sans-serif;
 }
+body{
+    height: 100vh;
+}
 
 
-
-.container{
+.Box{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2rem;
+    padding-top: 4rem;
    
 }
 
@@ -27,11 +29,11 @@ input#AmtNum {
     margin: 10px;
 }
 
-.container input{
+.Items input{
     margin-left: 10px;
 }
 
-.container button{
+.Items button{
     margin-left: 10px;
     padding: 0px 20px;
     font-size: 15px;
@@ -42,6 +44,9 @@ input#AmtNum {
 input#items{
     height: 30px;
     font-size: 15px;
+}
+input#AmtNum{
+    margin-right: 10px;
 }
 
 input#AmtSpent{
@@ -54,4 +59,14 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table th{
+    padding: 0px 25px;
 }
