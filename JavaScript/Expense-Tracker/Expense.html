@@ -4,8 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense-Tracker</title>
-    <link rel="stylesheet" href="./Expense.css">
 </head>
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    height: 100vh;
+}
+
+
+.Box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4rem;
+   
+}
+
+input#AmtNum {
+    height: 30px;
+    font-size: 15px;
+}
+
+.box {
+    border: 1px solid black;
+    height: 30px;
+    width: 11rem;
+    margin: 10px;
+}
+
+.Items input{
+    margin-left: 10px;
+}
+
+.Items button{
+    margin-left: 10px;
+    padding: 0px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    height: 30px;
+}
+
+input#items{
+    height: 30px;
+    font-size: 15px;
+}
+input#AmtNum{
+    margin-right: 10px;
+}
+
+input#AmtSpent{
+    height: 30px;
+    font-size: 15px;
+}
+
+/* arrow up-down */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table th,td{
+    padding: 0px 25px;
+    border: 2px solid black;
+    text-align: center;
+}
+</style>
 
 
 <body>
@@ -40,8 +115,6 @@
         </table>
     </div>  
 
-
-
     
 
 <script>
@@ -55,33 +128,28 @@ let downTable=document.getElementById('DownTable')
 let item=document.getElementById("items");
 let x=0;
 
-function Amtadd(){
-    spent.innerHTML= Number(AmtSpent.value)+Number(spent.innerHTML);
-    remain.innerHTML=Number(total.innerHTML)-Number(spent.innerHTML);
-    
-    let tabrow=document.createElement('tr')
-    let td1=document.createElement('td')
-    td1.innerHTML=++x;
-    let td2=document.createElement('td')
-    td2.innerHTML=item.value;
-    let td3=document.createElement('td')
-    td3.innerHTML=AmtSpent.value;
-    
-    downTable.append(tabrow)
-    tabrow.append(td1)
-    tabrow.append(td2)
-    tabrow.append(td3)
-}
-
-
-
 function openAmt(){
     total.innerHTML=AmtNum.value;
 }
 
 
-
-
+function Amtadd(){
+    spent.innerHTML= Number(AmtSpent.value)+Number(spent.innerHTML);
+    remain.innerHTML=Number(total.innerHTML)-Number(spent.innerHTML);
+    
+    let tabrow=document.createElement('tr');
+    let td1=document.createElement('td');
+    td1.innerHTML=++x;
+    let td2=document.createElement('td');
+    td2.innerHTML=item.value;
+    let td3=document.createElement('td');
+    td3.innerHTML=AmtSpent.value;
+    
+    downTable.append(tabrow);
+    tabrow.append(td1);
+    tabrow.append(td2);
+    tabrow.append(td3);
+}
 
 
 
