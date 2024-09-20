@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Calculator.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="wrapper">
+        <input type="number" id="Number1" placeholder="Enter Number 1"><br>
+        <!-- In case of select we have to select one option so no querySelectorALl will work   -->
+        <select name="operator" id="operation">
+            <option value="" >Select-Operation</option>
+            <option value="+" >+</option>
+            <option value="-" >-</option>
+            <option value="*" >*</option>
+            <option value="/" >/</option>
+            <option value="%" >%</option>
+        </select><br>
+        <input type="number" id="Number2" placeholder="Enter Number 2">
+        <div class="btn">
+            <button onclick="calc()">Calculate</button>
+        </div>
+        <input type="number" id="output" placeholder="Result">
+    </div>
+
+
+<script>
+let Num1=document.querySelector('#Number1');
+let Num2=document.querySelector("#Number2");
+let operator=document.querySelector('#operation');
+let result=document.querySelector('#output');
+
+
+function calc(){
+    let num1=Number(Num1.value);
+    let num2=Number(Num2.value);
+
+
+    if(operator.value === "+"){
+       result.value=num1+num2;
+    }
+    else if(operator.value ==="-"){
+        result.value=num1-num2;
+    }
+    else if(operator.value ==='*'){
+        result.value=num1*num2;
+    }
+    else if(operator.value ==='/'){
+        result.value=num1/num2;
+    }
+    else{
+        result.value=num1%num2;
+    }
+  
+    
+}
+
+
+    
+</script>
+
+</body>
+</html>

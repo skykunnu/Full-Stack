@@ -42,11 +42,12 @@ body{
     padding: 0px 5px;
     margin: 0px 5px;
     background-color: #EDE8DC;
-    font-size: 18px
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.932);
 }
 
 input::placeholder{
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 .heading select{
@@ -54,7 +55,7 @@ input::placeholder{
     border: none;
     border-radius: 5px;
     background-color: #EDE8DC;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .heading button{
@@ -78,13 +79,12 @@ input::-webkit-inner-spin-button {
 
 
 .table{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: space-evenly; */
 }
 
 .table th,td{
-    padding: 0px 25px;
+    padding: 0px 55px;
     text-align: center;
     color: whitesmoke;
 }

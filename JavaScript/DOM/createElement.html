@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreateElement</title>
+</head>
+<body>
+    
+<button onclick="clickMe()">Click Me</button>
+
+    <script>
+
+
+let Body=document.querySelector('body')
+function clickMe(){
+    let head1=document.createElement('h1');
+    let content =document.createTextNode('My name is Shikhar!');
+    head1.append(content); // content is appended to the head1 innerHTML.
+    Body.append(head1);  // head1 is appended to the Body.
+}
+
+    </script>
+</body>
+</html>

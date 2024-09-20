@@ -18,10 +18,7 @@ body{
    
 }
 
-input#AmtNum {
-    height: 30px;
-    font-size: 15px;
-}
+
 
 .box {
     border: 1px solid black;
@@ -29,6 +26,7 @@ input#AmtNum {
     width: 11rem;
     margin: 10px;
     background-color: whitesmoke;
+    padding: 0px 7px;
 }
 
 .Items input{
@@ -52,16 +50,20 @@ input#items{
     height: 30px;
     font-size: 15px;
     border: 0.5px solid black;
+    padding: 0px 7px;
 }
 input#AmtNum{
-    margin-right: 10px;
     border: 0.5px solid black;
+    height: 30px;
+    font-size: 15px;
+    padding: 0px 7px;
 }
 
 input#AmtSpent{
     height: 30px;
     font-size: 15px;
     border: 0.5px solid black;
+    padding: 0px 7px;
 }
 
 /* arrow up-down */
