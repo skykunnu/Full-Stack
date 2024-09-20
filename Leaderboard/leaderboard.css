@@ -11,28 +11,26 @@ body{
     padding-top:2rem;
     justify-content: center;
     height: 100vh;
-    background-image: url("https://images.unsplash.com/photo-1652513842544-ca66b676757a?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: url("https://images.unsplash.com/photo-1652513842544-ca66b676757a?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center/cover no-repeat;
 
 }
 
 .container{
     background-color: rgba(0,0,0,0.4);
-    backdrop-filter: blur(.4rem);
+    backdrop-filter: blur(1.8rem);
     width: 940px;
     border-radius: 10px;
 }
 
 .container h1{
     text-align: center;
-    color: rgb(236, 236, 236);
+    color: #ffffff;
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .heading{
-    padding: 2rem 0rem;
+    padding: 1rem 0rem;
     text-align: center;
 }
 .heading input{
@@ -44,6 +42,7 @@ body{
     background-color: #EDE8DC;
     font-size: 15px;
     color: rgba(0, 0, 0, 0.932);
+    font-weight: 600;
 }
 
 input::placeholder{
@@ -56,11 +55,12 @@ input::placeholder{
     border-radius: 5px;
     background-color: #EDE8DC;
     font-size: 15px;
+    font-weight: 600;
 }
 
 .heading button{
     border: none;
-    background-color: cornflowerblue;
+    background-color: rgb(255 255 255);
     height: 1.9rem;
     width: 8rem;
     border-radius: 20px;
@@ -68,7 +68,7 @@ input::placeholder{
     color: black;
     cursor: pointer;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 800;
 }
 
 input::-webkit-outer-spin-button,
@@ -78,13 +78,19 @@ input::-webkit-inner-spin-button {
 }
 
 
-.table{
-    /* align-items: center;
-    justify-content: space-evenly; */
-}
-
 .table th,td{
-    padding: 0px 55px;
+    padding: 0px 50px;
     text-align: center;
     color: whitesmoke;
+}
+
+button{
+    padding: 2px 8px;
+    border-radius: 50%;
+    margin: 2px 2rem;
+    border: none;
+    font-weight: 800;
+    cursor: pointer;
+    color: white;
+    background-color: maroon;
 }
