@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>leaderboard</title>
     <link rel="stylesheet" href="./leaderboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="./leaderboard.js" defer></script>
 </head>
 <body>
     <div class="container">
+        <h1>Leaderboard</h1>
         <div class="heading">
-            <input type="text" placeholder="First-Name">
-        <input type="text" placeholder="Last-Name">
-        <select name="Country" placeholder="Select Country">
+            <input type="text" placeholder="First-Name" id="fName">
+        <input type="text" placeholder="Last-Name" id="lName">
+        <select name="Country" placeholder="Select Country" id="Country">
             <option value="">Select Country</option>
             <option value="">India</option>
             <option value="">Australia</option>
@@ -20,10 +24,21 @@
             <option value="">West-Indies</option>
             <option value="">England</option>
         </select>
-        <input type="number" placeholder="Score">
+        <input type="number" placeholder="Score" id="Score">
         <div class="btn">
-            <button>Add Player</button>
+            <button onclick="player()">Add Player</button>
         </div>
+        <hr>
+        </div>
+        <div class="table">
+            <table id="DownTable">
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </table>
         </div>
         </div>
 </body>
