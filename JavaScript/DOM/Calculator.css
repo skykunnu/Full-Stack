@@ -5,28 +5,27 @@
     font-family: "Poppins",sans-serif;
 }
 body{
-    background-color: #08AEEA;
-background-image: linear-gradient(90deg, #08AEEA 0%, #2AF598);
+    background: url(https://media.istockphoto.com/id/2120335300/photo/heap-of-wooden-numbers-on-blue-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=jOWnC-qO-zCE8Q1aJdVKj5WKPqIIznkmounjd7NLDLU=) center/cover no-repeat;
     
 }
 
 h1{
     text-align: center;
-    padding-top: 1rem
+    color: white;
 }
 .wrapper{
     text-align: center;
     margin: 4rem auto;
-    height: 400px;
+    height: 410px;
     width: 450px;
     padding: 1rem 0rem;
-    box-shadow: 17px 14px 20px 0px grey;
+    box-shadow: 4px 5px 20px 0px #747373;
     border-radius: 10px;
-    background-color: #cda5cd;
+    background-color: #4F1787;
 }
 
 .wrapper input{
-    margin: 2rem 0rem;
+    margin: 1.5rem 0rem;
     border: none;
     font-size: 20px;
     padding: 4px;
