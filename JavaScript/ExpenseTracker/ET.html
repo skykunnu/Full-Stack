@@ -71,6 +71,8 @@ spendBtn.addEventListener('click',function(){
         footer.append(div);
         Spent.innerHTML=Number(kharchaMoney.value)+Number(Spent.innerHTML);        
         Remain.innerHTML=Number(totalMoney.value)-Number(Spent.innerHTML);
+
+
         if(Remain.innerHTML<0){
         alert('remaining amount exceeded')
         Remain.innerHTML="Not enough money"
