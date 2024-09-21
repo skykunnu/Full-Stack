@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+.header{
+    background-color: #008374;
+}
+
+a.navbar-brand {
+    color: white !important;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.nav-item a{
+    color: white;
+}
+
+.nav-item a:hover{
+    color: white !important;
+}
+
+.midSection{
+    background-color: #008374;
+    height: 500px;
+}
+
+.data{
+    margin-top: 3rem;
+}
+
+.btns button{
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    background-color: #1a9082;
+    border: none;
+    padding: 14px 40px;
+    border-radius: 50px;
+} 
+
+.bootImage{
+    height: 450px;
+    width: 300px;
+}
+
+.bootImage img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
