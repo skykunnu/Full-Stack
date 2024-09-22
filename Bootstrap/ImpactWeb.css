@@ -5,9 +5,13 @@
     font-family: "Poppins",sans-serif;
 }
 
-.header{
+nav.navbar.navbar-expand-lg {
     background-color: #008374;
 }
+
+
+
+
 
 a.navbar-brand {
     color: white !important;
@@ -15,11 +19,11 @@ a.navbar-brand {
     font-weight: 600;
 }
 
-.nav-item a{
+a.nav-link{
     color: white;
 }
 
-.nav-item a:hover{
+a.nav-link:hover{
     color: white !important;
 }
 
@@ -32,6 +36,18 @@ a.navbar-brand {
     margin-top: 3rem;
 }
 
+.data h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+}
+
+.data p{
+    color: #99c9b2;
+    font-size: 16px;
+
+}
+
 .btns button{
     font-size: 14px;
     font-weight: 500;
@@ -42,13 +58,20 @@ a.navbar-brand {
     border-radius: 50px;
 } 
 
+
+span i{
+    color: #64bbb1 !important;
+    background-color: #008374;
+    font-size: 32px !important;
+}
+
 .bootImage{
-    height: 450px;
-    width: 300px;
+    height: 300px;
+    width: 476px;
 }
 
 .bootImage img{
 height: 100%;
 width: 100%;
-object-fit: cover;
+object-fit: contain;
 }
