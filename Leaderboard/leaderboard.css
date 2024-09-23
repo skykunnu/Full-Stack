@@ -78,7 +78,7 @@ input::-webkit-inner-spin-button {
 }
 
 
-.table th,td{
+.table tr,td{
     padding: 0px 50px;
     text-align: center;
     color: whitesmoke;

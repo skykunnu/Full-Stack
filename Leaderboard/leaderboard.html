@@ -16,13 +16,14 @@
         <div class="heading">
             <input type="text" placeholder="First-Name" id="fName">
         <input type="text" placeholder="Last-Name" id="lName">
-        <select name="Country" placeholder="Select Country" >
-            <option value="">Select Country</option>
-            <option value="" id="Country">India</option>
-            <option value="" id="Country">Australia</option>
-            <option value="" id="Country">New Zealand</option>
-            <option value="" id="Country">West-Indies</option>
-            <option value="" id="Country">England</option>
+        <select name="Country"  id="Country" >
+            <!-- disabled selected work as placeholder in case of select, disabled meaning user cannot select it-->
+            <option value="" disabled selected>Select Country</option> 
+            <option value="India">India</option>
+            <option value="Australia">Australia</option>
+            <option value="New Zealand">New Zealand</option>
+            <option value="West-Indies">West-Indies</option>
+            <option value="England">England</option>
         </select>
         <input type="number" placeholder="Score" id="Score">
         <div class="btn">
