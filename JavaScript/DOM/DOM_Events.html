@@ -36,17 +36,13 @@
     </style>
 </head>
 <body>
-    
-<!-- OnClick event -->
-<!-- <div id="wrapper">
 
-</div>
-<button onclick="change()">ClickMe</button> -->
-
-<!-- Ondblclick event -->
+<!-- Onclick event & ondblclick event -->
 
 <div id="wrapper">
-    <h2 id="heading-2" onclick="change()" ondblclick="remove()">Click to Show panel</h1>
+    <!-- <h1 id="heading_2" onclick="change()" ondblclick="remove()">Click to Show panel</h1> -->
+    <h1 id="heading_2">Click to Show panel</h1>
+
 </div>
 <div id="text">
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis esse consequatur itaque nobis veritatis vero, fuga, sed quidem dicta dolorem aperiam animi quo explicabo expedita iste commodi suscipit quibusdam fugit.
@@ -54,19 +50,33 @@
 </div>
 
     <script>
-function change(){
-    let heading_2=document.getElementById("heading-2");
-    let Text=document.getElementById("text");
-    Text.style.display='block';
+            let heading_2=document.getElementById("heading_2");
+            let Text=document.getElementById("text");
 
-}
-function remove(){
-    let heading_2=document.getElementById("heading-2");
-    let Text=document.getElementById("text");
+//  using onclick & ondblclick.
+
+
+// function change(){
+//     Text.style.display='block';
+
+// }
+// function remove(){
+//     Text.style.display='none';
+// }
+
+
+//  using addEventListner
+
+heading_2.addEventListener('click',function(){
+
+     Text.style.display='block';
+})
+
+heading_2.addEventListener('dblclick',function(){
+
     Text.style.display='none';
-}
 
-
+})
 
     </script>
 </body>

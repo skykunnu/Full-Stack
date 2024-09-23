@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM-getElement</title>
+    <link rel="stylesheet" href="./DOMElement.css">
+
+  </head>
+  <body>
+    <!-- Some commonly used document.getElements methods  -->
+       <!--  
+         1.) document.getElementsByTagName()-> It returns HTML collection(array-like object but not actual array) of elements with a specific tag name. 
+              use for, for-in, for-of loop to traverse the html collection. 
+
+         for ex- let para=document.getElementsByTagName('p')-> this retrieves all p elements on the page. 
+
+         2.) document.getElementsByClassName()-> It returns HTML collection of elements that have a specific class name. 
+              use for, for-in, for-of loop to traverse the html collection.
+
+         for ex- let items = document.getElementsByClassName('item') -> This retrieves all elements that have the class item.
+    
+
+        3.) document.getElementById() -> Returns a single element that has the specified id attribute.
+  
+       -->
+
+   <!-- Modern alternatives  
+    
+   1.) querySelector()-> Returns the first element that matches a given CSS selector.
+
+   ex- // Select first element with class "item"
+        let item = document.querySelector('.item');
+   
+   2.) querySelectorAll()-> Returns a nodelist(behaves similarly to an array) of all elements that match a given css selector. 
+
+   ex- // Select all elements with class "item"
+          let items = document.querySelectorAll('.item');
+
+     Note:- looping techniques used in querySelectorAll() are for, for of , forEach() loop.
+   
+   -->
+
+<!--  Let's see an example using both className and querySelector -->
+
+     <!-- using class -->
+
+  <!-- <div class="wrapper"></div>
+ <div class="wrapper"></div>
+ <div class="wrapper"></div>
+ <div class="wrapper"></div>
+ <div class="wrapper"></div> -->
+
+
+ <!-- using querySelectorAll -->
+
+<div class="wrapper"></div>
+<div class="wrapper"></div>
+<div class="wrapper"></div>
+<div class="wrapper"></div>
+<div class="wrapper"></div>
+
+
+ <!-- // on refreshing, all the div's should appear. - question 
+
+  let wrap=document.getElementsByClassName('wrapper')
+
+    // using for loop
+
+    // for(let i=0;i<wrap.length;i++){
+    //     wrap[i].style.display='block';
+    // }
+ 
+    // using for of loop
+
+    // for(let element of wrap){
+    //     element.style.display="block"
+    // }
+
+    // using for in loop
+
+    // for(let index in wrap){
+    //       wrap[index].style.display='block'
+    // }
+
+
+    // In order to use for Each loop you need to convert wrap into an array, for that you can use spread function. 
+
+    // [...wrap].forEach((e)=>{
+    //     e.style.display='block'
+    // }) -->
+
+    <script>
+    
+    var wrap=document.querySelectorAll('.wrapper');
+
+
+  
+    // using for loop
+    // for(let i=0;i<wrap.length;i++){
+    //   wrap[i].style.display='block';
+    // }
+
+    //   using for of loop
+
+    // for(let element of wrap){
+    //   element.style.display='block'
+    // }
+
+    // using forEach loop
+
+    // wrap.forEach((e)=>{
+    //   e.style.display='block';
+    // })
+
+
+
+
+
+
+    </script>
+
+
+     
+  
+  </body>
+</html>
