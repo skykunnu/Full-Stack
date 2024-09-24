@@ -5,7 +5,7 @@ let Score=document.getElementById('Score');
 let downTable=document.getElementById('DownTable');
 
 
-function player(){
+function addPlayer(){
   
 
   if(fName.value || lName.value && Country.value || Score.value){
@@ -84,7 +84,7 @@ else{
 
 }
 
-
+-
 
 function sortPlayers() {
   let PlayerRow = Array.from(downTable.getElementsByTagName('tr'));

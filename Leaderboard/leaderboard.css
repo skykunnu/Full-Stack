@@ -18,7 +18,7 @@ body{
 .container{
     background-color: rgba(0,0,0,0.4);
     backdrop-filter: blur(1.8rem);
-    width: 940px;
+    width: 990px;
     border-radius: 10px;
 }
 
@@ -37,8 +37,8 @@ body{
     height: 30px;
     border: none;
     border-radius: 5px;
-    padding: 0px 5px;
-    margin: 0px 5px;
+    padding: 0px 12px;
+    margin: 0px 1px;
     background-color: #EDE8DC;
     font-size: 15px;
     color: rgba(0, 0, 0, 0.932);
@@ -56,6 +56,7 @@ input::placeholder{
     background-color: #EDE8DC;
     font-size: 15px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .heading button{
@@ -79,7 +80,7 @@ input::-webkit-inner-spin-button {
 
 
 .table tr,td{
-    padding: 0px 50px;
+    padding: 0px 49px;
     text-align: center;
     color: whitesmoke;
 }

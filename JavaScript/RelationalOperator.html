@@ -13,15 +13,34 @@
     <script>
         // Relational Operator (>,<,>=,<=)
  
-            var a=50;
-              b=50;
-              console.log(a>b); // false.
+        //     var a=50;
+        //       b=50;
+        //       console.log(a>b); // false.
 
-        let c=50;
-        let d=30;
+        // let c=50;
+        // let d=30;
 
-        console.log(c>=d); // true
-        console.log(d<=c); // true
+        // console.log(c>=d); // true
+        // console.log(d<=c); // true
+
+        // Comparison of string using relational operator 
+
+
+        // here comparison is based on their lexicographical order, which compares the string character by character based on their unicode values. 
+
+        let a="Shikhar";
+        let b="SHIKHAR";
+
+        // unicode value of s - 115
+        // unicode value of S - 83
+        // As both of the character being the first difference, so we will not compare further characters. 
+
+        console.log(a<=b) // false
+
+
+
+
+
 
     </script>
 </body>
