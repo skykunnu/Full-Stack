@@ -41,12 +41,29 @@
 
   
       Container.append(dot);
+      arrUndo.push(dot);
     });
 
-    Reset.addEventListener('click',function(){
+    Reset.addEventListener('click',function(e){
+      e.preventDefault();
       Container.innerHTML=""
+      arrUndo=[];
+      arrRedo=[];
     })
 
+    Undo.addEventListener('click',function(e){
+      e.preventDefault();
+      let undoDot=arrUndo.pop();
+      undoDot.style.display='none';
+      arrRedo.push(undoDot);
+    })
+
+    Redo.addEventListener('click',function(e){
+      e.preventDefault();
+      let redoDot=arrRedo.pop();
+      redoDot.style.display='block';
+      arrUndo.push(redoDot)
+    })
 
 
 
