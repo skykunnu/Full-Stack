@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Color Dots on Click</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+<button id="reset">Reset</button>
+<button id="undo">Undo</button>
+<button id="redo">Redo</button>
+<div id="container">
+
+</div>
+
+
+  <script>
+    let Container=document.querySelector('#container');
+    let Reset=document.querySelector('#reset');
+    let Undo=document.querySelector('#undo');
+    let Redo=document.querySelector('#redo');
+    let arrUndo=[];
+    let arrRedo=[];
+
+    Container.addEventListener('click', function(event) {
+
+
+      let x = event.pageX;
+      let y = event.pageY;
+
+      let dot = document.createElement('div');
+      dot.className = 'dot';
+
+      dot.style.left = `${x - 18}px`; 
+      dot.style.top = `${y - 40}px`;
+
+
+      let randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+      dot.style.backgroundColor = randomColor;
+
+  
+      Container.append(dot);
+    });
+
+    Reset.addEventListener('click',function(){
+      Container.innerHTML=""
+    })
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>

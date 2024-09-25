@@ -8,75 +8,70 @@ let downTable=document.getElementById('DownTable');
 function addPlayer(){
   
 
-  if(fName.value || lName.value && Country.value || Score.value){
+  if(fName.value!=="" && lName.value!=="" && Country.value!=="" && Score.value!==""){
+
     let playerRow=document.createElement('tr');
 
 
-    let fNd=document.createElement('td');
-    fNd.innerHTML=fName.value;
+    let row_first_Name=document.createElement('td');
+    row_first_Name.innerHTML=fName.value;
 
 
-    let lNd=document.createElement('td');
-    lNd.innerHTML=lName.value;
+    let row_last_Name=document.createElement('td');
+    row_last_Name.innerHTML=lName.value;
 
 
-    let country=document.createElement('td');
-    country.innerHTML=Country.value;
+    let row_country=document.createElement('td');
+    row_country.innerHTML=Country.value;
 
 
-    let score=document.createElement('td');
-    score.innerHTML=Score.value;
+    let row_score=document.createElement('td');
+    row_score.innerHTML=Score.value;
     
-    playerRow.append(fNd,lNd,country,score);
-
-
     
-    let DeleteBtn=document.createElement('button');
-    DeleteBtn.innerHTML="D";
+    let row_DeleteBtn=document.createElement('button');
+    row_DeleteBtn.innerHTML="D";
 
-    let addFive=document.createElement('button');
-    addFive.innerHTML='+5';
+    let row_addFive=document.createElement('button');
+    row_addFive.innerHTML='+5';
 
-    let subFive=document.createElement('button');
-    subFive.innerHTML='-5';
+    let row_subFive=document.createElement('button');
+    row_subFive.innerHTML='-5';
 
-    playerRow.append(DeleteBtn,addFive,subFive);
-
-
-
-     DeleteBtn.onclick=function(){
-       downTable.removeChild(playerRow) // removes playerRow(Child element) from downTable(parent element).
-       sortPlayers();
-      }
-
-
-
-    addFive.onclick=function(){
-        score.innerHTML=Number(score.innerHTML)+Number(5);
-        sortPlayers();
-      }
+    playerRow.append(row_first_Name,row_last_Name,row_country,row_score,row_DeleteBtn,row_addFive,row_subFive);
 
 
 
 
-    subFive.onclick=function(){
-        score.innerHTML=Number(score.innerHTML)-Number(5);
-        sortPlayers();
-      }
+        row_DeleteBtn.addEventListener('click',function(){
+          downTable.removeChild(playerRow)
+          sortPlayers();
+        })
+
+          
+        row_addFive.addEventListener('click',function(){
+          row_score.innerHTML=Number(row_score.innerHTML)+Number(5);
+          sortPlayers();
+        })
+   
+
+        row_subFive.addEventListener('click',function(){
+          row_score.innerHTML=Number(row_score.innerHTML)+Number(5);
+          sortPlayers(); 
+       })
     
 
 
     downTable.append(playerRow);
 
-    fName.value=""
-    lName.value=""
-    Country.value=""
-    Score.value=""
+   
+  clearInput();
 
-
-sortPlayers();
+  sortPlayers();
 
   }
+
+
 else{
   alert("Please Enter value's of all the fields");
 }
@@ -84,15 +79,29 @@ else{
 
 }
 
--
+
+function clearInput(){
+  fName.value=""
+  lName.value=""
+  Country.value=""
+  Score.value=""
+}
 
 function sortPlayers() {
   let PlayerRow = Array.from(downTable.getElementsByTagName('tr'));
-  PlayerRow.sort((A, B) => {
-      let scoreA = Number(A.children[3].innerHTML);
-      let scoreB = Number(B.children[3].innerHTML);
-      return scoreB - scoreA; 
+  PlayerRow.sort((playerA, playerB) => {
+      let playerScoreA = Number(playerA.children[3].innerHTML);
+      let playerScoreB = Number(playerB.children[3].innerHTML);
+      
+      return playerScoreB - playerScoreA; 
   });
   PlayerRow.forEach(player => downTable.append(player));
 }
+
+
+
+
+
+
+
 

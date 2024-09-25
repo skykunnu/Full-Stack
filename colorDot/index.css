@@ -1,0 +1,16 @@
+
+#container{
+    height: 100vh;
+    position: relative;
+}
+
+
+
+.dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    cursor: pointer;
+  }
