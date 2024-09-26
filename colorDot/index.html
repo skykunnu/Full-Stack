@@ -62,12 +62,11 @@
     Undo.addEventListener('click',function(e){
       e.preventDefault();
       Redo.disabled=false;
-
       let undoDot=arrUndo.pop();
 
-// Both methods 
-      // undoDot.style.display='none';
+// Two methods to remove dots - by display: none & by removeChild(). 
 
+      // undoDot.style.display='none';
       Body.removeChild(undoDot);
       arrRedo.push(undoDot);
       Redo.style.opacity="1"
@@ -76,6 +75,8 @@
     Redo.addEventListener('click',function(e){
       e.preventDefault();
       let redoDot=arrRedo.pop();
+
+// Two methods to display dots - by display: block & by append().
       // redoDot.style.display='block';
       Body.append(redoDot)
       if(arrRedo.length===0){
