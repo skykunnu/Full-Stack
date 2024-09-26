@@ -22,14 +22,19 @@ body{
     cursor: pointer;
   }
 
-  button{
+  .btn {
+    padding: 10px;
+    /* inline-block so that div does not cover whole block (ie whole width of the body). */
+    display: inline-block; 
+  }
+
+  .btn button{
     cursor: pointer;
     font-size: 18px;
     padding: 2px 15px;
     background-color: darkorchid;
     color: white;
     border-radius: 10px;
-    margin: 8px;
   }
 
   button:disabled{
