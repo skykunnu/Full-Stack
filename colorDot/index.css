@@ -1,8 +1,14 @@
 
-#container{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    
     height: 100vh;
-    position: relative;
-    cursor: pointer;
 }
 
 
@@ -18,4 +24,15 @@
 
   button{
     cursor: pointer;
+    font-size: 18px;
+    padding: 2px 15px;
+    background-color: darkorchid;
+    color: white;
+    border-radius: 10px;
+    margin: 8px;
+  }
+
+  button:disabled{
+    opacity: 0.75;
+    background-color: rgb(205, 175, 219);
   }
