@@ -18,7 +18,7 @@ addBtn.addEventListener('click',function(){
 
 confirm.addEventListener('click',function(){
    
-    if(Name.value=="" && typeof(Name.value)!=String){
+    if(Name.value=="" && !/^[a-zA-Z]+$/.test(Name.value)){
         alert('Please enter Name properly!')
     }
     
@@ -49,7 +49,7 @@ confirm.addEventListener('click',function(){
         
                Confirm_2.addEventListener('click',function(){
                 ProfileDel.style.display='None';
-                Profiles.removeChild(person);
+                person.remove()
         
                })
        })
