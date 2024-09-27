@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    background-color: #3A6D8C;  
+}
+
+.Box{
+    height: 220px;
+    width: 650px;
+    background-color: #A9A9A9;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 6px 8px 20px 8px black;
+    position: relative;
+}
+
+
+#AddBtn_1 #Addbtn{
+    font-size: 25px;
+    padding: 1px 12px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+#profileAdd{
+    height: 150px;
+    width: 260px;
+    background-color: rgb(235, 231, 225);
+    position: absolute;
+    bottom: 16%;
+    right: 30%;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+}
+
+
+#profileAdd h2{
+    background-color: #766e6e;
+    font-weight: 500;
+    border-radius: 10px 10px 0px 0px;
+    font-size: 22px;
+}
+
+input[type="text"] {
+    width: 14rem;
+    margin: 0.5rem 0;
+    font-size: 16px;
+}
+
+input::placeholder{
+    padding-left: 10px;
+}
+
+#profileAdd p{
+    margin-top:8px;
+}
+
+#Btn_2 #cancel_1 {
+    padding: 3px 5px;
+    background-color: red;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#Btn_2 #confirm_1 {
+    padding: 3px 5px;
+    margin-left: 7px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+span{
+    position: absolute;
+    top: -3%;
+    right: 0%;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#profileDelete{
+    height: 120px;
+    width: 260px;
+    background-color: rgb(235, 231, 225);
+    position: absolute;
+    bottom: 23%;
+    right: 30%;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+}
+
+#profileDelete p{
+margin: 15px;
+}
+
+
+#Btn_3 #cancel_2 {
+    padding: 3px 5px;
+    background-color: red;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#Btn_3 #confirm_2{
+    padding: 3px 5px;
+    margin-left: 7px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+button.Persons{
+    font-size: 24px;
+    padding: 2px 12px;
+    border-radius: 50%;
+    border: none;
+    margin-left: 9px;
+    background-color: #D2FF72;
+    color: black;
+}
+
