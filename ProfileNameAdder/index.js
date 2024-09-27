@@ -52,15 +52,10 @@ confirm.addEventListener('click',function(){
                 Profiles.removeChild(person);
         
                })
-
-
        })
-
-
-      
-
     }
 
+    
 })
 
 cancel.addEventListener('click',function(){
