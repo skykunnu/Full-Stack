@@ -18,7 +18,7 @@ addBtn.addEventListener('click',function(){
 
 confirm.addEventListener('click',function(){
    
-    if(Name.value=="" && !/^[a-zA-Z]+$/.test(Name.value)){
+    if(Name.value=="" || !isNaN(Name.value)){
         alert('Please enter Name properly!')
     }
     
