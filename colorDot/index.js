@@ -1,4 +1,4 @@
-let Body=document.body;
+    let Body=document.body;
     let Reset=document.querySelector('#reset');
     let Undo=document.querySelector('#undo');
     let Redo=document.querySelector('#redo');
@@ -7,7 +7,8 @@ let Body=document.body;
 
     Body.addEventListener('click', function(event) {
       // Below is done to avoid dots to appear on button and its div. 
-      if(event.target.nodeName==="DIV") return 
+      // if(event.target.nodeName==="DIV") return 
+       if(event.target.nodeName==="DIV") return
        if(event.target.nodeName==="BUTTON") return
 
       // to make coordinates of dots. 
