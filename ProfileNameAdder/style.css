@@ -26,6 +26,15 @@ body{
 }
 
 
+.Box h1{
+    position: absolute;
+    font-size: 28px;
+    top: 1%;
+    color: #1f05ff;
+
+}
+
+
 #AddBtn_1 #Addbtn{
     font-size: 25px;
     padding: 1px 12px;
@@ -41,7 +50,7 @@ body{
     width: 260px;
     background-color: rgb(235, 231, 225);
     position: absolute;
-    bottom: 16%;
+    bottom: 9%;
     right: 30%;
     border-radius: 10px;
     text-align: center;
