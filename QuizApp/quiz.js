@@ -12,6 +12,8 @@ let interval;
 let timer = 5;
 let flag = 0;
 let count=0;
+let selectedOption;
+let selectedAnswer;
 
 startBtn.addEventListener("click", startQuiz);
 
@@ -30,7 +32,7 @@ function startQuiz() {
         clearInterval(interval);
         questionDiv.innerHTML=""
         optionsDiv.innerHTML=""
-        timerDiv.innerHTML=""
+        timerDiv.style.display="none"
         questionDiv.innerHTML=calculateScore(); // Problem 
       } else {
         //change question
@@ -43,7 +45,9 @@ function startQuiz() {
         if (flag === 0) userAnswers.push("null");
         else flag = 0;
       }
-    } else {
+
+    } 
+    else {
       timerDiv.innerHTML = --timer;
     }
   }, 1000);
@@ -52,22 +56,22 @@ function startQuiz() {
 
 // Problem is coming here 
 function calculateScore(){
-    for(let i=0;i<CorrectAnswers.length;i++){
+    for(let i=0;i<questions.length;i++){
         if(userAnswers[i]===CorrectAnswers[i]){
           count++;
             console.log(userAnswers[i],CorrectAnswers[i])
         }
-        return `You answered ${count} out of 4 Questions`;
-    }
+      }
+      return `You answered ${count} out of ${questions.length} questions Correctly`;
 
 }
 
 function displayQuestion() {
   const randomIndex = getRandomIndex();
   questionDiv.innerHTML = questions[randomIndex].q;
+  CorrectAnswers.push(questions[randomIndex].a);
   displayOptions(questions[randomIndex].opt);
   questionNumber++;
-  CorrectAnswers.push(questions[randomIndex].a);
 //   console.log(CorrectAnswers);
 }
 
@@ -82,9 +86,13 @@ function displayOptions(arr) {
 }
 
 function storeUserAnswer(e) {
-  userAnswers.push(e.target.innerHTML);
-  console.log(userAnswers);
+   selectedOption=e.target;
+  selectedAnswer=selectedOption.innerHTML;
+  userAnswers.push(selectedAnswer);
+  optionColorUpdate()
+  // console.log(userAnswers);
   flag = 1;
+  // timer=1;
 }
 
 function getRandomIndex() {
@@ -93,5 +101,18 @@ function getRandomIndex() {
   else {
     questionsAlreadyDisplayed.push(randomValue);
     return randomValue;
+  }
+}
+
+function optionColorUpdate(){
+  if(selectedAnswer===CorrectAnswers[CorrectAnswers.length-1]){
+    selectedOption.style.backgroundColor='green'
+    selectedOption.style.color='white'
+
+  }
+  else{
+    selectedOption.style.backgroundColor='red'
+    selectedOption.style.color='white'
+
   }
 }
