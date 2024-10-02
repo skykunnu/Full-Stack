@@ -14,6 +14,7 @@ let flag = 0;
 let count=0;
 let selectedOption;
 let selectedAnswer;
+let timeOut;
 
 startBtn.addEventListener("click", startQuiz);
 
@@ -59,7 +60,6 @@ function calculateScore(){
     for(let i=0;i<questions.length;i++){
         if(userAnswers[i]===CorrectAnswers[i]){
           count++;
-            console.log(userAnswers[i],CorrectAnswers[i])
         }
       }
       return `You answered ${count} out of ${questions.length} questions Correctly`;
@@ -72,7 +72,6 @@ function displayQuestion() {
   CorrectAnswers.push(questions[randomIndex].a);
   displayOptions(questions[randomIndex].opt);
   questionNumber++;
-//   console.log(CorrectAnswers);
 }
 
 function displayOptions(arr) {
@@ -90,9 +89,8 @@ function storeUserAnswer(e) {
   selectedAnswer=selectedOption.innerHTML;
   userAnswers.push(selectedAnswer);
   optionColorUpdate()
-  // console.log(userAnswers);
   flag = 1;
-  // timer=1;
+  TimeOut();
 }
 
 function getRandomIndex() {
@@ -115,4 +113,10 @@ function optionColorUpdate(){
     selectedOption.style.color='white'
 
   }
+}
+
+function TimeOut(){
+  timeOut=setTimeout(()=>{
+    timer=1;
+  },300)
 }
