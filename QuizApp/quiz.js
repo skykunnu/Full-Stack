@@ -34,7 +34,7 @@ function startQuiz() {
         questionDiv.innerHTML=""
         optionsDiv.innerHTML=""
         timerDiv.style.display="none"
-        questionDiv.innerHTML=calculateScore(); // Problem 
+        questionDiv.innerHTML=calculateScore(); 
       } else {
         //change question
         displayQuestion();
@@ -55,7 +55,7 @@ function startQuiz() {
 }
 
 
-// Problem is coming here 
+
 function calculateScore(){
     for(let i=0;i<questions.length;i++){
         if(userAnswers[i]===CorrectAnswers[i]){
