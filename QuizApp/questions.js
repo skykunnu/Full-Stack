@@ -20,3 +20,4 @@ export const questions = [
       opt: ["APJ Abdul Kalam", "Narendra Modi", "Draupadi Murmu", "Rahul Gandhi"],
     },
   ];
+  

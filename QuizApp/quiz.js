@@ -86,18 +86,25 @@ function displayOptions(arr,correctOption) {
       correctOptionElement=optionPara;
     }
 
-    optionPara.addEventListener("click", storeUserAnswer);
-    optionsDiv.append(optionPara);
-  });
+    // optionPara.addEventListener("click", storeUserAnswer);
+    optionsDiv.addEventListener('click',storeUserAnswer)
+optionsDiv.append(optionPara);
+   
+  })
 }
 
 function storeUserAnswer(e) {
-   selectedOption=e.target;
-  selectedAnswer=selectedOption.innerHTML;
-  userAnswers.push(selectedAnswer);
-  optionColorUpdate()
-  flag = 1;
-  TimeOut();
+  if(e.target.nodeName==="P"){
+
+    
+       selectedOption=e.target;
+      selectedAnswer=selectedOption.innerHTML;
+      userAnswers.push(selectedAnswer);
+      optionColorUpdate()
+      
+        flag = 1;
+        TimeOut();
+  }
 }
 
 function getRandomIndex() {
