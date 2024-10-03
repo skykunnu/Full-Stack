@@ -71,7 +71,7 @@ function displayQuestion() {
   const randomIndex = getRandomIndex();
   questionDiv.innerHTML = questions[randomIndex].q;
   CorrectAnswers.push(questions[randomIndex].a);
-  
+
   displayOptions(questions[randomIndex].opt,questions[randomIndex].a);
   questionNumber++;
 }
@@ -84,7 +84,6 @@ function displayOptions(arr,correctOption) {
 
     if(option===correctOption){
       correctOptionElement=optionPara;
-      console.log(correctOptionElement)
     }
 
     optionPara.addEventListener("click", storeUserAnswer);
@@ -111,7 +110,8 @@ function getRandomIndex() {
 }
 
 function optionColorUpdate(){
-  if(selectedAnswer===CorrectAnswers[CorrectAnswers.length-1]){
+
+  if(selectedAnswer===correctOptionElement){
     selectedOption.style.backgroundColor='green'
     selectedOption.style.color='white'
 
