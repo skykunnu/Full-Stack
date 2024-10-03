@@ -15,6 +15,7 @@ let count=0;
 let selectedOption;
 let selectedAnswer;
 let timeOut;
+let correctOptionElement;
 
 startBtn.addEventListener("click", startQuiz);
 
@@ -62,7 +63,7 @@ function calculateScore(){
           count++;
         }
       }
-      return `You answered ${count} out of ${questions.length} questions Correctly`;
+      return `You answered ${count} out of ${questions.length} questions Correctly !`;
 
 }
 
@@ -70,17 +71,24 @@ function displayQuestion() {
   const randomIndex = getRandomIndex();
   questionDiv.innerHTML = questions[randomIndex].q;
   CorrectAnswers.push(questions[randomIndex].a);
-  displayOptions(questions[randomIndex].opt);
+  
+  displayOptions(questions[randomIndex].opt,questions[randomIndex].a);
   questionNumber++;
 }
 
-function displayOptions(arr) {
+function displayOptions(arr,correctOption) {
   optionsDiv.innerHTML = "";
   arr.forEach((option) => {
-    const para = document.createElement("p");
-    para.innerHTML = option;
-    para.addEventListener("click", storeUserAnswer);
-    optionsDiv.append(para);
+    const optionPara = document.createElement("p");
+    optionPara.innerHTML = option;
+
+    if(option===correctOption){
+      correctOptionElement=optionPara;
+      console.log(correctOptionElement)
+    }
+
+    optionPara.addEventListener("click", storeUserAnswer);
+    optionsDiv.append(optionPara);
   });
 }
 
@@ -111,6 +119,9 @@ function optionColorUpdate(){
   else{
     selectedOption.style.backgroundColor='red'
     selectedOption.style.color='white'
+   
+    correctOptionElement.style.backgroundColor='green'
+    correctOptionElement.style.color='white'
 
   }
 }
