@@ -18,6 +18,11 @@
     position: relative;
 }
 
+#Img img{
+height: 100%;
+width: 100%;
+}
+
 h1{
     position: absolute;
     top: 5%;
@@ -26,10 +31,6 @@ h1{
     font-size: 38px;
 }
 
-#Img img{
-height: 100%;
-width: 100%;
-}
 
 #imgItems{
     width: 50%;
@@ -47,3 +48,78 @@ margin: 2rem;
 cursor: pointer;
 }
 
+@media screen and ((min-width:858px) and (max-width:1060px)) {
+
+    
+   
+    #imgItems img{
+        height: 150px;
+        width: 150px;
+        }
+
+}
+
+@media screen and ((min-width:668px) and (max-width:857px)){
+   
+    #container{
+        flex-direction: column-reverse;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    #imgItems {
+    flex-wrap: nowrap;
+    align-items: center;
+    }
+
+    #imgItems{
+    width: 50%;
+    height: 50vh;
+    } 
+
+    #imgItems img{
+        height: 160px;
+        width: 160px;
+        margin: 0px 25px;
+    }
+
+
+    #Img{
+        width: 100%;
+        height: 50vh;
+        }
+}
+
+@media screen and ((min-width:300px) and (max-width:668px)) {
+    #container{
+        flex-direction: column-reverse;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    #imgItems {
+    flex-wrap: nowrap;
+    align-items: center;
+    }
+
+    #imgItems{
+    width: 50%;
+    height: 50vh;
+    } 
+
+    #imgItems img{
+        height: 60px;
+        width: 60px;
+        margin: 0 20px;
+    }
+
+
+    #Img{
+        width: 100%;
+        height: 50vh;
+        }
+}
