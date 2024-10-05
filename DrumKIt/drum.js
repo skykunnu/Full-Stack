@@ -27,10 +27,10 @@ ImgItems.addEventListener('keyup',Instrument);
 
 
 function Instrument(e){
- if(e.key==='a'){
+ if(e.key==='a'){  // if a key is pressed then crash audio will be played.
     crash.play()
  }
- else if(e.key==='s'){
+ else if(e.key==='s'){  
     kick.play()
  }
  else if(e.key==='d'){
