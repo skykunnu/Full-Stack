@@ -62,11 +62,9 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #ffe475;
     margin-top: 10px;
     padding: 6px 10px;
     border-radius: 10px;
-    color: black;
 
 }
 
@@ -80,5 +78,4 @@ h1 {
     font-size: 20px;
     padding: 10px;
     cursor: pointer;
-    color: black;
 }
