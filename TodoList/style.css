@@ -10,9 +10,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #f5e6d5;
     margin: 1rem auto;
     flex-direction: column;
+    background: url(https://cdn.pixabay.com/photo/2021/11/19/19/28/businesswoman-6810127_960_720.jpg) center/cover no-repeat;
 }
 
 h1 {
@@ -31,15 +31,15 @@ h1 {
     justify-content: space-around;
 }
 
-#todoInput input{
+#todoInput{
     width: 17rem;
     font-size: 16px;
     border-radius: 4px;
     border: none;
-    padding: 2px 0px;
+    padding: 2px;
 }
 
-#AddBtn button {
+#AddBtn {
     width: 4rem;
     height: 29px;
     border: none;
@@ -49,4 +49,36 @@ h1 {
     background-color: black;
     color: white;
     cursor: pointer;
+}
+
+
+#todoItems {
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+#todoItems .items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffe475;
+    margin-top: 10px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    color: black;
+
+}
+
+#todoItems .items p{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0px 10px;
+}
+
+#todoItems .items .btns span i{
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    color: black;
 }
