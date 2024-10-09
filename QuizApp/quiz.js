@@ -14,7 +14,7 @@ let flag = 0;
 let count=0;
 let selectedOption;
 let selectedAnswer;
-let timeOut;
+let timerOut;
 let correctOptionElement;
 
 startBtn.addEventListener("click", startQuiz);
@@ -28,8 +28,9 @@ function startQuiz() {
 
   interval = setInterval(() => {
     if (timer === 1) {
+      // total questions reached 
       if (questionNumber === questions.length) {
-        //questions over, compare user answers
+      
 
         clearInterval(interval);
         questionDiv.innerHTML=""
@@ -134,7 +135,8 @@ function optionColorUpdate(){
 }
 
 function TimeOut(){
-  timeOut=setTimeout(()=>{
+  timerOut=setTimeout(()=>{
     timer=1;
   },300)
 }
+clearTimeout(timerOut);
