@@ -112,13 +112,20 @@
 
 //-----------------------------------------------------------------------------------------
 
-// indexOf() and lastIndexOf()
+// indexOf() and lastIndexOf()-> (count space as well as (. or ,) also, and count each letter of the word)  
 
 // var a="Hello world welcome to javaScript Hello"
+
 
 // console.log(a.indexOf('Hello')) // 0, returns the index of the starting letter of the word that has been passed. 
 // console.log(a.indexOf("javaScript")) // 23, becoz counting always starts from 0 to that particular letter. 
 // console.log(a.lastIndexOf('Hello')) // 34
+
+
+// let text = "JavaScript is awesome. JavaScript is fun.";
+//         let result = text.replaceAll("JavaScript", "JS").indexOf("awesome") - text.lastIndexOf("is");
+//         console.log(result); // -28, because replaceALl returns string & according to that return string we have to find index of awesome which would be 6 and in case of lastIndexOf('is') it would be according to original text which would be 34 so therefore (6-34) will be -28.  
+
 
 //-------------------------------------------------------------------------------------------
 // includes() 

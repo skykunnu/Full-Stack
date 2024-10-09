@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoisting</title>
+</head>
+<body>
+    
+
+
+<script>
+    // Hoisting- It is a feature in js, where variable and function declarations are moved into the top of their containing scope. 
+
+/* Only possible in case of Regular Function Declaration, Not possible in case of function Expression & Arrow functions */
+
+
+/* In case of variable declared with var will give undefined if accessed before initialization.
+   In case of variable declared with let and const will give ReferencedError if accessed before initialization-> this is 
+   because they are in temporal dead zone (TDZ is an area of a block where variable is inacessible untill computer completely initializes it with a value.)  
+*/
+// In order to avoid hoisiting use Strict at the top of the editor. 
+
+        // console.log(x); // undefined, variable is declared but not assigned value. 
+        // var x = 5;
+        //  function innerScope() {
+        //      var x = 10;
+        //      console.log(x); // 10 
+        //  }
+        //  console.log(x); // 5 
+        //  innerScope();
+
+
+
+</script>
+
+</body>
+</html>
