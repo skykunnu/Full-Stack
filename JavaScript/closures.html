@@ -9,7 +9,8 @@
     
 
     <script>
-        // CLOSURES: functions defined inside another functions with access to the parent function's scope
+        // CLOSURES: functions defined inside another functions with access to the parent function's scope.
+        // parent function remains alive after the completion of function. 
 
     //    function parent(){
     //      var x=3;
@@ -45,11 +46,35 @@
         // document.write(addition(200)) // 400, becoz we called addition with 200 as an argument, now no accessing to outer variable.
 
 
+        // var print;
+        // for (var i = 0; i < 3; i++) 
+        // {
+        //     print = function () { console.log(i); };
+        // }
+
+        // var myObject = { print: print }; 
+        // myObject.print(); // As soon i reaches to 2 and then after incrementing i=2 it becomes 3 and condition gets false. 
+
+
+        // for(let i=0;i<=3;i++){
+        //     setTimeout(()=>{
+        //         console.log(i)
+        //     },1000)
+        // } // 0,1,2,3  
+
+        // The loop runs 4 times (i = 0, i = 1, i = 2, i = 3), and in each iteration, a new setTimeout function is scheduled.
+        // Since let has block scope, the value of i at the time of the setTimeout callback will be preserved for each iteration.
+
+
+        // for(var i=0;i<=3;i++){
+        //     setTimeout(()=>{
+        //         console.log(i)
+        //     },1000)
+        // }
+        // 4,4,4,4 // var is a functional scope in case of loop, so for each setTimeout callback it will reference to the one same copy (which is the last value of i) for which the loop gets ended, so in our case the last value of i is 4. 
 
 
 
-
-        
     </script>
 </body>
 </html>
