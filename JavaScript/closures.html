@@ -63,7 +63,7 @@
         // } // 0,1,2,3  
 
         // The loop runs 4 times (i = 0, i = 1, i = 2, i = 3), and in each iteration, a new setTimeout function is scheduled.
-        // Since let has block scope, the value of i at the time of the setTimeout callback will be preserved for each iteration.
+        // Since let has block scope (ie for loop block), Each iteration of the loop creates a new instance of i. This means that every setTimeout callback references the correct value of i for that specific iteration (ie for i=0 setTimeout reference to i=0 only). 
 
 
         // for(var i=0;i<=3;i++){
@@ -71,7 +71,7 @@
         //         console.log(i)
         //     },1000)
         // }
-        // 4,4,4,4 // var is a functional scope in case of loop, so for each setTimeout callback it will reference to the one same copy (which is the last value of i) for which the loop gets ended, so in our case the last value of i is 4. 
+        // 4,4,4,4 // when you use var, variable i is scoped to the entire function. this means that there is a single instance of i shared across all iterations of the loop, By the time the setTimeout function executes, the loop has completed, and i has already been incremented to its final value. 
 
 
 
