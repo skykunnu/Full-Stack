@@ -21,9 +21,9 @@ body{
 }
 
 .flip-card{
-    height: 160px;
-    width: 160px;
-    margin: 4px;
+    height: 120px;
+    width: 120px;
+    margin: 16px;
     cursor: pointer;
     background-color: transparent;
     perspective: 1000px;
@@ -50,8 +50,8 @@ body{
 
 
 .flip-card-back img , .flip-card-front img{
-    height: 160px;
-    width: 160px;
+    height: 120px;
+    width: 120px;
     border-radius: 10px;
 }
   

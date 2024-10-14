@@ -12,13 +12,14 @@ let timer=0;
 
 backImage();
 startTimer();
+
 flipFrontImage.forEach((flipFront_image)=>{
     flipFront_image.addEventListener('click',()=>{
         openImages++;
         flipFront_image.parentElement.parentElement.classList.add('backSide');
         openImagesStore.push(flipFront_image.parentElement.nextElementSibling.children[0])
         
-        setTimeout(()=>{
+        
             if(openImages>1){
                 if(openImagesStore[0].src===openImagesStore[1].src){
                     openImages=0;
@@ -26,15 +27,16 @@ flipFrontImage.forEach((flipFront_image)=>{
                 
             }
             else{
+                setTimeout(()=>{
                 openImagesStore.forEach((Img)=>{
                     Img.parentElement.parentElement.classList.remove('backSide');
                 })
                 openImages=0;
                 openImagesStore.length=0;
+            },1000)
             }
+            
         }
-        
-    },1000)
 })
 })
 
