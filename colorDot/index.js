@@ -6,20 +6,21 @@
     let arrRedo=[];
 
     Body.addEventListener('click', function(event) {
-      // Below is done to avoid dots to appear on button and its div. 
-      // if(event.target.nodeName==="DIV") return 
-       if(event.target.nodeName==="DIV") return
-       if(event.target.nodeName==="BUTTON") return
+      // Below is done to avoid dots to appear on button and its div.
+      // whatever values goes inside event.target.nodeName should be in capital letters.  
+       if(event.target.nodeName==="DIV" || event.target.nodeName==='BUTTON') return
+    
 
-      // to make coordinates of dots. 
-      let x = event.pageX;
-      let y = event.pageY;
+      // Way to make coordinates of dots in js. 
+      let xCoordinate = event.pageX;
+      let yCoordinate = event.pageY;
 
       let dot = document.createElement('div');
       dot.className = 'dot';
 
-      dot.style.left = `${x-10}px`; 
-      dot.style.top = `${y-10}px`;
+      // way to style coordinate of dots in js.
+      dot.style.top = `${yCoordinate-10}px`;
+      dot.style.left = `${xCoordinate-10}px`; 
 
 
       let randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
@@ -31,44 +32,45 @@
   
       Undo.disabled=false;
       Reset.disabled=false;
-      if(arrUndo.length>0){
-        Undo.style.opacity="1"
-        Reset.style.opacity='1'
-
-      }
     });
+
+
+
+
+    //  Reset function 
 
     Reset.addEventListener('click',function(e){
       e.preventDefault();
+      // below forEach is done to remove all dots from screen as soon as we click reset button.
         arrUndo.forEach((dots)=>{
          Body.removeChild(dots);
     })
+    // both undo and redo array will be empty.
       arrUndo=[];
-      arrRedo=[];
+      arrRedo=[]; 
       Reset.disabled=true;
       Undo.disabled=true;
     })
+
+
+    //  Undo function 
 
     Undo.addEventListener('click',function(e){
       e.preventDefault();
       Redo.disabled=false;
       let undoDot=arrUndo.pop();
-
-// Two methods to remove dots - by display: none & by removeChild(). 
-
-      // undoDot.style.display='none';
       Body.removeChild(undoDot);
       arrRedo.push(undoDot);
-      Redo.style.opacity="1"
     })
+
+
+    // Redo function 
 
     Redo.addEventListener('click',function(e){
       e.preventDefault();
       let redoDot=arrRedo.pop();
-
-// Two methods to display dots - by display: block & by append().
-      // redoDot.style.display='block';
       Body.append(redoDot)
+      // As soon as redo array gets empty disabled the redo button.
       if(arrRedo.length===0){
         Redo.disabled=true
       }

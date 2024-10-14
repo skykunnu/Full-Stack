@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -14,11 +13,13 @@ body{
 
 
 .dot {
+  /* here there is no ancestor element positioned, so absolute positioned element will be positioned relative to the initial containing block such as body or html   */
     position: absolute;
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    pointer-events: none;
+    /* pointer events are set of events that allow developers to respond to interactions like clicks,taps & so on.  */
+    pointer-events: none; 
     cursor: pointer;
   }
 

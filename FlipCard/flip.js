@@ -16,10 +16,14 @@ FlipCard.forEach(flip_Card=>{
         let flipCardInner=flip_Card.querySelector('.flip-card-inner')
         let flipCardBack=flip_Card.querySelector(".flip-card-back");
         flipCardBack.innerHTML=""
-    let Img=document.createElement('img');
+    
+        let Img=document.createElement('img');
+    
     let randomIndex = Math.floor(Math.random() * RandomImages.length);
+    
     Img.src = RandomImages[randomIndex].src;
-    console.log(Img.src)
+
+
     flipCardBack.append(Img)
     flipCardInner.style.transform='rotateY(180deg)'
 
