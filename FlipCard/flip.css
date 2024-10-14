@@ -49,20 +49,25 @@ body{
   }
 
 
-.flip-card-back img{
+.flip-card-back img , .flip-card-front img{
     height: 160px;
     width: 160px;
     border-radius: 10px;
 }
-
-
-  .flip-card-front {
-    background-color: #e78c6b;
-    border-radius: 10px;
-    
-  }
   
 
-  .flip-card-back {
+  .backSide{
     transform: rotateY(180deg);
+  }
+
+  .flip-card-back{
+    transform: rotateY(180deg);
+    
+  }
+
+  #Result{
+    display: none;
+    font-size: 32px;
+    color: black;
+    font-family: sans-serif;
   }
