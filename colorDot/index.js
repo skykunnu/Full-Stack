@@ -28,10 +28,13 @@
 
   
       Body.append(dot);
+      // pushing every dot to arrUndo. 
       arrUndo.push(dot);
   
       Undo.disabled=false;
       Reset.disabled=false;
+
+
     });
 
 
