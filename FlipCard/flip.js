@@ -7,7 +7,9 @@ let openImagesStore=[];
 let openImages=0;
 let result=document.querySelector("#Result");
 let Container=document.querySelector('.container');
-let timer=0;
+let timer=60;
+let Timer=document.querySelector('#time');
+let TimerDiv=document.querySelector('#timer');
 
 
 backImage();
@@ -43,13 +45,15 @@ flipFrontImage.forEach((flipFront_image)=>{
 
 function startTimer(){
    let interval=setInterval(()=>{
-        timer++;
-       if(timer===60){
-        Container.style.display='none';
-        result.style.display='block';
-        clearInterval(interval);
-       }
-       console.log(timer)
+       Timer.innerHTML=--timer; 
+       if(timer===0){
+           Container.style.display='none';
+           result.style.display='block';
+           TimerDiv.style.display='none';
+            Timer.innerHTML=0;
+           clearInterval(interval);
+
+        }
     },900)
 }
 
@@ -68,7 +72,6 @@ function randomIndex(){
 
 function backImage(){
     for(let i=0;i<actualImage.length;i++){
-
         let Img=document.createElement('img');
         Img.src=actualImage[randomIndex()];
         flipBackImage[i].append(Img);

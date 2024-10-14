@@ -17,7 +17,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 2rem 20rem;
+    margin: 3rem 20rem;
 }
 
 .flip-card{
@@ -70,4 +70,16 @@ body{
     font-size: 32px;
     color: black;
     font-family: sans-serif;
+  }
+
+  #timer{
+    position: absolute;
+    font-size: 15px;
+    font-weight: 600;
+    top: 1rem;
+    padding: 4px 30px 3px 30px;
+    border-radius: 10px;
+    /* right: 4rem; */
+    background-color: #0293ff;
+    color: black;
   }
