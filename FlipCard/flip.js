@@ -10,7 +10,7 @@ let Container=document.querySelector('.container');
 let timer=60;
 let Timer=document.querySelector('#time');
 let TimerDiv=document.querySelector('#timer');
-
+let counter=0;
 
 backImage();
 startTimer();
@@ -26,6 +26,7 @@ flipFrontImage.forEach((flipFront_image)=>{
                 if(openImagesStore[0].src===openImagesStore[1].src){
                     openImages=0;
                 openImagesStore.length=0;
+                counter++;
                 
             }
             else{
@@ -42,24 +43,18 @@ flipFrontImage.forEach((flipFront_image)=>{
 })
 })
 
-
 function startTimer(){
    let interval=setInterval(()=>{
        Timer.innerHTML=--timer; 
-       if(timer===0){
+       if(timer===0 || counter===6){
            Container.style.display='none';
            result.style.display='block';
            TimerDiv.style.display='none';
-            Timer.innerHTML=0;
            clearInterval(interval);
 
         }
     },900)
 }
-
-
-
-
 
 function randomIndex(){
     let RandomIndex=Math.floor(Math.random()*actualImage.length);
