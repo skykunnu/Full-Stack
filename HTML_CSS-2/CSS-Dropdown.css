@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    height: 100vh;
+}
 li{
     list-style: none;
 }
@@ -10,43 +14,26 @@ a{
     text-decoration: none;
 }
 
-body{
-    height: 100vh;
-}
-
-header{
-height: 70px;
-width: 100%;
-background-color: #22438c;
-}
 #menu{
+    height: 50px;
     width: 100%;
+    background-color: #22438c;
 }
 
 /* for centering ul */
 #menu .main{ 
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-}
-
-
-/* we have used inline block here becoz it automatically adjusts height and width and top-bottom margin and padding.
-parent li has a position relative.
-*/
-
-#menu .main li{
-    display: inline-block;
+    justify-content: space-around;
     position: relative;
-    width: 11rem;
 }
 
 /* Why display block because anchor tag are inline in nature. */
-#menu li a{
-    height: 70px;
+#menu .main li a{
+    width: 11rem;
     display: block;
     color: whitesmoke;
-    padding: 25px;
+    padding: 16px;
     text-align: center;
 }
 
@@ -56,21 +43,23 @@ parent li has a position relative.
     position: absolute;
     display: none;
     width: 11rem;
-    height: 13.2rem;
+    height: 9rem;
     text-align: center;
 }
-.dropdown li a{
-    display: block;
+
+
+
+#menu .dropdown li a {
     font-size: 16px;
-    color: black;
-    width: 11rem;
+    color: white;
+    padding: 15px 0px;
 }
 
-ul li a:hover{
+#menu .main li :hover{
 background-color: black;
 }
 
-ul li:hover .dropdown{
+#menu .main li:hover .dropdown{
     display: block;
     background-color: #22438c;
     color: black;
