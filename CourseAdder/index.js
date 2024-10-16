@@ -2,7 +2,7 @@ let AddList=document.querySelector('.add ul');
 let DeleteList=document.querySelector('.delete ul');
 
 
-AddList.addEventListener('click',(e)=>{
+AddList.addEventListener('dragstart',(e)=>{
         if(e.target.nodeName==='LI'){
             e.target.style.display='none'
             let DeleteListItem=document.createElement('li');
@@ -19,4 +19,4 @@ AddList.addEventListener('click',(e)=>{
             AddListItem.innerHTML=e.target.innerHTML
             AddList.append(AddListItem);
         }
-    })
+    })data-value="html"

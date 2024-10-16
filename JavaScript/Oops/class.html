@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+</head>
+<body>
+<script>
+
+// OOP (Object oriented programing)
+//     ->It is important for all programing language
+//     ->DRY(Dont repeat yourself)
+//     ->three major concept of object oriented programing
+//     ->Object  
+//     ->Class 
+//     ->Inheritance
+//      ->Use in high level programing 
+
+// ->OBJECT
+//     ->Everything is object (Living thing or not living thing) according to java script.
+
+
+    // class Human{
+    //    constructor(f,l,a){
+    //     this.fname=f;
+    //     this.lname=l;
+    //     this.age=a;
+    //    }
+    // }
+
+    // // let myobj=new Human("amit","singh",30);
+    // // console.log(myobj);
+
+    // class Teacher extends Human{
+
+    // }
+
+    // let myObj=new Teacher('akash','jain',40);
+    // console.log(myObj) // Teacher {fname: 'akash', lname: 'jain', age: 40}
+
+
+    class Student{
+        constructor(Username,RollNo,LastName){
+            this.userName=Username;
+            this.rollNo=RollNo;
+            this.lastName=LastName;
+        }
+    }
+
+    class Teacher extends Student{
+        constructor(Username,RollNo,LastName,salary,id,age){
+            super(Username,RollNo,LastName)
+            this.Salary=salary;
+            this.Id=id;
+            this.Age=age;
+        }
+        // Below is without constructor 
+        
+        // salary=2300;
+        // id=1;
+        // Age=30;
+    }
+
+    class Principal extends Teacher{
+
+    }
+
+    let obj1= new Principal('Rashmi',21,'khanna',30000,1,26)
+    console.log(obj1)
+
+
+
+    </script>
+</body>
+</html>
