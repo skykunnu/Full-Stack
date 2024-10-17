@@ -7,7 +7,7 @@ drag.forEach((courseItem)=>{
         const courseText = e.target.innerText;  // Capture the text
         e.dataTransfer.setData("id", courseId);
         e.dataTransfer.setData("text", courseText); 
-        console.log(courseId)
+        
         
     }
 
@@ -28,7 +28,9 @@ drop.ondrop = (e)=>{
     newLI.id = courseId;
     newLI.innerText = courseText;  // Set the text content
     drop.appendChild(newLI);
-    //    let data = document.createElement("li")
-    //    data.innerHTML=e.dataTransfer.getData("text")
-    //    drop.appendChild(data)
+
+
+    // to hide the dragged items from add list.
+    const draggedItem=document.getElementById(courseId);
+    draggedItem.style.display='none';
 }
