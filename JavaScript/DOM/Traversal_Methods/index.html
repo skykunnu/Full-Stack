@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traversal_method</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="parentbox">
+        <div class="first" id="fele">
+            <h1>1</h1>
+        </div>
+        <div class="two" id="two">
+            <h1>2</h1>
+        </div>
+        <div class="three" id="three">
+            <h1>3</h1>
+        </div>
+        <div class="four">
+            <h1>4</h1>
+        </div>
+        <div class="five">
+            <h1>5</h1>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+ 
+let aakash=document.getElementById("two").parentElement;
+aakash.style="background:purple"
+
+let parent=document.getElementById("parentbox").lastElementChild;
+parent.style="background:gold"
+
+let last=document.getElementById("parentbox").firstElementChild
+last.style="background:tan"
+
+let direct=document.getElementById("three").previousElementSibling;
+direct.style="background:yellow"
+
+let main=document.getElementById("parentbox").children[2];
+main.style="background:gold"
+    
+    
+</script>

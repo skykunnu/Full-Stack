@@ -1,0 +1,44 @@
+#parentbox
+{
+    width: 1200px;
+    height: 300px;
+    background-color: maroon;
+    padding:20px;
+    border-radius: 20px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+
+}
+.first
+{
+    width: 200px;
+    height: 150px;
+    background-color: white;
+}
+.two
+{
+    width: 200px;
+    height: 150px;
+    background-color: white;
+}
+.three
+{
+    width: 200px;
+    height: 150px;
+    background-color: white;  
+}
+.four
+{
+    width: 200px;
+    height: 150px;
+    background-color: white;  
+}
+.five
+{
+    width: 200px;
+    height: 150px;
+    background-color: white;  
+}

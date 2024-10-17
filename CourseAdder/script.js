@@ -6,27 +6,21 @@ drag.forEach((courseItem)=>{
         const courseId=e.target.id 
         const courseText = e.target.innerText;  // Capture the text
         e.dataTransfer.setData("id", courseId);
-        e.dataTransfer.setData("text", courseText); 
-        
-        
-    }
-
-    
+        e.dataTransfer.setData("text", courseText);    
+    }  
 })
 
 
 drop.ondragover = (e)=>{
-   console.log("ondragover")
    e.preventDefault()
-   
 }
 
 drop.ondrop = (e)=>{
     const courseId = e.dataTransfer.getData('id');
-    const courseText = e.dataTransfer.getData('text');  // Retrieve the text content
+    const courseText = e.dataTransfer.getData('text'); 
     const newLI = document.createElement('li');
     newLI.id = courseId;
-    newLI.innerText = courseText;  // Set the text content
+    newLI.innerText = courseText; 
     drop.appendChild(newLI);
 
 
