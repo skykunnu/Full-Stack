@@ -1,38 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Promise</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promise & CallBack-Hell</title>
+  </head>
+  <body>
     <script>
+      // CallBack-Hell
 
-// let pro1=new Promise((resolve,reject)=>
-// {
-//     console.log("Pending state");
-    
-//     setTimeout(()=>
-// {
+      // function task1(callback){
+      //     setTimeout(() => {
+      //         console.log('Task1')
+      //         callback();
+      //     }, 1000);
+      // }
 
-//     resolve("your promise is resolved");
-//     console.log(pro1);
-    
-// },2000)
-// })
+      // function task2(callback){
+      //     setTimeout(() => {
+      //         console.log('Task2')
+      //         callback();
+      //     }, 2000);
+      // }
+      // function task3(callback){
+      //     setTimeout(() => {
+      //         console.log('Task3')
+      //         callback();
+      //     }, 5000);
+      // }
+      // function task4(callback){
+      //     setTimeout(() => {
+      //         console.log('Task4')
+      //         callback();
+      //     }, 3000);
+      // }
+      // function task5(callback){
+      //     setTimeout(() => {
+      //         console.log('Task5')
+      //         callback();
+      //     }, 4000);
+      // }
+      // function task6(callback){
+      //     setTimeout(() => {
+      //         console.log('Task6')
+      //         callback();
+      //     }, 700);
+      // }
+      // function task7(callback){
+      //     setTimeout(() => {
+      //         console.log('Task7')
+      //         callback();
+      //     }, 600);
+      // }
+      // function task8(callback){
+      //     setTimeout(() => {
+      //         console.log('Task8')
+      //         callback();
+      //     }, 500);
+      // }
+
+      // task1 and along with other task functions are making callback hell pyramid by calling one another into each other.
+      // to reduce it promises came into existence.
+
+      // task1(()=>{
+      //     task2(()=>{
+      //         task3(()=>{
+      //             task4(()=>{
+      //                 task5(()=>{
+      //                     task6(()=>{
+      //                         task7(()=>{
+      //                             task8(()=>{
+
+      //                             })
+      //                         })
+      //                     })
+      //                 })
+      //             })
+      //         })
+      //     })
+      // })
+
+      // ---------------------------------------------------------------------------------------------------------------------------------
+
+      // Promise -> A promise is an object that holds the current state of an async operation.
+
+      // Example-> Requesting some data from a server, the promise promises us to get that data which we can use in future.
+
+      // States of promise -> Pending, resolve, rejected.
+
+      // Mehtods of promise -> then condition works for resolve & catch condition works for reject.
+
+      // Basic syntax of promise is that it takes two function (ie resolve, reject) as an argument.
+
+      // let pro1=new Promise((resolve,reject)=>
+      // {
+      //     console.log("Pending state");
+
+      //     setTimeout(()=>
+      // {
+
+      //     resolve("your promise is resolved");
+      //     console.log(pro1);
+
+      // },2000)
+      // })
+
+      // let pro2= new Promise((resolve,reject)=>{
+      //     console.log("pending state");
+
+      //     setTimeout(()=>{
+      //         reject('your promise is rejected');
+      //         console.log(pro2)
+      //     })
+      // },2000)
+
+      // let promise= new Promise((resolve,reject)=>{
+      //     // console.log('Pending state')
+      //     const randomNumber=Math.floor(Math.random()*9);
+
+      //     setTimeout(()=>{
+      //         if(randomNumber<4){
+      //             resolve('The random number is less than 4');
+      //         }
+
+      //         else{
+      //             reject('The number is greater than 4');
+      //         }
+      //     },1000)
+
+      // })
+
+      // promise
+      // .then((value)=>{
+      //   console.log(value);
+      // })
+
+      // .catch((value)=>{
+      // console.log(value)
+      // })
+
+      // Using Promise.all() to fire two resolves of promises together.
+      // If any of the promises has reject function inside it, then in the case of promise.all() if the promises has a reject function then promise.all() will immediatley reject the condition and will stop the further execution of promises having resolve or reject function.
+
+      // const promise1=new Promise((resolve,reject)=>{
+
+      //     setTimeout(()=>{
+      //         resolve('hello! the task is resolved.')
+      //     },1000)
+      // })
+
+      // const promise2=new Promise((resolve,reject)=>{
+      //     setTimeout(()=>{
+      //         // resolve('Hello! the task-2 is resolved.')
+      //         reject('Hello! the task-2 is rejected.')
+      //     },1000)
+      // })
+
+      // Promise.all([promise1,promise2]) // more than one promises are taken inside an array in promise.all().
+      // .then((data)=>{
+      // console.log(data[0], data[1])
+      // })
+      // .catch((value)=>{
+      //     console.log(value);
+      // })
+
+      //--------------------------------------------------------------------------------------------------------------------------------------
+
+    //   Async/Await -> 
+
+      // const preHeatOven=()=>{
+      //   return new Promise((resolve,reject)=>{
+
+      //       setTimeout(()=>{
+      //           const preHeatOven=true;
+      //           if(preHeatOven){
+      //               resolve("Preheat oven to 180deg.")
+      //           }
+      //           else{
+      //               reject("Failed task.")
+      //           }
+      //       })
 
 
+      //   })
+      // }
 
 
-// let pro2= new Promise((resolve,reject)=>{
-//     console.log("pending state");
-
-//     setTimeout(()=>{
-//         reject('your promise is rejected');
-//         console.log(pro2)
-//     })
-// },2000)
-
+      // ---------------------------------------------------------------------
     </script>
-</body>
+  </body>
 </html>

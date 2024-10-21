@@ -9,18 +9,33 @@
     <script>
 // synchronous Programming 
 
+// Here each log function is dependent to each other, execution of one is depend on each other. 
+
 // console.log("hello")
 // console.log("world")
 // console.log("how are you !")
 
 // Asynchronous Programming 
 
-// console.log('Hello')
-// setTimeout(()=>{
-//     console.log("how are you")
-// },2000)
-// console.log('World')
+// Below each function is executing independently , without any interference. 
 
+
+// let showMessage=((callback)=>{
+//     console.log(callback);
+// })
+
+// let firstMessage=((callback)=>{   // this function is calling two callback functions (ie showMessage() & callback()). 
+//         setTimeout(()=>{
+//             showMessage("hello")  // -> this function is responsible for printing hello. 
+//             callback();  // -> this function is responsible for printing world. 
+//         },1000)
+// })
+
+// let secondMessage=(()=>{
+//     console.log('World');
+// })
+
+// firstMessage(secondMessage) // Hello world. 
 
     </script>
 </body>

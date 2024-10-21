@@ -19,4 +19,4 @@ AddList.addEventListener('dragstart',(e)=>{
             AddListItem.innerHTML=e.target.innerHTML
             AddList.append(AddListItem);
         }
-    })data-value="html"
+    })

@@ -28,3 +28,4 @@ drop.ondrop = (e)=>{
     const draggedItem=document.getElementById(courseId);
     draggedItem.style.display='none';
 }
+
