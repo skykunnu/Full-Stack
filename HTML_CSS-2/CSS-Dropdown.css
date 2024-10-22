@@ -20,8 +20,8 @@ a{
     background-color: #22438c;
 }
 
-/* for centering ul */
-#menu .main{ 
+/* for centering li's present in ul. */
+#menu .mainUL{ 
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -29,7 +29,7 @@ a{
 }
 
 /* Why display block because anchor tag are inline in nature. */
-#menu .main li a{
+#menu .mainUL li a{
     width: 11rem;
     display: block;
     color: whitesmoke;
@@ -55,11 +55,11 @@ a{
     padding: 15px 0px;
 }
 
-#menu .main li :hover{
+#menu .mainUL li :hover{
 background-color: black;
 }
 
-#menu .main li:hover .dropdown{
+#menu .mainUL li:hover .dropdown{
     display: block;
     background-color: #22438c;
     color: black;
