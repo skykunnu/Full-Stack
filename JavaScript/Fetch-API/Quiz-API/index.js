@@ -36,10 +36,7 @@ function fetchData(url){
     fetch(url) // fetches the data from the API. this returns a promise that resolves to a Response. 
     .then((response)=>response.json()) // converts the response to json becoz response(data) from the server is typically in JSON format and this step converts it into simple javaScript object. It also returns promise resolves with javascript object. 
      
-    .then((result)=>
-        {showData(result.results)
-            console.log(result.results)
-}); // passes the trivia questions which is an array of objects.
+    .then((result)=>showData(result.results)); // passes the trivia questions which is an array of objects.
 }
 
 
