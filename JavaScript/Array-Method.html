@@ -11,13 +11,17 @@
 
 // Ways of creating Arrays
 
+
 // By declaring values inside bracket. 
 
 // var arr1=[1,2,3,4,5]
 
-// By using new keyword 
 
-//  var name=new Array() // syntax
+
+// By using constructor function. 
+
+// syntax
+//  var name=new Array()
 // {
 
 // }
@@ -38,6 +42,8 @@
 
         
   // Array methods: push, pop, shift, unshift, slice, splice, toString, join
+
+//  Array methods like (push, pop, shift & unshift) mutates the original array on which they are called on. 
     
 
 // Push method-> It pushes the element at the end of the array and returns the new length of the array.
@@ -96,11 +102,13 @@
 
 //------------------------------------------------------------------------------------------------------------------------
 
-    
-// slice method-> It removes the certain portion of an array and it does'nt take negative arguments.
+// Slice creates a new array and does'nt modify the Orignal array. 
 
 
-// It always create the new array and does'nt modify the orignal array. 
+// Slice method-> It removes the certain portion of an array and it does'nt take negative arguments.
+
+// Syntax - arr.slice(start,end)
+
 
 // const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 
@@ -112,26 +120,31 @@
 //------------------------------------------------------------------------------------------------------------------------
 
 
+// Splice method-> removes all the count of elements from the start index. It mutates the original array.
+
+// Syntax- arr.splice(start,count(no of elements to be removed)) 
+
+// Using splice you can also replace the existing element with new element.
 
 
-// splice method->  It is used to add the new items to an array and it does modify the orignal array. 
-
-
-// Using splice you can remove the element from an array without adding new element.
 
 // const fruits = ["Banana", "Orange", "Apple", "Mango"];
-// fruits.splice(2, 0, "Lemon", "Kiwi");
 
 // first argument defines the position where new elements should be added. 
 // second argument defines how many elements should be removed. 
 // rest of the parameters defines the new elements to be added. 
 
+// fruits.splice(2, 0, "Lemon", "Kiwi");
 // console.log(fruits) // ["Banana", "Orange","Lemon","Kiwi","Apple", "Mango"];
+
+//-----------Below is the other example of above array----------------------
+
 
 // fruits.splice(2,2,"Lemon","Kiwi");
 // console.log(fruits) // ["Banana", "Orange", "Lemon", "Kiwi"]
     
-// fruits.splice(0,1) // ["Orange", "Apple", "Mango"] 
+// fruits.splice(0,1) 
+// console.log(fruits) // ["Orange","Lemon","Kiwi"]
     
     
 //------------------------------------------------------------------------------------
@@ -140,10 +153,11 @@
 
 // toString() converts an array to a string of (comma separated) array values and returns it into the new array.    
     
-// let fruits = [1, 2, 3, 4];
+// let NumArr= [1, 2, 3, 4];
 
-// newArr=fruits.toString();
-// console.log(newArr) // 1,2,3,4
+// newArr=NumArr.toString();
+// console.log(NumArr) [1,2,3,4];
+// console.log(newArr) // 1,2,3,4 
 // console.log(typeof(newArr)) // string
     
 //------------------------------------------------------------------------------------

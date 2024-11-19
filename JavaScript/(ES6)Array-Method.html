@@ -18,9 +18,13 @@
 
 
 *
-
-
 // Map, filter, reduce , some , every, find, findIndex, forEach, for in , for of
+
+// Map, filter & reduce do not mutate the original array Instead returns the new array.
+
+
+
+
 
 // Map -> It creates a new array with the results of a provided function on every element in the calling array. 
 
@@ -71,23 +75,25 @@ and if init value is present than accumulator value will be the init value anf t
 
       //---------------------------------------------------------------------------------------------------------------------------------------
 
+// Some & Every do not mutate the original array. 
 
-// some-> It returns true if, in the array, it finds an element for which the provided function returns true; otherwise it returns false. It doesn't modify the array.
+
+// some-> It returns true, if in the array it finds an element for which the provided function returns true; otherwise it returns false. It doesn't modify the array.
 
 // Every->  whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value (true & false).
 
- // const numbers = [1, 2, 3, 4, 5];
-      // const result = numbers.every(num => num > 0) && numbers.some(num => num > 4);
-      // console.log(result);
+//  const numbers = [1, 2, 3, 4, 5];
+//       const result = numbers.every(num => num > 0) && numbers.some(num => num > 4);
+//       console.log(result); // True
 
 
 //-----------------------------------------------------------------------------------------------------------------------------------------------
 
 // find & findIndex
 
-// find-> It returns the first element in the provided array that satisfies the provided testing function. If no values satisfy the testing function, undefined is returned.
+// find-> It returns the first element in the provided array that satisfies the provided condition. If no values satisfy the condition, undefined is returned.
 
-// diff b/w find() and filter() is that filter() checks for every element in the array while the find() returns the first element that satisfies the provided testing function.
+// Diff b/w find() and filter() is that filter() checks for every element in the array while the find() returns the first element that satisfies the provided testing function.
 
 
 
@@ -111,6 +117,9 @@ and if init value is present than accumulator value will be the init value anf t
 
 
 //------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Enumerating through arrays 
+
 
 // ForEach loop 
 
@@ -148,14 +157,17 @@ and if init value is present than accumulator value will be the init value anf t
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
-// For in loop -> It iterates over the indices in an array.(not recommended for arrays).
+// For in loop -> It iterates over the indexes in an array.(not recommended for arrays).
 
 // let fruits=['Guava','Apple','Orange','Blueberry'];
 
 // for(let fruit in fruits){
 //       console.log(fruit) // 0, 1, 2, 3
+//       console.log(fruits[fruit]) // 'Guava','Apple','Orange','Blueberry'
 // }
 
+
+// -----------------------------------------------------------------------------------------------------------------------------------
 
     </script>
 </body>
