@@ -17,9 +17,10 @@
     //      function child(){ // here child() is forming closure with parent() becoz it is accessing x present in the parent function.
     //         return x+x;
     //      }
-    //     //   child() // without return it will give undefined becoz parent function is not returning something. 
+    //     //   child()  
 
-    //     return child()   
+    //     return child() // without return it will give undefined becoz parent function is not returning something.
+       
     //     var x=2 // Let Say x=2 is defined after return child() and  answer is 6. means that x is taking 3 not 2 as a value although it is defined after var x=3, because child() is called before x=2 which makes x=2 unreachable, but if x=2 is defined before return child() then return value of child() will be 4. 
 
     //    }
