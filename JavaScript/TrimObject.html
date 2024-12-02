@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trimming the object</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        function trimObject(obj,value){
+         let keys=Object.keys(obj) // a,b,c,d
+         let Obj={};
+
+    if(keys.length===0) return value;
+    if(value.length===0) return obj;
+
+
+
+         keys.forEach((key)=>{
+            if(!value.includes(key)) Obj[key]=obj[key] // a & d ke liye yeh false se true mein convert ho jayega and vice-versa
+         })
+        
+        return Obj;
+        }
+
+
+        console.log(trimObject({a:1,b:2,c:3,d:4},["b","c"])) // a:1 ,d:4
+        console.log(trimObject({a:1,b:2,c:3,d:4},[]))  // {a: 1, b: 2, c: 3, d: 4}
+        console.log(trimObject({a:1,b:2,c:3,d:4},["a","b","c","d"])) // {}
+        console.log(trimObject({},["a","b","c","d"])) // ['a', 'b', 'c', 'd']
+    </script>
+</body>
+</html>
