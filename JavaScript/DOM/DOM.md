@@ -21,4 +21,10 @@ now create tr and under tr create td as much as you want.
 first append all td inside tr and then append tr inside for ex DownTable.
 
 
-3. 
+3. Difference between innerText vs innerHTML vs TextContent. 
+
+InnerHTML-> Reads and write the HTML markup inside an element & includes HTML tags,content & attributes. 
+
+InnerText-> Reads or writes the visible text content of an element & excludes both hidden elements or styles. 
+
+TextContent-> includes all text even if hidden by css. 

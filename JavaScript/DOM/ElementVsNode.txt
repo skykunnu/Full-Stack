@@ -1,0 +1,7 @@
+// Difference between the Element and Node. 
+
+> Element is a specific type of node that represents an HTML element. While all elements are nodes, not all nodes are element.
+
+> Nodes are everything in the DOM. a node can be an element, attribute, text, comment and so on. Nodes are organized like a tree structure, with the document node at the top and all other nodes branching off from it. 
+
+
