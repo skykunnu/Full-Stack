@@ -2,7 +2,7 @@ const green=document.querySelector('.green')
 const pink=document.querySelector('.pink')
 const blue=document.querySelector('.blue')
 
-// Below we have done event bubbling (ie If we click on any element below it will execute all the event listener from there till it finds the window object). this simply means that event bubbling occurs from (inside to outside).
+// Below we have done event bubbling (ie If we click on any element below it will execute all the event listener from there till it finds the window object). this simply means that event bubbling occurs from (inside to outside). window object is the last object till the bubbling is executed. 
 
 // this third argument (true) inside the event listner is for event capturing that happens from (outside to inside). if we use stopPropagation on any of the below event listners then from there to  last child the propogation will stop although the console statements of current(on which the stopPropogation is written) event listner will be executed. 
 
