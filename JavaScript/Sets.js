@@ -10,7 +10,7 @@ console.log(set.has(4)) // It tells whether the element is present or not by ret
 
 console.log(set.size) // returns the size of the set.
 
-set.clear() // It removes all values from a set. 
+set.clear() // It removes all values from the set. 
  
 for(const item of set){
     console.log(item) 
