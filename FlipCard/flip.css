@@ -9,7 +9,7 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: url(https://cdn.pixabay.com/photo/2017/03/02/08/58/background-texture-2110724_1280.jpg) center/cover no-repeat;
+    background: url(https://cdn.pixabay.com/photo/2022/05/31/00/56/sky-7232494_1280.jpg) center/cover no-repeat;
 }
 
 .container{
@@ -17,12 +17,12 @@ body{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 3rem 20rem;
+    margin: 5rem 23rem;
 }
 
 .flip-card{
-    height: 120px;
-    width: 120px;
+    height: 100px;
+    width: 100px;
     margin: 16px;
     cursor: pointer;
     background-color: transparent;
@@ -76,10 +76,20 @@ body{
     position: absolute;
     font-size: 15px;
     font-weight: 600;
-    top: 1rem;
+    top: 7.4rem;
     padding: 4px 30px 3px 30px;
     border-radius: 10px;
-    /* right: 4rem; */
+    right: 5rem;
     background-color: #0293ff;
     color: black;
+  }
+
+  #Heading{
+    position: absolute;
+    font-size: 22px;
+    font-weight: 600;
+    top: 2rem;
+    right: 33rem;
+    color: #000957;
+
   }

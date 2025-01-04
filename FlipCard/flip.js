@@ -13,7 +13,7 @@ let TimerDiv=document.querySelector('#timer');
 let counter=0;
 
 backImage();
-startTimer();
+// startTimer();
 
 flipFrontImage.forEach((flipFront_image)=>{
     flipFront_image.addEventListener('click',()=>{
