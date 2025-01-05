@@ -5,7 +5,7 @@ const form=document.querySelector('form')
 
 // usernameInput.addEventListener('click',()=>{
 //     console.log('Input clicked')
-// })
+// },{once:true}) // It will only run once after triggered.  
 
 // usernameInput.addEventListener('dblclick',()=>{
 //     console.log('Input dblclicked')
