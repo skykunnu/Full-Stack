@@ -74,7 +74,53 @@ console.log(f) // syntax error, As f is not initialized.
 
 // ---------------------------------------------------------------------------------------------------------------------
 
-// Variable Shadowing 
+// ⁡⁣⁣⁢Scope of a variable -> It is a place or area upto which a variable is accessible. ⁡
+
+/* ⁡⁣⁢⁣In JavaScript, we have three scopes global scope, function scope, and block scope.⁡ 
+
+-> JS has function-level scoping  
+
+# ⁡⁢⁣⁣The variable declared with var is global-scoped and function-scoped, meaning
+that if we create a variable inside of a function it will not be accessible outside the function. 
+⁡
+
+# ⁡⁣⁢⁣The variable declared with let & const are function-scoped but at the same time, they are block-scoped. 
+This means that in a block of code consisting of curly braces. eg-> loops , if-else statments etc. ⁡
+
+*/
+
+// Variable Shadowing
+
+/* 
+⁡⁣⁣⁢It is a concept in js when a variable with the same name is declared in an inner scope
+as well as a variable in an outer scope. Any references to the variable within the inner scope
+will refer to the inner variable, effectively shadowing the outer variable. ⁡
+
+*/
+
+let fruit='Apple';
+
+function chooseFruit(){
+    let fruit="Orange";
+    console.log(fruit);
+}
+
+chooseFruit(); // Orange
+console.log(fruit); // apple
+
+/* 
+⁡⁣⁣⁢The inner scope variable shadowed the outer scope variable. 
+The priority of scopes goes from inner-most to outer-most scope. 
+That is why, the variables inside the function are prioritized and
+then when the function ends, they are gone from the memory. 
+
+same applies to block scope. 
+
+If you create a variable in an outer scope with the let keyword and another variable with the var keyword in a block scope but with the same name, it will throw an error. This is called illegal shadowing.⁡
+
+*/
+
+
 
 
     </script>
