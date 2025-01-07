@@ -10,15 +10,14 @@
   <body>
     <!-- Some commonly used document.getElements methods  -->
        <!--  
-         1.) document.getElementsByTagName()-> It returns HTML collection(array-like object but not actual array) of elements with a specific tag name. 
+         1.) document.getElementsByTagName()-> ⁡⁣⁣⁢It returns HTML collection(array-like object but not an actual array) of elements with a specific tag name.⁡ 
 
-              use for, for-in, for-of loop to traverse the html collection. 
+              ⁡⁢⁣⁣use for, for-in, for-of loop to traverse the html collection.⁡ 
 
          for ex- let para=document.getElementsByTagName('p')-> this retrieves all p elements on the page. 
 
-         2.) document.getElementsByClassName()-> It returns HTML collection of elements that have a specific class name.
+         2.) document.getElementsByClassName()-> ⁡⁣⁣⁢It returns HTML collection of elements that have a specific class name.⁡
           
-              use for, for-in, for-of loop to traverse the html collection.
 
          for ex- let items = document.getElementsByClassName('item') -> This retrieves all elements that have the class item.
     
@@ -34,12 +33,12 @@
    ex- // Select first element with class "item"
         let item = document.querySelector('.item');
    
-   2.) querySelectorAll()-> Returns a nodelist(behaves similarly to an array) of all elements that match a given css selector. 
+   2.) querySelectorAll()-> ⁡⁣⁣⁢Returns a nodelist(behaves similarly to an array) of all elements that match a given css selector⁡. 
 
    ex- // Select all elements with class "item"
           let items = document.querySelectorAll('.item');
 
-     Note:- looping techniques used in querySelectorAll() are for, for of , forEach() loop.
+     Note:- ⁡⁢⁣⁣looping techniques used in querySelectorAll() are for, for of , forEach() loop.⁡
    
    -->
 
@@ -86,7 +85,7 @@
     // }
 
 
-    // In order to use for Each loop you need to convert wrap into an array, for that you can use spread function. 
+    ⁡⁣⁣⁢// In order to use forEach loop you need to convert wrap into an array, for that you can use spread function. ⁡
 
     // [...wrap].forEach((e)=>{
     //     e.style.display='block'
@@ -116,6 +115,27 @@
     // })
 
 
+    // ⁡⁣⁣⁢ HTML Collection vs NodeList ⁡
+
+    /* 
+    ⁡⁣⁢⁣In Js HTML Collection & Nodelist are different types of objects that represent groups of DOM Elements. ⁡
+    
+   ⁡⁣⁣⁢ # Nodelist-> It is a collection of nodes, which may include (element,text & comment) node.
+    
+    ex- document.querySelectorAll() , childNodes.
+
+    -> NodeList returned by document.querySelectorAll() is staticList meaning they do not update when the DOM Changes. 
+    -> NodeList returned by childNodes are live in nature. ⁡
+
+
+
+    ⁡⁣⁢⁣# HTML Collection-> It is a collection of only HTML elements (element nodes). It is typically live
+    meaning it automatically updates to reflect changes in DOM. 
+    
+    ex- document.getElementByTagName(), document.getElementByClassName()⁡
+
+    
+    */
 
 
 
