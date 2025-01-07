@@ -86,11 +86,11 @@ that if we create a variable inside of a function it will not be accessible outs
 
 # ⁡⁣⁢⁣The variable declared with let & const are function-scoped but at the same time, they are block-scoped. 
 This means that in a block of code consisting of curly braces. eg-> loops , if-else statments etc.
-they will not be accessible outside the block scope.   ⁡
+they are not accessible outside the block.   ⁡
 
 */
 
-// Variable Shadowing
+// ⁡⁢⁣⁣Variable Shadowing⁡
 
 /* 
 ⁡⁣⁣⁢It is a concept in js when a variable with the same name is declared in an inner scope
@@ -110,7 +110,7 @@ chooseFruit(); // Orange
 console.log(fruit); // apple
 
 /* 
-⁡⁣⁣⁢The inner scope variable shadowed the outer scope variable. 
+⁡⁣⁣⁢The inner scope variable shadowed (override) the outer scope variable. 
 The priority of scopes goes from inner-most to outer-most scope. 
 That is why, the variables inside the function are prioritized and
 then when the function ends, they are gone from the memory. 

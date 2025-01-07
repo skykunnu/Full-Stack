@@ -10,15 +10,15 @@
 
 
 <script>
-    // Hoisting- It is a feature in js, where variable and function declarations are moved into the top of their containing scope.
+    // ⁡⁣⁣⁢Hoisting- It is a feature in js, where variable and function declarations are moved into the top of their containing scope.⁡⁡
     // Between function and variable declaration function has higher priority than variable.  
 
-/* Only possible in case of Regular Function Declaration, Not possible in case of function Expression & Arrow functions */
+/* ⁡⁢⁣⁣Only possible in case of Regular Function Declaration, Not possible in case of function Expression & Arrow functions⁡ */
 
 
-/* In case of variable declared with var will give undefined if accessed before initialization.
+/*⁡⁣⁢⁣ In case of variable declared with var will give undefined if accessed before initialization.
    In case of variable declared with let and const will give ReferencedError if accessed before initialization-> this is 
-   because they are in temporal dead zone (TDZ is an area of a block where variable is inacessible untill computer completely initializes it with a value.)  
+   because they are in temporal dead zone (TDZ is an area of a block where variable is inacessible untill computer completely initializes it with a value.) ⁡ 
 */
 // In order to avoid hoisiting use Strict at the top of the editor. 
 
@@ -29,30 +29,46 @@
         //      console.log(x); // 10 
         //  }
         //  console.log(x); // 5 
-        //  innerScope();
+        //  innerScope(); // 10
 
 
-    //    function foo() {
-    //         console.log(a);
-    //         var a = 1;
-    //         function a() { }
-    //         console.log(a);
-    //     }
+       function foo() {
+            console.log(a);
+            var a = 1;
+            function a() { }
+            console.log(a);
+        }
 
-    //     foo(); // function a() {}, 1
+    
+        
+        function foo() {
+            // Hoisting of function declaration 'a'
+            function a() { }
+            
+            // Hoisting of variable declaration 'var a'
+            var a;
+            
+            console.log(a);     // Logs: function a() { }
+            a = 1;              // Variable assignment
+            console.log(a);     // Logs: 1
+        }
+        
+        // Explanation 
+        /* 
+       
+       1> function declaration takes precedence over variable declaration during hoisting 
+        because function declaration are more complete unit of functionality containing 
+        both name and implementation while the variable declaration are just placeholder 
+        untill value's are assigned to them. 
 
-    // Explanation- 
+       2> when the first console.log(a) executes it prints the function defination becoz 
+       a references to the function at that point. 
 
-        // function foo(){
+       3> then assignment a=1 executes, which overwrites the function reference with number 1. 
 
-        //     function a() {} // function declaration is hoisted
-        //     var a; // variable declaration is hoisted 
-        //     console.log(a) //  function a() {}
-        //     a=1; 
-        //     console.log(a) // 1
-        // }
-
-
+       4> Finally second console.log(a) executes it prints 1, since a now holds that value. 
+    
+        */
 
 </script>
 
