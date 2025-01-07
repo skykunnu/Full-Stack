@@ -12,7 +12,7 @@ where an event on child element bubbles up to its ancestors.
 */
 
 
-const addCardBtn = document.querySelector('.card')
+const addCardBtn = document.querySelector('.add-card')
 const container = document.querySelector('.container')
 
 let count = 1
@@ -22,4 +22,13 @@ addCardBtn.addEventListener('click', () => {
     newCard.classList.add('card')
     newCard.innerText = count++
     container.append(newCard)
+})
+
+container.addEventListener('click',(e)=>{
+    if(e.target.className="card"){
+        e.target.remove();
+    }
+    else{
+        return;
+    }
 })
