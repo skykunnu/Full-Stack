@@ -8,7 +8,7 @@ on the browser.⁡
 
 /* ⁡⁢⁣⁣Local Storage⁡⁢⁣⁣:-⁡
 
--> ⁡⁣⁢⁣It is a form of web storage that stores data for a long time.⁡
+-> ⁡⁣⁢⁣It is a type of web storage that stores the data for a long time (ie day, week or even a year).⁡ 
 
 -> It only stores data in the form of strings. 
 
@@ -24,6 +24,8 @@ so as to store the data.
 -> ⁡⁢⁣⁣To remove whole Data -> localStorage.clear()⁡
 
 -> ⁡⁣⁣⁢Limit is upto 5MB per app per browser and never expired⁡
+
+-> ⁡⁢⁣⁣can be accessed on client side only⁡ 
 
 localStorage.setItem('name','Shikhar')
 localStorage.setItem('place','Jaipur')
@@ -50,6 +52,8 @@ is cleared once the user closes the browser window.⁡
 -> ⁡⁣⁢⁡⁢⁣⁣To remove Data -> sessionStorage.removeItem("key") {removes only the key/value pair present in quotes}.⁡⁡
 
 -> ⁡⁣⁣⁢limit only by system memory and expired as soon as tab is closed.⁡
+
+-> ⁡⁢⁣⁣can be accessed on client side only⁡⁡ 
 
 
 sessionStorage.setItem('name','Shikhar')
