@@ -73,7 +73,7 @@ sessionStorage.clear();
 but with technology advancement, a cookie can track your web activites
 and retrieve your content preferences. 
 
--> It comes with expiry date. 
+-> It comes with an expiry date. 
 
 -> It size is much smaller around 4kb. 
 
