@@ -69,15 +69,17 @@ sessionStorage.clear();
 
 /* ⁡⁣⁣⁢⁡⁣⁣⁢Cookies:⁡-⁡ 
 
--> It is initially used to store info about the websites that you visit 
+-> ⁡⁣⁢⁣It is initially used to store info about the websites that you visit 
 but with technology advancement, a cookie can track your web activites
-and retrieve your content preferences. 
+and retrieve your content preferences.⁡ 
 
--> It comes with an expiry date. 
+-> ⁡⁣⁣⁢Can set expiration date. ⁡
 
--> It size is much smaller around 4kb. 
+-> ⁡⁢⁣⁣It size is much smaller around 4kb. ⁡
 
--> cookies can be sent to server with every request. 
+-> ⁡⁣⁣⁢cookies sent to the server with every HTTP request.⁡
+
+
 
 
 document.cookie="userName= Shikhar; expires=9 Jan 2025 12:00:00 UTC"
