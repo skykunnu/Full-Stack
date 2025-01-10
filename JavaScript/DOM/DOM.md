@@ -28,3 +28,6 @@ InnerHTML-> Reads and write the HTML markup inside an element & includes HTML ta
 InnerText-> Reads or writes the visible text content of an element & excludes both hidden elements or styles. 
 
 TextContent-> includes all text even if hidden by css. 
+
+4. window.location.href -> It refers to the current URL of the page. 
+

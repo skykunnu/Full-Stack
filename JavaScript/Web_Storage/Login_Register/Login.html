@@ -1,17 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>login</title>
     <style>
-        body{
-            display: flex;
-            justify-content: center;
-        }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      form {
+        width: 500px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      input {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+        box-sizing: border-box;
+      }
     </style>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <form id="loginform">
+      <h2>Login</h2>
+      <input type="text" placeholder="Username" required id="username" />
+      <input type="password" placeholder="Password" required id="password" />
+      <button type="submit">Login</button>
+      &nbsp; <a href="register.html">Go to register</a>
+    </form>
+
+    <script>
+      document
+        .getElementById("loginform")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          let username = document.getElementById("username").value;
+          let password = document.getElementById("password").value;
+
+          let user = localStorage.getItem("User");
+          
+          if (user) {
+              console.log(user)
+              let parsedUser = JSON.parse(user);
+            if (parsedUser.Password === password) {
+              window.location.href = "index.html";
+            } else {
+              alert("Incorrect password");
+            }
+          } else {
+              alert("user not found");
+            }
+        });
+    </script>
+  </body>
 </html>
