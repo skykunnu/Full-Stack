@@ -31,8 +31,10 @@
         }
 
         document.getElementById('logoutButton').addEventListener('click',function (){
-            localStorage.removeItem('user');
-            window.location.href='login.html';
+            localStorage.removeItem('User');
+            document.getElementById("welcomeMessage").innerHTML=`Hello, please <a href="login.html">login</a>`;
+            document.getElementById("logoutButton").classList.add('hidden');
+            
 
         })
 
