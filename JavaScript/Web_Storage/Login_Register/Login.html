@@ -45,8 +45,7 @@
           let user = localStorage.getItem("User");
           
           if (user) {
-              console.log(user)
-              let parsedUser = JSON.parse(user);
+              let parsedUser = JSON.parse(user); // this takes a JSON-formatted string and converts it into a javascript object.  
             if (parsedUser.Password === password) {
               window.location.href = "index.html";
             } else {
