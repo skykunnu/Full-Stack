@@ -11,12 +11,19 @@
 // ⁡⁣⁣⁢ Spread operator-> It allows you to easily expand elements of an iterable (like arrays, strings, or objects) into individual elements or properties. It's a powerful and convenient way to copy, merge, or manipulate arrays and objects, among other things.
 
 
-// Properties of spread operator
 
 /* 
-1. for Arrays 
--> 
+1. ⁡⁣⁢⁣for Arrays⁡ 
 
+-> It creates shallow copy when used for copying & merging.
+
+⁡⁢⁣⁣2. for objects⁡ 
+
+-> It also create shallow copy. 
+
+-> When merging objects, properties from later objects overwrite earlier ones if there are duplicate keys.
+
+-> The spread operator does not copy non-enumerable properties.
 
 
 */
@@ -63,9 +70,41 @@ const d=[...b, ...x];
 //     console.log(Object.values(obj2)[2]) // 100000
 
 
+
+
+
+
+//----------------------------------------------------------------------------------------------------------------------------
+
+// ⁡⁣⁣⁢Rest Parameter-> It allows a function to accept indefinite number of arguments as an array.⁡ 
+
+
+/* ⁡⁢⁣⁣Properties of Rest Parameter⁡ 
+
+⁡⁣⁢⁣1. A function definition can only have one rest parameter.
+
+2. A rest paramater must be the last paramater in the function definition. 
+
+3. Trailing commas are not allowed after the rest parameter.
+
+4. The rest parameter cannot have a default value.⁡
+
+*/
+
+function myFunc(a,b, ...leftArg){
+    console.log(a); // 1
+    console.log(b); // 2 
+    console.log(leftArg); // [3,4,5,6,7,8,9,10]
+}
+
+
+myFunc(1,2,3,4,5,6,7,8,9,10);
+
+
+
 // ------------------------------------------------------------------------------------------------------------------------------
 
-// Destructuring- It is a Js feature that allows you to unpack values from arrays or properties from objects into distinct variables.
+// ⁡⁣⁢⁣Destructuring- It is a Js feature that allows you to unpack values from arrays or properties from objects into distinct variables.⁡
 
     // let arr=[1,2,3]
     // let [a, ,c]=arr
