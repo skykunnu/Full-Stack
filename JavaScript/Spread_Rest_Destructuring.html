@@ -7,14 +7,25 @@
 </head>
 <body>
     <script>
-// Spread operator-> It allows you to easily expand elements of an iterable (like arrays, strings, or objects) into individual elements or properties. It's a powerful and convenient way to copy, merge, or manipulate arrays and objects, among other things.
+// ⁡⁣⁣⁢ Spread operator-> It allows you to easily expand elements of an iterable (like arrays, strings, or objects) into individual elements or properties. It's a powerful and convenient way to copy, merge, or manipulate arrays and objects, among other things.
 
-// const a=[1,2,3,4];
-// const b=[2,4,6];
-// const c=[1,7,8,9];
 
-// const x=[...a, ...c];
-// const d=[...b, ...x];
+// Properties of spread operator 
+/* 
+
+
+
+
+*/
+
+const a=[1,2,3,4];
+const b=[2,4,6];
+const c=[1,7,8,9];
+
+const x=[...a, ...c];
+// console.log(x) // [1,2,3,4,1,7,8,9] 
+const d=[...b, ...x];
+// console.log(d) // [2,4,6,1,2,3,4,1,7,8,9]
 
 // document.write(d[0]+d[1]+d[2]+d[3]) // 13
 // document.write(d[d.length-2]+d[d.length-1]); //  17
