@@ -103,19 +103,25 @@ Recursively copies every element of the array including nested array & object
 */
 
 function DeepCopyArray(objArr){
-return objArr.map((item)=>{
+return objArr.map((item)=>{ // the map method returns a new array where each element is transformed based on the logic. 
     if(Array.isArray(item)){
         return DeepCopyArray(item);
     }
     else if(item && typeof item === "object"){
         return DeepCopyObject(item);
     }
+    else {
+      return item;
+    }
 })
 }
 
 function DeepCopyObject(obj){
-    return Object.keys(obj).reduce((copy,key)=>{
+  /* calls the reduce method on array (keys of obj) to iterate through the keys (property's name) and construct a new object. for ex keys:- [a,b] */
+    return Object.keys(obj).reduce((copy,key)=>{ 
         copy[key]=DeepCopyArray([obj[key]])[0]
+ /* {}[a]=DeepCopyArray([obj[a]])[0] -> takes the value of obj[a] and wraps it in an array and calls DeepCopyArray on this element and recursively deep copy the property value. 
+extracts the deep copied value from the returned array using [0].  */
     },{})
 }
 
@@ -129,7 +135,7 @@ const newObj=DeepCopyArray(objArr);
       
 
 
-
+// 3. 
 
 
     </script>
