@@ -20,6 +20,20 @@
    In case of variable declared with let and const will give ReferencedError if accessed before initialization-> this is 
    because they exist in the temporal dead zone (TDZ is an area of a block where variable is inacessible untill computer completely initializes it with a value.) ⁡ 
 */
+
+/* 
+
+⁡⁣⁣⁢How to determine if hoisting is happening ?⁡ 
+
+Look for variable shadowing (ie if a local variable with the same name as a global variable exists,
+hoisting will priortize the local variable's declaration at the top of the function/block scope. 
+
+*/
+
+
+
+
+
 // In order to avoid hoisiting use Strict at the top of the editor. 
 
         // console.log(x); // undefined, variable is declared but not assigned value. 
@@ -69,6 +83,11 @@
        4> Finally second console.log(a) executes it prints 1, since a now holds that value. 
     
         */
+
+
+
+
+
 
 </script>
 
