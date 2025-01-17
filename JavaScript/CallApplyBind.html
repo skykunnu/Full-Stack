@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call_Apply_Bind</title>
+</head>
+<body>
+    <script>
+        //call, bind, apply -> In JavaScript, call(), apply(), and bind() are methods available on function object( functions present inside the object) that allow you to control the context in which the function is executed (i.e., what this refers to).
+
+// In JavaScript, 
+
+//  call() is like you giving instructions to a function right away, saying, "Run this function, but use this person (or object) as this when running."
+// first argument passed to call should be the context (which is this object) and the subsequent arguments are the parameters to the function. 
+
+
+// const person = 
+// { name: "Shikhar" ,
+// sayHello: function(age,country){
+// return `My name is ${this.name} and I am ${age} years old and I am from ${country}.`;
+// }    
+// };
+
+// const a=person.sayHello.call(person,"24","India")    
+// console.log(a) // My name is Shikhar and I am 24 years old and I am from India.
+
+
+//----------------------------------------------------------------------------------------------
+
+// The apply() method works similarly to call(), but instead of passing arguments individually, it accepts a single array of arguments. This is useful when you don’t know in advance how many arguments will be passed.
+// first argument passed to apply should be the context (which is this object) and the subsequent arguments are the parameters to the function. 
+
+
+// const person = 
+// { name: "Alice" ,
+// sayHello: function(age,country){
+// return `My name is ${this.name} and I am ${age} years old and I belong to ${country}`;
+// }    
+// };
+
+// const a=person.sayHello.apply(person, [25, "USA"]);
+// console.log(a) // My name is Alice and I am 25 years old and I belong to USA. 
+
+// ------------------------------------------------------------------------------------------------
+
+// bind()-> This method doesn’t immediately invoke the function. Instead, it creates a new function where the context (this) and any provided arguments are fixed in advance.. basically an object can borrow a method from another object.
+// The first argument passed to bind should be the context (which is this object) and the subsequent arguments are the parameters to the function. 
+
+
+// const person = 
+// { name: "Alice",
+// sayHello:function(age, country) {
+//     console.log(`My name is ${this.name}, I am ${age} years old and from ${country}.`);
+// }
+//  };
+
+
+// const boundSayHello = person.sayHello.bind(person,25,"USA");
+// boundSayHello(); // My name is Alice, I am 25 years old and from USA. 
+
+
+// ------------------------------------------------------------------------------------------------------------
+
+
+
+    </script>
+</body>
+</html>

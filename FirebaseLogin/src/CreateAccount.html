@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <script type="module" src="./CreateAccount.js" defer></script>
+    <title>Create_Account</title>
+</head>
+<body class="flex items-start justify-center mt-[8rem] bg-slate-300">
+    <div id="wrapper" class="flex flex-wrap items-center justify-center h-[22rem] w-[25rem] bg-gray-500 rounded-lg">
+        <form action="">
+            <div class="heading">
+                <h1 class="text-center text-3xl font-bold pb-4">Create Account</h1>
+            </div>
+            <div class="email my-2">
+                <p class="text-black font-medium text-xl py-2">Email</p>
+                <input type="email" id="email" placeholder="Enter your Email" class="rounded-sm text-md w-[15rem] p-1"required>
+            </div>
+            <div class="password my-2">
+                <p class="text-black font-medium text-xl py-2">Password</p>
+                <input type="password" id="password" placeholder="Enter your Password" class="rounded-sm text-md w-[15rem] p-1" required>
+            </div>
+            <div class="text-center">
+                <button type="submit" id="submit" class=" mt-5 text-white px-10 py-1 rounded-sm bg-black text-md">Submit</button>
+            </div>
+        </form>
+        <div id="footer" class="flex gap-2">
+            <p>If you already Have an account</p>
+            <p class="underline underline-offset-1 text-white"><a href="./login.html">Login Here</a></p>
+        </div>
+    </div>
+</body>
+</html>
