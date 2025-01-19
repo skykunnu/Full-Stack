@@ -18,6 +18,7 @@ const firebaseConfig = {
   const db=getFirestore(app)
 
   const Email=document.getElementById("email");
+  const name=document.getElementById("name");
   const logout=document.getElementById("Logout");
 
   // Fetch user details 
@@ -30,6 +31,7 @@ const firebaseConfig = {
             if(docSnap.exists()){
                 const userData=docSnap.data();
                 Email.textContent=userData.email;
+                name.textContent=userData.UserName;
             }
             else{
                 alert("No user data found!");

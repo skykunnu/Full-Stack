@@ -22,9 +22,12 @@ submit.addEventListener('click',function(e){
     e.preventDefault();
     const emailField=document.getElementById('email');
     const passwordField=document.getElementById('password');
+    const UserNameField=document.getElementById('Username');
+
 
     const email=emailField.value;
     const password=passwordField.value;
+    const UserName=UserNameField.value;
 
 
 
@@ -34,12 +37,14 @@ submit.addEventListener('click',function(e){
      
      setDoc(doc(db,"users",user.uid),{
       email:user.email,
+      UserName:UserName,
       uid:user.uid,
      }).then(()=>{
        alert("User is successfully created.")
        emailField.value="";
        passwordField.value="";
-       window.location.href="login.html"
+       UserNameField.value="";
+       window.location.href="login.html";
      })
       
     })
