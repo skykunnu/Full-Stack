@@ -7,6 +7,46 @@
 </head>
 <body>
     <script>
+        // 4 common reasons/ways to avoid memory leak in javascript
+
+        /*
+        1. ⁡⁣⁣⁢Global variables without identifiers (let, const, var)⁡
+
+        -> Variables without let, const or var identifiers will automatically be part of a global scope. 
+        if they hold any reference of the scoped object then because of the global scope it won't allow the garbage collector to clean that variable even after the scope is completed. 
+
+        Ex-
+        
+        var global="I am global"
+
+        function scopedFunction(){
+
+            scoped="I am scoped" // Global scoped explicitly.
+        
+            let inner="inner";
+            console.log("variables - ", scoped, inner)
+        
+        
+        }
+
+        scopedFunction(); // After the execution of the function the (inner) variable will be cleaned by the garbage collector while the variable named scoped will remain inside global scope (window in browser).
+
+
+        2. ⁡⁣⁣⁢Not removing Event listeners⁡
+
+        -> It's important to remove event listeners once the DOM element is no longer part of the DOM means removed from the DOM otherwise they will listen for an infinite amount time untill web pages are available. 
+
+        
+        3. ⁡⁣⁣⁢Mindfully use the closures⁡
+
+        -> Closures can retain the references of objects which are part of its lexical scope for a longer duration and can cause memory leaks. 
+
+
+        4. ⁡⁣⁣⁢Not cleared Timers & Intervals⁡
+
+        -> Uncleared setInterval() keeps the associated object in memory and won't allow the garbage collector to collect the linked object. 
+        
+        */
 
 
 
