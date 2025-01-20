@@ -5,11 +5,9 @@ let flipcardfront;
 let flipcardinner;
 let flipcard;
 let imgPoke;
-// let type;
 let temp = [];
 let offset = 0;
 
-//  let URL =`https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=20`
 
 document.addEventListener("DOMContentLoaded",loadData)
 loadMore.addEventListener("click", loadData);
@@ -20,7 +18,7 @@ function loadData() {
     fetch(URL)
         .then((response) => response.json())
         .then((result) => {
-            // console.log(result)
+        
             showdata(result.results)
             offset += 20
 
@@ -28,12 +26,12 @@ function loadData() {
 }
 
 function showdata(data) {
-    //  console.log(data)
+    
     data.forEach(item => {
         if (temp.includes(item.name)) {
-            return; // Skip if it's a duplicate
+            return; 
         }
-        // Add Pokémon name to temp to track already displayed ones
+        
         temp.push(item.name);
 
 
@@ -61,13 +59,13 @@ function showdata(data) {
     });
 }
 
-function imgurl(url, imgelement,typee) {
+function imgurl(url, Img_element,Type) {
     fetch(url)
         .then((response) => response.json())
         .then((result) =>{
-            imgelement.src = result.sprites.other.dream_world.front_default
-           typee.innerText = result.types[0].type.name
-// console.log(result.types[0].type.name);
+            Img_element.src = result.sprites.other.dream_world.front_default
+           Type.innerText = result.types[0].type.name
+
 
         console.log(result)
             
