@@ -30,23 +30,21 @@ DELETE: Remove a resource from the server.
 // Fetch-API
 const URL='https://dog.ceo/api/breeds/image/random';
 
-// const button=document.querySelector("button");
-// const Img=document.querySelector('img');
+const button=document.querySelector("button");
+const Img=document.querySelector('img');
 
 
-// button.addEventListener("click",()=>{
+button.addEventListener("click",()=>{
 
-// fetch(URL).then(response=>response.json())
-// .then((json)=>{
-// Img.src=json.message;   
-// })
-// })
+fetch(URL).then(response=>response.json())
+.then((json)=>{
+Img.src=json.message;   
+})
+})
 
 
 // XML HTTP Request (XHR) -> Oldest way of calling an API and accessing data from it. 
 
-const button=document.querySelector("button");
-const Img=document.querySelector('img');
 
 button.addEventListener('click',()=>{
 
