@@ -1,12 +1,20 @@
-let Input = document.querySelector("#todoInput");
+
+// Below we have target input,addbtn & Tasks.
+ let Input = document.querySelector("#todoInput");
 let addbtn = document.querySelector("#AddBtn");
 let todoCont = document.querySelector("#todoItems");
+
+
+
+
+
 let BgColor = [
   { backgroundColor: "#FFEEA9", color: "black" },
   { backgroundColor: "#F9D689", color: "black" },
   { backgroundColor: "#F6E9B2", color: "black" },
   { backgroundColor: "#FFE0B6", color: "black" },
 ];
+
 
 let ItemArr = [];
 let count = 0;
@@ -17,9 +25,13 @@ let changedObjectTask;
 addbtn.addEventListener("click", Tasks);
 
 function Tasks() {
+
   if (Input.value === "") {
     alert("Please Enter the task !");
-  } else {
+  } 
+  
+  
+  else {
     if (flag) {
       currentEditPara.innerHTML = Input.value;
       ItemArr = ItemArr.map((item) => {
@@ -32,12 +44,14 @@ function Tasks() {
       flag = false;
       currentEditPara = null;
       Input.value = "";
-    } else {
+    } 
+    
+    else {
       let para = document.createElement("p");
-      let delBtn = document.createElement("span");
+      let delBtn = document.createElement("span"); // delBtn & deli will wrapped together. 
       let deli = document.createElement("i");
-      let editi = document.createElement("i");
-      let editBtn = document.createElement("span");
+      let editBtn = document.createElement("span"); // EditBtn & editi will be wrapped together. 
+      let editi = document.createElement("i"); 
       let ItemDiv = document.createElement("div");
       let btnDiv = document.createElement("div");
       para.innerHTML = Input.value;

@@ -1,0 +1,1 @@
+# NaN is the only value in js which is not equal to itself. 
