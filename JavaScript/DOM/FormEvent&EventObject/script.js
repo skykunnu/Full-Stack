@@ -27,8 +27,27 @@ usernameInput.addEventListener('input',(e)=>{
 
 */
 
+// ⁡⁣⁣⁢Load Event-> It is an event in js, fired when a resource such as (images, script, stylesheet or entire page) has finished loading.⁡
 
 
+// const button=document.querySelector("button");
+// const Img=document.querySelector('img');
+
+// button.addEventListener('click',()=>{
+
+// const xhr=new XMLHttpRequest();
+
+// xhr.responseType='json';
+
+// xhr.addEventListener('load',()=>{
+//     Img.src=xhr.response.message;
+// })
+
+// xhr.open('GET', URL);
+// xhr.send();
+
+
+// })
 
 
 // change event -> it will occur when we type & click anywhere outside the input. 

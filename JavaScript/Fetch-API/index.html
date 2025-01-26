@@ -6,13 +6,63 @@
     <title>API</title>
 </head>
 <body>
+<!-- API-(Application programming interface)  It is a set of rules and protocols that allows different software applications to
+ communicate with each other.  -->
 
-
-
+ <button>Click_Me</button>
+ <br>
+<img src="" style="width: 500px; height: 500px;">
 
     
     <script>
+/* 
+Methods: APIs often use standard HTTP methods to perform actions:
 
+GET: Retrieve data from the server.
+
+POST: Send data to the server to create a new resource.
+
+PUT: Update an existing resource on the server.
+
+DELETE: Remove a resource from the server.
+*/
+
+// Fetch-API
+const URL='https://dog.ceo/api/breeds/image/random';
+
+// const button=document.querySelector("button");
+// const Img=document.querySelector('img');
+
+
+// button.addEventListener("click",()=>{
+
+// fetch(URL).then(response=>response.json())
+// .then((json)=>{
+// Img.src=json.message;   
+// })
+// })
+
+
+// XML HTTP Request (XHR) -> Oldest way of calling an API and accessing data from it. 
+
+const button=document.querySelector("button");
+const Img=document.querySelector('img');
+
+button.addEventListener('click',()=>{
+
+const xhr=new XMLHttpRequest();
+
+xhr.responseType='json';
+
+xhr.addEventListener('load',()=>{
+    Img.src=xhr.response.message;
+})
+
+xhr.open('GET', URL);
+xhr.send();
+
+
+})
 
 
     </script>
