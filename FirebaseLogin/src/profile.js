@@ -2,14 +2,16 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebas
 import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js";
 import {getFirestore, doc, getDoc} from "https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore.js"
 
+import { ENV } from "./env.js";
+
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBznDPQViP6tTsx58VPPwodZ0wMbpLwQ04",
-    authDomain: "fir-jslogin.firebaseapp.com",
-    projectId: "fir-jslogin",
-    storageBucket: "fir-jslogin.firebasestorage.app",
-    messagingSenderId: "1076308838234",
-    appId: "1:1076308838234:web:372c59b1560a647e705563"
+    apiKey: ENV.Firebase_API_Key,
+    authDomain: ENV.Firebase_AuthDomain,
+    projectId: ENV.Firebase_projectId,
+    storageBucket: ENV.Firebase_storageBucket,
+    messagingSenderId: ENV.Firebase_messagingSenderId,
+    appId: ENV.Firebase_appId,
   };
 
 
