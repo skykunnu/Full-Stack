@@ -13,20 +13,25 @@
     <script>
  // Comparison Operator 
 
-        //     // == (value compare) vs === (value and data type compare) 
+     // == (it compares the value after type coercion them to a common type) vs === (it compares both type and values wihtout type coercion) 
 
-           var a='Ram'
-           b=Ram;
 
-           console.log(a==b) // Error, Ram is not defined. 
-   
-        var a=10;
-        var b="10";
+     console.log('3'==3); // true, becoz string is coerced to number.
+     console.log(false==0); // true, becoz boolean is coerced to number. 
 
-        console.log(a==b); // true, becoz both value are same. 
+     console.log([1]==1) // true, becoz [1] is coerced to a string and then to a number.
 
-        console.log(a===b)  // False, becoz both value and data type are not same. 
+     console.log({}=="[object Object]") // true, becoz {} is coerced to {}.toString()->"[object Object]"
 
+     console.log(null==undefined); // true, becoz of a special rule comes from ECMA which is "Abstract equality comparison Algo". as both of them represent no value or absence of value.    
+
+    //  The algorithm governs how the == operator works when the types of the two values being compared differ.
+
+
+     console.log('4'=== 4); // true
+     console.log(false===0); // false
+     console.log(null===undefined); // false
+          
 
 
     </script>
