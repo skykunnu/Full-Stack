@@ -33,6 +33,16 @@ for(var i=0;i<10;i++){
 // By the time the setTimeout callbacks run, i has the value of 10. therefore all callbacks logs 10.
 
 
+// You can fix the above code by using let instead of var. 
+
+for(let i=0;i<10;i++){
+    (function(flag){
+       setTimeout(()=>{
+        console.log(i)
+       },100) 
+    })(i);
+} // 0-9, since i is declared with let, it will create a new scope for each iteration of the loop. 
+
 
 
 
