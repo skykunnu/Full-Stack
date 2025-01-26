@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIFE</title>
+</head>
+<body>
+    <!-- IIFE- Immediately invoked function expression -->
+
+<script>
+    /* 
+    IIFE is a JS function that runs as soon as it is defined. it is a common pattern used to create a local scope for variables. 
+    
+    (function(){
+        const secret='This is a secret!'
+        console.log(secret); // This is a secret. 
+    })();
+    
+    console.log(secret) // Error: secret is not defined. 
+    
+    
+    */
+
+for(var i=0;i<10;i++){
+    (function(flag){
+       setTimeout(()=>{
+        console.log(i)
+       },100) 
+    })(i);
+} /* 10 times 10, because since i is declared with var, it is shared across all iterations of the loop (As it does'nt create a new scope for each iteration of the loop). */
+
+// By the time the setTimeout callbacks run, i has the value of 10. therefore all callbacks logs 10.
+
+
+
+
+
+</script>
+
+
+
+
+
+<script>
+
+
+</script>
+
+</body>
+</html>

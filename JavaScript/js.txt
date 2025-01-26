@@ -1,1 +1,4 @@
+# JavaScript was made so that without page refresh or redirection we can change the content. 
+
+
 # NaN is the only value in js which is not equal to itself. 
