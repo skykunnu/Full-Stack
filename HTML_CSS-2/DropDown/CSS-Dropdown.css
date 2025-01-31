@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* navbar is a parent div of all, overflow hidden is used to hide excess content ie when content is larger than its container, display flex is used to align content inside navbar in same line horizontally */
+
+.navbar{
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    gap: 2rem;
+    align-items: center; 
+    padding-left: 10px;
+    
+}
+
+.navbar a{
+    padding: 12px 16px;
+    text-decoration: none;
+    color: white;
+}
+
+ 
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 12px 16px;
+    background-color: inherit;
+    font-family: inherit; 
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: red;
+    }
+
+    /* With position absolute it will come down under the navbar */
+.dropdown-content{
+display: none;
+position: absolute;
+z-index: 1;
+min-width: 110px;
+background-color: antiquewhite;
+}
+
+
+/* Why display block becoz all three links were coming in inline form. */
+.dropdown-content a{
+     display: block;
+     text-decoration: none;
+     padding: 12px 16px;
+     color: black;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  /* on hover it will change the display from none to block. */
+.dropdown:hover .dropdown-content{
+    display: block;
+}
