@@ -1,0 +1,12 @@
+CSS Important Interview Questions 
+
+1. Explain Positions in css ?
+
+-> There are 4 types of positions in css
+
+* Static
+* Fixed
+* Absolute
+* Relative
+
+-> static- 
