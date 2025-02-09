@@ -1,4 +1,17 @@
 # JavaScript was made so that without page refresh or redirection we can change the content. 
 
-
 # NaN is the only value in js which is not equal to itself. 
+
+# If you have multiple js files in your project , Browsers converts all of them into single js files. 
+
+- for ex- In a HTML doc you have three js files placed in the order(js1,js2,js3) 
+js1 contains var fruit='Apple', js2 contains var fruit='Guava', js3 contains console.log(fruit)
+what will be the output in the console.
+
+Since browser contains all js files into single js file so, therefore Apple will be 
+overwrite by Guava and in the console output will be Guava. 
+
+
+
+
+
