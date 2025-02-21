@@ -18,3 +18,13 @@ height and width.
 7. ⁡⁣⁣⁢Web Sockets-⁡ It helps us establishing a bidirectional live communication between client and the server. to reduce the latency in the response. 
 
 
+# CSS3 New features
+
+1. Pseudo-elements 
+
+2. Border Style 
+
+3. Background Style properties. 
+
+4. supports animation and 3D animation.
+
