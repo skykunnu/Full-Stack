@@ -1,0 +1,125 @@
+<!-- 
+1. 4 reasons to write HTML 
+2. Format of HTML page
+3. 3 Mandatory things that make your HTML page a valid page. 
+4. Tags
+5. What Matters in HTML
+6. Why every tag looks similar
+-->
+
+<!-- HTML - Hypertext Markup Language, Hypertext means text made up of links, markup means language made up of tags 
+ In initial days HTML purpose was for documentation.
+
+HTML is a case insensitive language (Both smallcase and uppercase letters are treated equal.)
+
+HTML is a text file which contains tags that eventually makes an UI. 
+
+HTML is a very forgiving langauge. it will render the wrong tags also.  
+
+
+# 4 reasons to write HTML 
+
+1. HTML provides the foundational structure for web pages. 
+2. HTML is a standard markup language for the web, supported by all browsers. 
+3. HTML serves as the backbone for adding interactive features via integration of CSS(for styling) and Javascript(for functionality). 
+4. Writing HTML with semantic tags ensures content is accessible to screen readers. 
+
+# Format of HTML Page
+
+-> HTML Version
+-> Head- Configuration
+-> Body- Content
+
+
+
+-->
+<!-- If you dont include <!DOCTYPE html> in your html file then following things are observed. 
+# HTML Version
+
+Open the console and type document.compatMode: if output is CSS1Compat means the Doctype html is included and if output is BackCompat means the Doctype html is not included. 
+
+1. CSS1Compat=Standard mode (if doctype html is included)
+2. BackCompat=Quirks mode  (if doctype html is not included)
+3. Visual issues
+4. Javascript issues
+5. Semantic elements lose their meaning.
+
+
+# Head 
+
+1. title - basically adds the title to the html doc. 
+
+2. base - the base tag in the head section of html doc sets a default URL that all relative URLs(such as links, images, stylesheets and script) will follow not absolute URLs like(https://google.com).
+
+# how base URL works
+
+1. Example without <base>
+
+<a href="about.html">About us <a>
+
+If the current page URL is https://example.com/products/index.html, clicking "About Us" will navigate to:
+➡ https://example.com/products/about.html (relative to the current page)
+
+
+2. Example with <base>
+
+<base href="https://example.com/">
+
+<a href="about.html">About us <a>
+
+    on clicking "About us" it will navigate to  ➡ https://example.com/about.html (relative to the base url.)
+
+
+
+
+
+
+
+
+3. style - 
+4. meta - It is the very powerful tag in entire html file. 
+
+# 3 Mandatory things that make your HTML page a valid page
+
+-> DOCTYPE Declaration
+
+-> HTML, head & body structure
+
+-> Character Encoding Declaration utf-8
+
+
+
+
+
+
+
+
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<!-- <base href="https://google.com" target=""> -->
+
+</head>
+
+<body>
+    
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
