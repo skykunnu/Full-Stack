@@ -1,10 +1,12 @@
-<!-- 
+<!--  Topics to learn 
+
 1. 4 reasons to write HTML 
 2. Format of HTML page
 3. 3 Mandatory things that make your HTML page a valid page. 
 4. Tags
 5. What Matters in HTML
 6. Why every tag looks similar
+
 -->
 
 <!-- HTML - Hypertext Markup Language, Hypertext means text made up of links, markup means language made up of tags 
@@ -36,10 +38,13 @@ HTML is a very forgiving langauge. it will render the wrong tags also.
 <!-- If you dont include <!DOCTYPE html> in your html file then following things are observed. 
 # HTML Version
 
-Open the console and type document.compatMode: if output is CSS1Compat means the Doctype html is included and if output is BackCompat means the Doctype html is not included. 
+Open the console and type console.log(document.compatMode): if output is CSS1Compat means the Doctype html is included and if output is BackCompat means the Doctype html is not included. 
 
-1. CSS1Compat=Standard mode (if doctype html is included)
-2. BackCompat=Quirks mode  (if doctype html is not included)
+1. CSS1Compat=Standard mode (if doctype html is included), Most modern website use this mode, It ensures proper layout and styling according to W3C spec.  
+2. BackCompat=Quirks mode  (if doctype html is not included), Used mainly for backward compatibility with old websites. 
+
+The CSS1 and Back compat mode refers to document modes in web browser, which affects how a webpage is rendered. 
+
 3. Visual issues
 4. Javascript issues
 5. Semantic elements lose their meaning.
@@ -49,7 +54,7 @@ Open the console and type document.compatMode: if output is CSS1Compat means th
 
 1. title - basically adds the title to the html doc. 
 
-2. base - the base tag in the head section of html doc sets a default URL that all relative URLs(such as links, images, stylesheets and script) will follow not absolute URLs like(https://google.com).
+2. base - the base tag in the head section of html doc sets a default URL that all relative URLs(such as links, images, stylesheets and script) will follow, not the absolute URLs like(https://google.com).
 
 # how base URL works
 
@@ -69,14 +74,16 @@ If the current page URL is https://example.com/products/index.html, clicking "Ab
 
     on clicking "About us" it will navigate to  ➡ https://example.com/about.html (relative to the base url.)
 
-
-
-
-
-
-
-
 3. style - 
+
+
+
+
+
+
+
+
+
 4. meta - It is the very powerful tag in entire html file. 
 
 # 3 Mandatory things that make your HTML page a valid page
