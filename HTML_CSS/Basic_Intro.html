@@ -16,7 +16,9 @@ HTML is a case insensitive language (Both smallcase and uppercase letters are tr
 
 HTML is a text file which contains tags that eventually makes an UI. 
 
-HTML is a very forgiving langauge. it will render the wrong tags also.  
+HTML is a very forgiving langauge. it will render the wrong tags & text also.  
+
+# To validate your html use HTML Validator tool. 
 
 
 # 4 reasons to write HTML 
@@ -35,26 +37,40 @@ HTML is a very forgiving langauge. it will render the wrong tags also.
 
 
 -->
-<!-- If you dont include <!DOCTYPE html> in your html file then following things are observed. 
+<!--
+
+# HTML Version
+
+If you dont include <!DOCTYPE html> in your html file then the mode of your browser changes into quirks mode. 
 # HTML Version
 
 Open the console and type console.log(document.compatMode): if output is CSS1Compat means the Doctype html is included and if output is BackCompat means the Doctype html is not included. 
 
 1. CSS1Compat=Standard mode (if doctype html is included), Most modern website use this mode, It ensures proper layout and styling according to W3C spec.  
+
 2. BackCompat=Quirks mode  (if doctype html is not included), Used mainly for backward compatibility with old websites. 
 
 The CSS1 and Back compat mode refers to document modes in web browser, which affects how a webpage is rendered. 
 
-3. Visual issues
-4. Javascript issues
+3. Visual issues : Spacing/Font size inconsistencies. 
+
+4. Javascript issues : document.body.clientHeight.
+
 5. Semantic elements lose their meaning.
 
 
-# Head 
+# Head-Configuration (Brain of HTML Doc)
 
 1. title - basically adds the title to the html doc. 
 
 2. base - the base tag in the head section of html doc sets a default URL that all relative URLs(such as links, images, stylesheets and script) will follow, not the absolute URLs like(https://google.com).
+
+ base tag takes two attributes href and target. target attri means where to open the linked document default value is _self(opens in the same tab) _blank means opens the link in different tab.
+
+ Always include href in order to work with base tag. 
+
+ base tag is unique in a html doc. 
+
 
 # how base URL works
 
@@ -74,25 +90,197 @@ If the current page URL is https://example.com/products/index.html, clicking "Ab
 
     on clicking "About us" it will navigate to  ➡ https://example.com/about.html (relative to the base url.)
 
-3. style - 
+
+3. style - With the help of style tag we can write css for our html doc. 
+
+
+4. meta - It is a very powerful tag in the entire html file.
+
+With the meta tag we can tell the browser about the webpage and also how to manage this webpage in different-different devices(ie mobile, laptop and so on). 
+
+With the help of meta tag we can provide some information to search engine so that they can show it in search results.  
+
+Ex-
+  <meta name="title" content="This is my fancy web page" />
+  <meta name="description" content="description" />
 
 
 
+5. Link tag -> it is used to link an external file with the html doc. 
+
+
+for ex- <link rel="stylesheet" href="path of external css file.">
+
+<link rel='icon' href='fav.png' />
+
+for ex- if you want to add icon to your webpage, you can do so without explicitly adding it in the html doc by simply making favicon.ico file inside the root directory because browsers now days become really smart that they  automatically find the favicon.ico and make the icon of it for your webpage. 
+
+
+6. Script tag -> This tag is used to write javascript inside the html doc. it can be used inside head tag or body tag. 
+
+
+# body tag ->  This is a tag where we write all the content, images and so on that we want to display on the brwoser. 
 
 
 
-
-
-
-4. meta - It is the very powerful tag in entire html file. 
 
 # 3 Mandatory things that make your HTML page a valid page
 
 -> DOCTYPE Declaration
 
--> HTML, head & body structure
+-> HTML, head & body tag
 
--> Character Encoding Declaration utf-8
+-> Character Encoding Declaration utf-8 and lang attribute in html tag which tells you about the language of the html doc. en-english
+
+<meta charset="UTF-8"> tag is an HTML element that specifies the character encoding for your webpage. character encoding defines how characters (letter, numbers, symbols) are represented in binary code so that browsers can display them correctly.
+
+UTF-8 is a widely used encoding standard that supports huge range of characters including emoji international alphabets and symbols. 
+
+Imagine your webpage has this text: "I love piñatas! 🎉"
+
+With <meta charset="UTF-8">: The browser renders it perfectly as "I love piñatas! 🎉".
+Without it: If the browser defaults to ISO-8859-1, you might see "I love piÃ±atas! ðŸŽ‰" or even replacement characters like "I love pi?atas! ?"
+
+-->
+
+<!-- 
+# Tags 
+
+> Self Closing tags - A tag is self closing tag if it meets both of these conditions.
+
+1. It is a void element (cannot have content and children)
+2. It is defined as such in the HTML spec. 
+
+ex- <base>, <br>, <hr>, <col>, <img>, <input> <link>, <meta> and so on. 
+
+---------------------------------------------------------------------
+Note- if there is a block element then inside it you can include only block elements as well as inline element. 
+
+if there is an inline element then inside it you can only include inline element. 
+
+In your webpage you can include maximum one space. 
+
+1. Div tag - It is a general purpose container that can contain any type of content or tag also. 
+
+2. Span tag - Inside span tag you can only include that tag which does'nt break the line like (label, anchor tag) and span tag only. 
+
+3. Heading tag - h1>h2>h3>h4>h5>h6
+
+4. paragraph tag - <p> tag . 
+
+5. code tag - If you want include any type of code on your webpage. <code> var x=1 </code>  
+
+6. kbd(keyboard) tag - If you want include any info related to keyboard like ctrl+c on your webpage. <kbd>ctrl+c</kbd> 
+
+7. pre tag - if you want to control formatting then use pre tag. 
+
+8. sup/sub- for ex you want to display x^2 then it is possible with the help of sup tag <span>x<sup>2</sup></span>.with sub it will come down. 
+
+9. hr - horizontal line. 
+
+10. br- line break. 
+
+11. a - anchor tag used to define links inside our webpage. 
+
+12. ul - unordered list 
+
+<ul style="list-style-type:circle">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<ul style="list-style-type:disc">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<ul style="list-style-type:square">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+13. ol- ordered list
+
+<ol start='100'>
+<li> this is item 1 </li>
+<li> this is item 2 </li>
+<li> this is item 3 </li>
+<li> this is item 4 </li>
+</ol>
+
+by default output will be 
+
+1. this is item 1
+2. this is item 2
+3. this is item 3
+4. this is item 4
+
+By using start attribute the count will start from 100
+
+100. this is item 1
+101. this is item 2
+102. this is item 3
+103. this is item 4
+
+By using reversed attribute the count will start from 
+
+103. this is item 1
+102. this is item 2
+101. this is item 3
+100. this is item 4
+
+By using type attribute say type="a" the count will start from 
+
+a. this is item 1
+b. this is item 2
+c. this is item 3
+d. this is item 4
+
+
+14. dl tag- datalist tag used where you want to show title small and description big. 
+
+<dl> - datalist
+<dt>OS</dt> - data term
+<dd>Operating System</dd> - data defination
+
+<dt>SW</dt>
+<dd>Software</dd>
+
+</dl>
+
+15. table tag- This tag is used to show the data in tabular form. 
+
+<table>
+
+<tr> // table row
+   <th>Month</th> // table heading
+   <th>Savings</th>
+</tr>
+<tr>
+<td>January</td> // table data
+<td>$100</td>
+</tr>
+
+
+</table>
+
+
+16. forms tag - This tag is used to gather info from the user. 
+
+# What matters in HTML?
+
+- Proper placement of elements. 
+- Efficient usage of tags
+- Art of using minimum but required tags in right structure. 
+
+
+# You need to remember few things while writing HTML 
+
+1. Each tag comes with price, it's not free. Do not overuse them. 
+As per chrome lighthouse 5000 DOM elements are good. 
 
 
 
@@ -105,28 +293,33 @@ If the current page URL is https://example.com/products/index.html, clicking "Ab
 
 
 
-<!DOCTYPE html>
-<html>
-<head>
-<title></title>
-<!-- <base href="https://google.com" target=""> -->
 
-</head>
 
-<body>
-    
-</body>
-</html>
+
+
+
+
+
+
+
+
 
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <title>This is HTML</title>
+    <meta name="title" content="This is my fancy web page" >
+    <meta name="description" content="description" >
+  </head>
+  <body>
+    <code>
+        var x=1;
+    </code>
+    <kbd>
+        ctrl+c
+    </kbd>
+  </body>
 </html>
+
+
