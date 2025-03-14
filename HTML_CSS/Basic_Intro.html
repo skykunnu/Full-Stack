@@ -41,7 +41,7 @@ HTML is a very forgiving langauge. it will render the wrong tags as well as text
 
 # HTML Version
 
-If you dont include <!DOCTYPE html> in your html file then the mode of your browser changes into quirks mode. 
+If you didn't include <!DOCTYPE html> in your html file then the mode of your browser changes into quirks mode. 
 # HTML Version
 
 Open the console and type console.log(document.compatMode): if output is CSS1Compat means the Doctype html is included and if output is BackCompat means the Doctype html is not included. 
@@ -54,7 +54,7 @@ The CSS1 and Back compat mode refers to document modes in web browser, which aff
 
 3. Visual issues : Spacing/Font size inconsistencies. 
 
-4. Javascript issues : document.body.clientHeight.
+4. Javascript issues : document.body.clientHeight (It gives you the height of the <body> elements content area).
 
 5. Semantic elements lose their meaning.
 
@@ -297,18 +297,12 @@ As per chrome lighthouse 5000 DOM elements are good.
 
 
 
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <title>This is HTML</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="This is my fancy web page" >
     <meta name="description" content="description" >
   </head>
