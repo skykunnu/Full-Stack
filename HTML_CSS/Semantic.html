@@ -3,31 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML 5 Tags</title>
+    <title>HTML 5 Tags (Semantic tags)</title>
 </head>
 <body>
 
 
-<!-- HTML and HTML 5 difference hai audio and video tag -->
+<!-- HTML and HTML 5 have only one difference that is Semantic tags.  -->
 
-    <!-- Semantic tags: tags or elements with meaning
-    header, footer, section, aside, nav, main, article, figure.    
-    datalist, audio, video
-
-/* BOX Model-> dimension of any element = width + height + padding + border + margin
-*/
-
-
-
-    hr-->
     
     <!-- All semantic elements are equivalent to div tag
 
      Semantic tags do not have any special effect on website design, but are
-     very important for better SEO of the website. As search engines rank websites
-     with semantic tags higher than those with only divs.
+     very important for better SEO of the website because search engines ranks up the websites
+     having higher semantic tags than those with only divs.
 
     -->
+    <!-- 
+
+    Screen Readers are assistive technologies that help people with visual impairments
+    or blindness interact with digital content. 
+
+
+    1. Landmarks- End User (Screen Readers) 
+
+
+    2. Sectioning- (Search Engines + Screen Readers)
+
+
+    # What is the problem with <div>
+
+    -> Below are the following problems of the div tag
+    
+    * It's too generic, does not have any meaning.
+    * Does not create any landmark. 
+    * Does not create any sectioning of your webpage. 
+
+
+    Note:- Semantic elements are for 2 things. Document Outline and for Landmarks.
+    We have to use them in less quantity. Divs are the real boss. 
+
+    
+    // Semantic Tags:-
+
+    1. main:- <main>Content</main>, It holds your webpage most prominent content. At one time, only one main tag is allowed. 
+    
+    2. nav:- used to wrap in page navigation (internal navigation on the same page) or outside page navigation (external navigation means going to different page).
+
+    -> You can have multiple navs. In that case use aria-labelledBy to name different navs. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    -->
+
+
+
+
+<nav></nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  <!-- Below is the way to link input tag with datalist tag by giving list attribute to input and id attribute to datalist having the same value.  -->
 
