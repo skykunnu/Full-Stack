@@ -89,10 +89,12 @@ function clearInput(){
 
 function sortPlayers() {
   let PlayerRow = Array.from(downTable.getElementsByTagName('tr'));
+  console.log(PlayerRow);
   PlayerRow.sort((playerA, playerB) => {
+    console.log(playerA);
       let playerScoreA = Number(playerA.children[3].innerHTML); // score A
       let playerScoreB = Number(playerB.children[3].innerHTML); // score B
-      return playerScoreB - playerScoreA; 
+      return playerScoreB - playerScoreA;  // To appear the score in Descending order. 
   });
   PlayerRow.forEach(player => downTable.append(player)); 
 }
