@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronous Vs Synchronous</title>
+</head>
+<body>
+    <!-- Asynchronous Vs Synchronous -->
+<script>
+
+// Javascript is a single thread language, meaning it has only one call stack and one execution thread to process code at a time.
+
+// In Javascript all the asynchronous tasks like (setTimeout, fetch and so on) are done with the help of browser. 
+
+
+/* Synchronous means the code runs in a particular sequence of instruction given in the program. 
+Each instruction(code) waits for the previous instruction(code) to complete its execution. */
+
+
+console.log('First'); // First
+console.log('Second'); // Second
+console.log('Third'); // Third
+
+
+/* Asynchronous code execution allows the execution of the upcoming instructions immediately*/
+
+
+console.log('First'); 
+
+setTimeout(() => console.log('Second'), 2000); 
+
+console.log('Third');
+
+/* Order of above program is 
+First
+Third
+Second (due to delay of 2sec).
+
+
+*/
+</script>
+
+
+</body>
+</html>

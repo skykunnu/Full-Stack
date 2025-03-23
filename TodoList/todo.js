@@ -49,9 +49,9 @@ function Tasks() {
     else {
       let para = document.createElement("p");
       let delBtn = document.createElement("span"); // delBtn & deli will wrapped together. 
-      let deli = document.createElement("i");
+      let deli = document.createElement("i"); // delete icon
       let editBtn = document.createElement("span"); // EditBtn & editi will be wrapped together. 
-      let editi = document.createElement("i"); 
+      let editi = document.createElement("i"); // edit icon
       let ItemDiv = document.createElement("div");
       let btnDiv = document.createElement("div");
       para.innerHTML = Input.value;
@@ -87,6 +87,7 @@ function Tasks() {
       });
 
       ItemArr.push(itemObj);
+      console.log(ItemArr)
       Input.value = "";
     }
   }
@@ -95,7 +96,7 @@ function Tasks() {
 function Delete(ID, ItemDiv) {
   ItemArr = ItemArr.filter((Arrayitem) => Arrayitem.id !== ID);
   ItemDiv.remove();
-  console.log(ItemArr);
+  
 }
 
 function edit(para, Task) {
@@ -104,6 +105,8 @@ function edit(para, Task) {
   changedObjectTask = Task;
   flag = true;
   currentEditPara = para;
+  console.log(currentEditPara);
+  
 }
 
 function BGColor() {

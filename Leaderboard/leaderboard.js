@@ -88,8 +88,8 @@ function clearInput(){
 }
 
 function sortPlayers() {
-  let PlayerRow = Array.from(downTable.getElementsByTagName('tr'));
-  console.log(PlayerRow);
+  let PlayerRow = Array.from(downTable.getElementsByTagName('tr')); // creating array of all tr's 
+  
   PlayerRow.sort((playerA, playerB) => {
     console.log(playerA);
       let playerScoreA = Number(playerA.children[3].innerHTML); // score A
