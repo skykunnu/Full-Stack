@@ -132,7 +132,7 @@
 // the catch method will not be executed, since because the promise is in resolve state, so for this case catch method will never execute. [1,2,3,4,finally 1,finally 2]. 
 
 // What if we put catch method between these then methods (where state is rejected) ?
-// the first catch method along with then methods coming after first catch will be executed rest all then & catch methods will not executed. [1,6,4.finally 1, finally 2]. 
+// only the first catch method along with rest of the then methods coming after the first catch will be executed rest all then & catch methods will not be executed. [1,6,4,finally 1, finally 2]. 
 
 
 .catch((error)=>{
