@@ -117,6 +117,7 @@
   const NewPromise=new Promise((resolve, reject)=>{
     setTimeout(()=>{
         reject(1);
+        resolve(1);
     },200);
   })
 .then((data1)=>{
@@ -124,12 +125,14 @@
     return 2;
   })
 
+  // then function takes catch function as a second argument. so what if catch function is internally attached to data2. then priority will given to this catch and rest all will be ignored.
+
 .then((data2)=>{
     console.log(data2);
     return 3;
   })
 //   What if we put catch method between these then methods (where state is resolved) ?
-// the catch method will not be executed, since because the promise is in resolve state, so for this case catch method will never execute. [1,2,3,4,finally 1,finally 2]. 
+// the catch method will not be executed, because the promise is in resolve state, so for this case catch method will never execute. [1,2,3,4,finally 1,finally 2]. 
 
 // What if we put catch method between these then methods (where state is rejected) ?
 // only the first catch method along with rest of the then methods coming after the first catch will be executed rest all then & catch methods will not be executed. [1,6,4,finally 1, finally 2]. 
