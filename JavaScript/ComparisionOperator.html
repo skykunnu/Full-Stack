@@ -31,6 +31,10 @@
      console.log('4'=== 4); // true
      console.log(false===0); // false
      console.log(null===undefined); // false
+     
+     let key1=Symbol(); // unique value is generated everytime a symbol function is called. 
+     let Key2=Symbol(); 
+     console.log(Key1===Key2) // false
 
      console.log([]=="") // true, becoz empty array gets convert into a empty string. 
      console.log([]==[]) // false, becoz double equalsto  only converts array into string when the comparison is with different data type so therefore internally double equalsto uses triple equalsto and since both of them references to different memory.      

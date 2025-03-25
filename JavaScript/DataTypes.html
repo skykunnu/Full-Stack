@@ -9,22 +9,35 @@
 
     <script>
      
-     // DataTypes: Number, string, Boolean, Array, Object, Undefined, null, Symbol
+     // DataTypes: Number, string, Boolean, Array, Object, Undefined, null, Symbol, BigInt
 
     //  var a=10;
-    //  console.log(typeof(a)) // Number
+    //  console.log(typeof(a)) // Number (No float number is included in Number ie decimal number also have type number only).
+    
+    // var h=Number.MAX_SAFE_INTEGER; // 9007199254740991 (It is a maximum number that you can use in js)
+    // console.log(typeof h); // Number
+
+    /* If we want to create an integer greater than max safe integer then use BigInt in that case.   
+
+    // let x=BigInt(Number.MAX_SAFE_INTEGER) // 9007199254740991n (n is a notation to depict that it is a BigInt).
+    //     console.log(typeof x) // bigint , 9007199254740991n
+    
+    */
+
+    //    var I=Symbol(); // it generates a unique value every time we call the symbol function.
+    //    console.log(typeof I) // Symbol
 
     //  var b='Shikhar'
     //  console.log(typeof(b)) // String
 
     //  var c=true;
     //  console.log(typeof(c)) // boolean
-
+    
     //  var d;
-    //  console.log(typeof(d)) // undefined
+    //  console.log(typeof(d)) // undefined means absence of value 
      
-    //  var e=null;
-    //  console.log(typeof(e)) // object
+    //  var e=null;   // null is a value
+    //  console.log(typeof(e)) // object (historical javascript mistake)
 
     //  var f=[1,2,3,4,5]
     //  console.log(typeof(f)) // object
@@ -33,17 +46,18 @@
     //     myName:'Shikhar',
     //     Age:24
     //  }
-    //  console.log(g) // object
+    //  console.log(typeof g) // object
 
-//     const mySymbol = Symbol("description");
-// console.log(typeof mySymbol); // "symbol"
+    // console.log(typeof function(){}) // function
+
+
 //----------------------------------------------------------------------
 
 // Primitive and Non Primitive Data types.
 
-// Primitive-> String, Numbers, boolean, null, undefined, symbol. (Copy of variable is formed)
+// Primitive-> String, Numbers, boolean, null, undefined, symbol, BigInt. (Copy of variable is formed)
 
-// Non-Primitive-> Array, Object, functions.
+// Non-Primitive-> Array, Object & functions.
 
 
 // Stack and Heap memory 
