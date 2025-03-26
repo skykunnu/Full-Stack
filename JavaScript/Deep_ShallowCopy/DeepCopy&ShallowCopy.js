@@ -33,7 +33,7 @@ let anotherFood = foodItems; // copying(refrencing) of object(foodItems) into ne
 /*
 // ⁡⁣⁢⁣Object's Method (Ways of cloning an object):-
 
-1. ⁡⁣⁢⁣Using spread operator⁡
+1. ⁡⁣⁢⁣Using ⁡⁣⁢⁣Destructuring⁡⁡
 
 let obj1={
 name:"shikhar",
@@ -53,8 +53,9 @@ let obj2={...obj1};
 obj2.name='Dikshant'
 obj2.hobbies.h1='Music';
 
-console.log("Obj1",obj1.name, obj1.name); // shikhar, Dikshant because name property is of primitive data type so in this shallow copy will not be performed. 
-console.log("Obj2",obj2.hobbies.h1,obj2.hobbies.h1); // Music, Music because hobbies property is of non primitive data type so in this shallow copy is performed. 
+console.log("Obj1",obj1.name, obj2.name); // shikhar, Dikshant because name property is of primitive data type so in this shallow copy will not be performed. 
+
+console.log("Obj2",obj1.hobbies.h1,obj2.hobbies.h1); // Music, Music because hobbies property is of non primitive data type so in this case shallow copy is performed. 
 
 
 2. ⁡⁣⁢⁣using Object.assign() ⁡
@@ -77,7 +78,7 @@ let obj2=Object.assign({},obj1);
 obj2.name='Dikshant'
 obj2.hobbies.h1='Music';
 
-console.log("Obj1",obj1.name, obj1.name); // shikhar, dikshant same explanation as above. 
+console.log("Obj1",obj1.name, obj2.name); // shikhar, dikshant same explanation as above. 
 console.log("Obj2",obj2.hobbies.h1, obj1.hobbies.h2); // Music, Music same explanation as above.
 
 ⁡
@@ -98,8 +99,52 @@ copied, since they are only references. hence you would end up doing (SHALLOW CO
 /* 
 # ⁡⁢⁣⁣Deep copy methods of Arrays⁡ ⁡⁢⁣⁣& Object⁡
 
+1. ⁡⁣⁣⁢Using structuredClone()⁡
 
-1. ⁡⁣⁣⁢Using JSON.parse(JSON.stringify())⁡:- Works only with Number and String and Object literal without function or Symbol properties. 
+const obj={
+
+name:"Shikhar",
+age:24,
+hobbies:{
+h1:"cricket",
+h2:"GK",
+h3:"Music",
+h4:"Reading"
+}
+}
+
+const newObj=structuredClone(obj);
+
+newObj.name="Rishi";
+newObj.age=23;
+newObj.hobbies.h1='football';
+
+
+console.log(obj.name,obj.age,obj.hobbies)
+console.log(newObj.name,newObj.age,newObj.hobbies)
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2. ⁡⁣⁣⁢Using JSON.parse(JSON.stringify())⁡:- Works only with Number and String and Object literal without function or Symbol properties. 
 
 Ex-
 
@@ -133,7 +178,7 @@ Original & new object are independent to each other even in the nested array cas
 
 
 
-⁡⁣⁣⁢2. Using Recursive function⁡ 
+⁡⁣⁣⁢3. Using Recursive function⁡ 
 
 Recursively copies every element of the array including nested array & object 
 
@@ -170,7 +215,7 @@ const objArr = [1, [2, 3], { a: 4, b: [5, 6] }];
 
 
 
-// 3. ⁡⁣⁣⁢⁡⁣⁣⁢⁡⁣⁣⁢Using Lodash clonedeep⁡ ⁡ - It works with all types, function & symbol are copied by reference.
+// 4. ⁡⁣⁣⁢⁡⁣⁣⁢⁡⁣⁣⁢Using Lodash clonedeep⁡ ⁡ - It works with all types, function & symbol are copied by reference.
 // (This is working in browser environment)
 
 const arrOfFunction = [
@@ -184,8 +229,8 @@ const arrOfFunction = [
 let cloneObject = _.cloneDeep(arrOfFunction);
 
 // deepClone copy by reference function and Symbol
-console.log(cloneObject); // [f,{...}, Symbol(4)]
+// console.log(cloneObject); // [f,{...}, Symbol(4)]
 
 // JSON replace function with null and function in object with undefined
 
-console.log(JSON.parse(JSON.stringify(arrOfFunction))); // [null,{},null]
+// console.log(JSON.parse(JSON.stringify(arrOfFunction))); // [null,{},null]
