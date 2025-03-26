@@ -142,7 +142,7 @@
 // // the catch method will not be executed, because the promise is in resolve state, so for this case catch method will never execute. (1,2,3,5,finally 1,finally 2). 
 
 // // What if we put catch method between these then methods (where state is rejected) ?
-// // only the first catch method along with rest of the then methods coming after the first catch will be executed rest all then & catch methods will not be executed. ('error logged', 1, undefined, undefined, finally 1, finally 2). 
+// // only the first catch method along with rest of the then methods coming after the first catch will be executed rest all then & catch methods will not get executed. ('error logged', 1, undefined, undefined, finally 1, finally 2). 
 
 
 // .catch((error)=>{
@@ -189,12 +189,19 @@ function asyncTasks(data,time,needToReject){
     })
 }
 
-const needToReject=true;
+// const needToReject=true;
 const p1=asyncTasks("p1",3000/* reject */) // this /* reject */ is just a comment to let other know about that it is a reject condition. 
 const p2=asyncTasks("p2",1000)
 const p3=asyncTasks("p3",2000)
 const p4=asyncTasks("p4",4000)
 const p5=asyncTasks("p5",5000)
+
+
+MyPromiseAll([p1,p2,p3,p4,p5]).then((data)=>{
+  console.log(data);
+}).catch((error)=>{
+  console.log({error});
+})
 
 // p1.then(console.log);
 // p2.then(console.log);
@@ -218,7 +225,7 @@ const p5=asyncTasks("p5",5000)
 
 // It executes all promises together, 
 
-// The execution time of promise.all is the max time given to any promise in this case is 2000ms.
+// The execution time of promise.all is the max time given to any promise. in this case is 2000ms.
 
 // It returns the data in the same order as passed in an array.
 
@@ -226,6 +233,8 @@ const p5=asyncTasks("p5",5000)
 
 // Promise.all([p1,p2,p3,p4,p5]).then((data)=>{
 //     console.log(data);
+// }).catch((error)=>{
+// console.log({error});
 // })
 
 
@@ -261,12 +270,36 @@ const p5=asyncTasks("p5",5000)
 
 // if all the promises are rejected then an error message is shown saying Aggregate error: All promises were rejected. 
 
-Promise.any([p2,p3,p1,p4,p5]).then((data)=>{
-    console.log({data})
-}).catch((error)=>{
-    console.log({error})
-})
+// Promise.any([p2,p3,p1,p4,p5]).then((data)=>{
+//     console.log({data})
+// }).catch((error)=>{
+//     console.log({error})
+// })
 
+//-----------------------------------------------------------------------------------------------------------------
+
+// Polyfill of Promise.all
+
+function MyPromiseAll(arrayOfPromises){
+  return new Promise(function (resolve,reject){
+    const result=[];
+    let flag=0;
+  for(let i=0;i<arrayOfPromises.length;i++){
+    const pr=arrayOfPromises[i];
+
+    pr.then(data=>{
+      flag++;
+      result[i]=data;
+      if(flag===arrayOfPromises.length){
+        resolve(result);
+      }
+    }).catch((e)=>{
+      reject(e);
+    })
+  }
+
+  })
+}
 
 
 
