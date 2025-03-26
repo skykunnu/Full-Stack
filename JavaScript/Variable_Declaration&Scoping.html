@@ -32,6 +32,11 @@
         }
         // console.log(a) // 50
 
+
+        age=20; // It is a global variable defined in the global scope as it was not defined with any variable keyword. so, therefore it's a global variable. 
+        console.log(age) //20
+
+
 //----------------------------------------------------------------------------------------------------------------------------------
       // Let can be re-assign, is block scoped (It can be accessed inside block only) but cannot be re-declare.
 
@@ -52,7 +57,7 @@
 
 //-------------------------------------------------------------------------------------------------------------------------------------
 
-// const cannot be re-declare, re-assign and it is a block scoped. 
+// const cannot be re-declare, re-assign and is block scoped. 
 
    const c=50;
     // const a=100; error
@@ -122,9 +127,14 @@ then when the function ends, they are gone from the memory.
 
 same applies to block scope. 
 
-If you create a variable in an outer scope with the let keyword and another variable with the var keyword in a block scope but with the same name, it will throw an error. This is called illegal shadowing.⁡
-
+If you create a variable in an outer scope with the let keyword and another variable with the var keyword in a block scope but with the same name, it will throw an error. This is called illegal shadowing because var is not block scoped and redeclaration of variable is not allowed in ⁡⁣⁣⁢var⁡ ⁡⁣⁣⁢but vice-versa is possible⁡⁡⁣⁣⁢.⁡ 
 */
+
+let a=10;
+{
+    var a=30;
+    console.log(a); // Syntax error : Indentifier a is already been declared. 
+}
 
 
 
