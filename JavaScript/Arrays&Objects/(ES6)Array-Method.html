@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array-Method-ES6</title>
+</head>
+<body>
+    <script>
+
+
+// HOF - Higher order function 
+/* 
+1. arrays methods - (Map, filter, Reduce)
+2. function ke argument mein function leta hai 
+3. array return karta hai
+4. 3rd property does'nt work in case of reduce. 
+
+
+*
+// Map, filter, reduce , some , every, find, findIndex, forEach, for in , for of
+
+// Map, filter & reduce do not mutate the original array Instead returns the new array.
+
+
+
+
+
+// Map -> It creates a new array with the results of a provided function on every element in the calling array. 
+
+      // const numbers = [1, 2, 3, 4, 5];
+      // numbers.map(num => num * 2);
+      // console.log(numbers);
+
+
+
+
+// filter ->  It filters out the elements based on the condition given in the filter function and returns the filtered elements in the new array. 
+
+// console.log(myFunction());
+
+      // let myArray = [1, 2, 3, 4, 5];
+
+      // function myFunction() {
+      //   return myArray.filter(function(num) {
+      //     return num > 3;
+      //   });
+      // }
+
+
+
+
+// reduce -> The final result of running the reducer across all elements of the array is a single value.      
+
+/* if init value is not present than accumulator value will be the 0th index of the array and traversing will start from 1st element
+and if init value is present than accumulator value will be the init value anf traversing will start from 0th element.
+*/  
+
+
+// const numbers = [1, 2, 3, 4, 5];
+      // let init = 2;
+      // const sum = numbers.reduce(function (acc, num) {
+      //   return acc * num;
+      // }, init);
+      // console.log(sum);
+// 
+
+
+
+ // const arr = [1, 2, 3, 4, 5];
+      // const result = arr.map(x => x * 2).filter(x => x > 5).reduce((acc, cur) => acc + cur, 0);
+      // console.log(result); //24
+
+
+
+      //---------------------------------------------------------------------------------------------------------------------------------------
+
+// Some & Every do not mutate the original array. 
+
+
+// some-> It returns true, if in the array it finds an element for which the provided function returns true; otherwise it returns false. It doesn't modify the array.
+
+// Every->  whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value (true & false).
+
+//  const numbers = [1, 2, 3, 4, 5];
+//       const result = numbers.every(num => num > 0) && numbers.some(num => num > 4);
+//       console.log(result); // True
+
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------
+
+// find & findIndex
+
+// find-> It returns the first element in the provided array that satisfies the provided condition. If no values satisfy the condition, undefined is returned.
+
+// Diff b/w find() and filter() is that filter() checks for every element in the array while the find() returns the first element that satisfies the provided testing function.
+
+
+
+// const array1 = [5, 12, 8, 130, 44];
+
+// const found = array1.find((element) => element > 10);
+
+// console.log(found); // 12.
+
+
+
+
+// findIndex-> returns the index of the first element in an array that satisfies the provided testing function. If no elements satisfy the testing function, -1 is returned.
+
+
+// const array1 = [5, 12, 8, 130, 44];
+
+// const isLargeNumber = (element) => element > 13;
+
+// console.log(array1.findIndex(isLargeNumber)); // 3
+
+
+//------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Enumerating through arrays 
+
+
+// ForEach loop 
+
+// let arr=[10,20,30,40,50]
+
+// Anonymous function with ForEach
+
+
+// arr.forEach(function(element,index){
+//       document.write(`${element} : ${index} <br>`)
+// });
+
+
+// Arrow function with ForEach
+
+// let sum=0
+// arr.forEach((element)=>{
+// sum+=element;
+// })
+
+// document.write(sum) // 150
+
+
+//------------------------------------------------------------------------------------------------------------------------------------
+
+// For of loop -> It iterates over the values of array.
+
+// let fruits=['Guava','Apple','Orange','Blueberry'];
+
+// for(let fruit of fruits){
+//       console.log(fruit) // 'Guava','Apple','Orange','Blueberry'
+// }
+
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+// For in loop -> It iterates over the indexes in an array.(not recommended for arrays).
+
+// let fruits=['Guava','Apple','Orange','Blueberry'];
+
+// for(let fruit in fruits){
+//       console.log(fruit) // 0, 1, 2, 3
+//       console.log(fruits[fruit]) // 'Guava','Apple','Orange','Blueberry'
+// }
+
+
+// -----------------------------------------------------------------------------------------------------------------------------------
+
+    </script>
+</body>
+</html>

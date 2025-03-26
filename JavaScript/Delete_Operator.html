@@ -14,7 +14,7 @@
 
 /* Important points to know about Delete operator 
 
-1. Variables declared with let, var & const keyword cannot be deleted.  
+1. Variables declared with let, var & const keyword cannot be deleted using delete operator.  
 
 2. Built in object properties cannot be deleted ex-(Object.prototype). 
  
@@ -24,7 +24,8 @@ const name="Shikhar"
 age=24;
 
 console.log(Delete name); // false
-console.log(Delete age); //  True, As variable declared without keyword are defined in global object can be deleted.   
+
+console.log(Delete age); //  True, As variable declared without keyword are defined in global object and delete operator can delete the properties from objects.   
 
 
 */
