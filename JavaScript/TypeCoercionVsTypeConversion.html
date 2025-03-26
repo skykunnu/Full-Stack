@@ -26,7 +26,9 @@ It is the automatic or implicit conversion of a value from one data type to anot
 
 1. if both are primitive data types then convert it to a number. 
 
-2. if not then first convert it to string and then convert to number. 
+2. if not then first convert it to string and then convert to number.
+
+3. if you try to convert incompatible data types such as 1-{}, in such case you will get NaN. 
 
 */
 
@@ -34,7 +36,9 @@ console.log(2+"2") // 22, Type coercion took place where number(2) converts to s
 console.log(1+true) // 2, because true(boolean) gets type coerced to number 1. 
 console.log(2-"2") // 0, "2" gets type coerced to number. 
 console.log(2+[]) // 2, because js first convert non-primitive datatypes to strings and then to number. so, therefore empty array gets converted to empty string and then to number which is 0 from empty string. 
-console.log(2+{})
+console.log(2+{}) // '2[object Object]', because js first convert empty obj to string becoming '[object Object]' and then concatenation occurs.
+console.log(2-{}) // NaN, because - operator forces numeric conversion & numeric conversion for empty object is not possible, so NaN. 
+
 
 // Type Conversion (Explicit conversion)
 
