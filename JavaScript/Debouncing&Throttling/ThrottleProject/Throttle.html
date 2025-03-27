@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Throttle</title>
+</head>
+<body>
+    
+
+
+    <script>
+     
+//Throttling ensures that a function is only executed at most once in a specified interval, even if triggered multiple times.
+
+function throttle(func, limit){
+    let lastCall=0;
+    return (...args)=>{
+        let currentCall=Date.now();
+        console.log("current-call:-",currentCall);
+        console.log("Last-call",lastCall);
+        console.log("currentcall-lastCall",currentCall-lastCall);
+        if(currentCall-lastCall>=limit){
+            func(...args);
+            lastCall=currentCall;
+        }
+    }
+}
+
+function SearchQuery(fName, lName){
+    console.log("My Name is "+fName+" "+lName)
+}
+
+
+const ThrottleSearch=throttle((fn,ln)=>SearchQuery(fn,ln),1000);
+
+ThrottleSearch("Shikhar","Khandelwal");
+setTimeout(()=>ThrottleSearch("Tanmay","Shukla"),1001)
+ThrottleSearch("Abhishek","Khandelwal");
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

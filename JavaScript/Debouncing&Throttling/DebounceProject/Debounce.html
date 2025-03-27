@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debounce</title>
+
+</head>
+<body>
+ <div id="wrapper">
+    <input type="text" placeholder="Type Search">
+</div>
+    
+
+<script>
+
+
+// Debouncing is a technique used in programming to limit the rate at which a function is executed. It ensures that a function is only called after a certain amount of time has passed since its last invocation,
+
+
+const input=document.querySelector('input');
+input.addEventListener('keyup',debounce(hello,1000));
+
+function debounce(func,delay){
+let timer;
+return (...args)=>{   // rest operator is used (collecting all the arguments)
+    clearTimeout(timer);
+    timer=setTimeout(()=>{
+        func(...args); // spread operator is used. (distributing all the arguments)
+    },delay)
+}
+}
+
+// Before spread & rest operators, passing arguments to the closure was done using bind & apply. 
+
+
+
+function hello(e){
+    console.log('Hello '+e.target.value);
+}
+
+</script>
+
+
+</body>
+</html>

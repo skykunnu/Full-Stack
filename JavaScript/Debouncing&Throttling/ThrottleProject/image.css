@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    width: 80vw;
+}
+
+
+#loader{
+    width: 120px;
+    height: 120px;
+    border: 5px solid rgb(207, 189, 207);
+    border-radius: 50%;
+    border-right-color: purple;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#post{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#post a{
+    width: 31%;
+    height:250px;
+    padding:10px;
+    border: 1px solid black;
+    border-radius:10px;
+}
+
+#post a img{
+    width: 100%;
+    height: 100%;
+}
