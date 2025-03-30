@@ -20,6 +20,8 @@
     -->
     <!-- 
 
+    Semantic tags create Landmarks and Sectioning. 
+
     Screen Readers are assistive technologies that help people with visual impairments
     or blindness interact with digital content. 
 
@@ -45,22 +47,104 @@
     
     // Semantic Tags:-
 
-    1. main:- <main>Content</main>, It holds your webpage most prominent content. At one time, only one main tag is allowed. 
+    1. main:- <main>Content</main>, It holds your webpage most 
+    ------------
+    prominent content. At one time, only one main tag is allowed. 
     
-    2. nav:- used to wrap in page navigation (internal navigation on the same page) or outside page navigation (external navigation means going to different page).
+    2. nav:- used to wrap in page navigation (internal navigation on 
+     ------------
+    the same page) or outside page navigation (external navigation means going to different page).
 
-    -> You can have multiple navs. In that case use aria-labelledBy to name different navs. 
+    -> You can have multiple navs. In that case use aria-label  to name different navs. 
+    <nav aria-label="Primary"><a href="23">Sample 1</a></nav>
+<nav aria-label="Secondary"><a href="2343">Sample 2</a></nav>
+
+    3. aside tag:- The element defines some content aside(bagal me) 
+     ------------
+    from the content it is placed in. 
+   
+    -> This tag is used in html to define content that is indirectly related to the main content. 
+    -> It is often used for sidebar, Advertisements, Author-bio sections. 
+    -> requires a aria-label if you have multiple tag.
+    -> Avoid it having in main. 
+
+    # It is not necessary to place aside only on the side. you can position it anywhere on the screen, including the middle, top, or bottom. 
+
+
+    4. Header tag- It represents a container for introductory content 
+     ------------
+    or set of navigational links. 
+
+    -> It typically contains logo, search bar or one more heading element. 
+
+    -> According to official doc you should have one header in the entire html doc. 
+
+
+    5. Footer tag- It defines a footer for a doc & section.
+     ------------
+    -> It typically contains copyright info, back to top links, related doc. 
+
+    -> According to official doc you should have one footer in the entire html doc. 
 
 
 
+    6. Section tag- defines a section of document or logical grouping 
+    --------------
+    of content within document. 
+
+    -> It has 2 purpose:-
+
+    # To create a landmark.
+    #  To create branches and outline. 
+
+    -> If you want to create a landmark using section tag than use aria-label with section tag. 
+
+    -> H1 inside section is treated as name of the branch. 
 
 
+    
+    7. article tag - It represent one single unit and work 
+    ---------------
+    independently. 
+
+    -> It is used in blogs, comments, News article and so on. 
+    -> Unlike sections, article can have its own header and footer. 
 
 
+    8. figure tag 
+    ------------------
+    -> The main role of figure tag is to semantically associate media (like image) with its caption using <figcaption> tag. 
+
+    -> both figcaption and figuretag are used together. 
+
+    9. details/ summary tag - It is similar to expand and collapse 
+    -------------------------
+    functionality means when you click on the arrow beside FAQ then all 4 divs will be visible. 
+
+    <details>
+    <summary>FAQ</summary>
+    <div>1. HTML</div>
+    <div>2. CSS</div>
+    <div>3. Shikhar</div>
+    <div>4. Shikhar</div>
+    </details>
+
+    10. time tag -> if you want to show any time related info in your webpage then use time tag. 
+
+    11. <address> tag -> It is used to represent the contact info. 
 
 
+    Q1. Which Elements creates Landmark ? 
+    
+    Ans. header, nav, main, aside, section, article, footer, form. 
+    
+    Q2. Which Elements creates sectioning ?
 
+    Ans. section, article, aside, nav. 
 
+    Q3. Which Elements allows multiple h1s ?
+
+    Ans section and aside. 
 
 
 
@@ -72,7 +156,6 @@
 
 
 
-<nav></nav>
 
 
 
