@@ -9,4 +9,6 @@ CSS Important Interview Questions
 * Absolute
 * Relative
 
--> static- 
+-> static- default 
+
+
