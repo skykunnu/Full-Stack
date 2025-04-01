@@ -225,6 +225,8 @@ MyPromiseAll([p1,p2,p3,p4,p5]).then((data)=>{
 
 // It executes all promises together, 
 
+// Promise.all returns promise. 
+
 // The execution time of promise.all is the max time given to any promise. in this case is 2000ms.
 
 // It returns the data in the same order as passed in an array.
@@ -297,7 +299,6 @@ function MyPromiseAll(arrayOfPromises){
       reject(e);
     })
   }
-
   })
 }
 

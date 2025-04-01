@@ -18,15 +18,20 @@
 // Debouncing is a technique used in programming to limit the rate at which a function is executed. It ensures that a function is only called after a certain amount of time has passed since its last invocation,
 
 
+// It limits the execution of a function call and waits for a certain amount of time before running it again. 
+// It helps us optimize how we call certain events.  
+
+
 const input=document.querySelector('input');
 input.addEventListener('keyup',debounce(hello,1000));
 
 function debounce(func,delay){
 let timer;
-return (...args)=>{   // rest operator is used (collecting all the arguments)
+return (...args)=>{   // rest operator is used (collecting all the arguments), did this to take value from the input 
+
     clearTimeout(timer);
     timer=setTimeout(()=>{
-        func(...args); // spread operator is used. (distributing all the arguments)
+        func(...args); // spread operator is used. (distributing all the arguments), did this to take value from the input
     },delay)
 }
 }

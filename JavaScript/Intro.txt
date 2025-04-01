@@ -9,4 +9,7 @@
 
 // Prompt are used to take value from the user.
  
-//  
+//  JS Executes the code in 2 phases 
+
+1. Parsing/scope setting/ Memory allocation phase. - All comprises of phase 1
+2. code Execution phase.

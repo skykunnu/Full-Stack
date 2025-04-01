@@ -13,6 +13,14 @@
      
 //Throttling ensures that a function is only executed at most once in a specified interval, even if triggered multiple times.
 
+// Throttling is a technique to limit the execution of an event handler even when this event triggers continuosly due to user actions. 
+// So in our Image gallery project user action is infinite Scrolling. ex- resizing window, infinte scrolling.
+
+
+
+
+
+
 function throttle(func, limit){
     let lastCall=0;
     return (...args)=>{
