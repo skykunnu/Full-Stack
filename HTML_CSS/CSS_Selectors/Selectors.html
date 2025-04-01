@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+      /* h1[name='Shikhar']{
+        color: magenta;
+      }
+
+      #H1{
+        background-color: bisque;
+      } */
+
+      div h1{
+        color: yellow;
+      }
+
+      div>p{
+        color: blueviolet;
+      }
+
+      div + span{
+        color: red;
+      }
+
+      div~span{
+        color: blue;
+      }
+
+    </style>
+</head>
+<body>
+<!-- CSS Selectors selects the HTML elements you want to style. -->
+
+
+    <!-- 
+    1. Simple Selectors - name,id,class selectors 
+    
+    -> One page, one id, one time.
+    
+    -> One page, one class, as many times. 
+    
+    -> A single tag can have atmost one id.
+  
+    -> A single tag can have as many classes.
+    
+    -> Id always take priority over classes. 
+
+    ex-  #H1{
+        background-color: bisque;
+      }
+
+    
+      2. Attribute Selector - It matches elements based on the element having a given attribute. 
+      
+      ex- <h1> elements with name attribute as Shikhar.  
+
+       h1[name='Shikhar']{
+        color: magenta;
+      }
+      
+      3. Combinators Selector - Space, >, ~ , + 
+
+      space and > are child selectors
+
+      ~ and + are sibling selectors
+      
+      # Space -  
+      
+     Ex-  div h1{
+        color: yellow;
+      }
+
+      # >(child combinator)-
+
+      Ex- select all those p elements who are immediate child of div element.  
+      
+      div>p{
+        color: blueviolet;
+      }
+
+
+      # + (sibling combinator)- select all those span who are immediate sibling of div element. 
+
+      Ex- first span element will be turned red.  
+      
+      div + span{
+        color: red;
+      }
+
+
+      # ~ (tild combinator)- select all those span who are sibling of div element and are coming after it only not before it. 
+
+
+      Ex- All span element coming after div will be turned blue. 
+        div~span{
+        color: blue;
+      }
+
+
+
+    -->
+
+    <!-- My name is shikhar will turn into magenta color.-->
+    <h1 name="Shikhar" id="H1" class="heading1">My name is shikhar. </h1> 
+    
+    <div>
+        <h1>Aila! Jaadu</h1>
+        <p>Hello, Shikhar khandelwal</p>
+        <h2>I am from jaipur rajasthan. </h2>
+    </div>
+
+
+    <!-- Below is the example of + & ~ selectors. -->
+    <div class="box">
+    <span>child 1</span>
+    </div>
+    <span>Sibling 1</span>
+    <span>Sib 2</span>
+    <span>Sib 3</span>
+    <span>Sib 4</span>
+    <span>Sib 5</span>
+
+
+
+
+
+</body>
+</html>
